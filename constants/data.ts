@@ -48,3 +48,11 @@ export const FOOTERLINKS: FooterLink[] = [
   { label: "Contact Us", href: "/contact" },
   { label: "Careers", href: "/careers" },
 ];
+
+export const IMAGES = [
+  "/slideshow-images/hero5.JPG",
+  "/slideshow-images/hero1.JPG",
+  "/slideshow-images/hero2.JPG",
+  "/slideshow-images/hero3.JPG",
+  "/slideshow-images/hero4.JPG",
+];

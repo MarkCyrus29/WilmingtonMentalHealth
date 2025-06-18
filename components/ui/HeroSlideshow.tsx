@@ -2,28 +2,21 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-
-const images = [
-  "/slideshow-images/hero5.JPG",
-  "/slideshow-images/hero1.JPG",
-  "/slideshow-images/hero2.JPG",
-  "/slideshow-images/hero3.JPG",
-  "/slideshow-images/hero4.JPG",
-];
+import { IMAGES } from "@/constants/data";
 
 export default function HeroSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
+      setCurrentIndex((prev) => (prev + 1) % IMAGES.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="relative overflow-hidden h-[calc(100vh-100px)] w-screen">
-      {images.map((src, index) => (
+      {IMAGES.map((src, index) => (
         <Parallax
           speed={-30}
           className="absolute inset-0 top-7 -z-10"
