@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 import { NAVLINKS } from "@/constants/data";
-import Link from "next/link";
 
 function Header() {
   return (
@@ -14,17 +13,91 @@ function Header() {
         height={150}
         priority
       />
-      <nav className="flex gap-5 items-center">
+
+      <nav className="flex gap-2 items-center">
         {NAVLINKS.map((item, index) => (
-          <Link
-            key={index}
-            href={item.link}
-            className="flex flex-row transition-opacity hover:opacity-80"
-          >
-            {item.title}
-            {item.title !== "Home" ? <ChevronDown /> : ""}
-          </Link>
+          <div key={index} className="relative group">
+            {/* Main Link */}
+            <a
+              href={item.link || "#"}
+              className="flex items-center transition-opacity duration-100 hover:bg-gray/60 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+              tabIndex={0}
+            >
+              {item.title}
+              {item.children && <ChevronDown className="w-4 h-4" />}
+            </a>
+
+            {/* Dropdown (1st level) */}
+            {item.children && (
+              <div
+                className="absolute top-full left-0 ml-1
+                opacity-0 invisible pointer-events-none
+                peer-hover:opacity-100 peer-hover:visible peer-hover:pointer-events-auto
+                peer-focus:opacity-100 peer-focus:visible peer-focus:pointer-events-auto
+                hover:opacity-100 hover:visible hover:pointer-events-auto
+                transition-opacity duration-300 delay-150
+                bg-white shadow-lg rounded-md p-2 z-10 min-w-max"
+              >
+                <ul className="space-y-1">
+                  {item.children.map((child, childIndex) => (
+                    <li key={childIndex} className="relative">
+                      {/* The parent link is the peer */}
+                      <a
+                        href={child.link || "#"}
+                        className="relative flex items-center px-4 py-2 text-sm hover:bg-gray/60 rounded whitespace-nowrap peer"
+                        tabIndex={0}
+                      >
+                        {child.title}
+                        {child.children && (
+                          <ChevronDown className="w-4 h-4 ml-1" />
+                        )}
+                      </a>
+                      {/* The sub-submenu shows when hovering/focusing the peer <a> OR when hovering the submenu itself */}
+                      {child.children && (
+                        <ul
+                          className="absolute top-0 left-full ml-1
+                            opacity-0 invisible pointer-events-none
+                            peer-hover:opacity-100 peer-hover:visible peer-hover:pointer-events-auto
+                            peer-focus:opacity-100 peer-focus:visible peer-focus:pointer-events-auto
+                            hover:opacity-100 hover:visible hover:pointer-events-auto
+                            transition-opacity duration-300 delay-150
+                            bg-white shadow-lg rounded-md p-2 z-10 min-w-max"
+                        >
+                          {child.children.map((subChild, subIndex) => (
+                            <li key={subIndex}>
+                              <a
+                                href={subChild.link || "#"}
+                                className="block px-4 py-1 text-sm text-gray-600 hover:bg-gray/60 rounded whitespace-nowrap"
+                                tabIndex={0}
+                              >
+                                {subChild.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         ))}
+
+        {/* Search bar with icon */}
+        <form className="flex items-center border border-dark/50 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-primary ml-4">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="px-4 py-2 outline-none w-[160px] placeholder:text-dark/60"
+          />
+          <button
+            type="submit"
+            className="px-3 h-full flex items-center justify-center text-primary transition cursor-pointer"
+          >
+            <Search size={18} />
+          </button>
+        </form>
       </nav>
     </header>
   );

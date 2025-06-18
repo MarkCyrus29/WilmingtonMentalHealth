@@ -7,13 +7,13 @@
 @theme {
   --color-background: #f9f9f9;
   --color-foreground: #343434;
-  --color-primary: #4099bc;
-  --color-secondary: #00314a;
+  --color-primary: #3563ff;
+  --color-secondary: #3994d4;
+  --color-accent: #fc0404;
   --color-dark: #101010;
-  --color-gray: #45556c;
-  
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gray: #d8d8d8;
+
+  --font-poppins: var(--font-poppins);
 
   --font-size-h1: clamp(2rem, 5vw, 4rem);
   --font-size-h2: clamp(1.5rem, 4vw, 3rem);
@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins, Arial, Helvetica, sans-serif;
 }
 h1 {
   font-size: var(--font-size-h1);
@@ -76,5 +76,9 @@ p {
   font-size: var(--font-size-base);
   line-height: 1.75rem;
   margin-bottom: 1rem;
-  color: var(--color-gray);
+  color: var(--color-dark);
+}
+p,
+a {
+  @apply text-dark/60;
 }

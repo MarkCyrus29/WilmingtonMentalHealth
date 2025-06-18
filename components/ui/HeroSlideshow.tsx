@@ -4,10 +4,11 @@ import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
 
 const images = [
-  "https://picsum.photos/id/1011/2000/1200",
-  "https://picsum.photos/id/1015/2000/1200",
-  "https://picsum.photos/id/1021/2000/1200",
-  "https://picsum.photos/id/1035/2000/1200",
+  "/slideshow-images/hero5.JPG",
+  "/slideshow-images/hero1.JPG",
+  "/slideshow-images/hero2.JPG",
+  "/slideshow-images/hero3.JPG",
+  "/slideshow-images/hero4.JPG",
 ];
 
 export default function HeroSlideshow() {
@@ -25,18 +26,19 @@ export default function HeroSlideshow() {
       {images.map((src, index) => (
         <Parallax
           speed={-30}
-          className="absolute inset-0 top-8 -z-10"
+          className="absolute inset-0 top-7 -z-10"
           key={index}
         >
           <Image
             src={src}
-            alt={`Hero ${index + 1}`}
+            alt={`Hero Image ${index + 1}`}
             fill
             className={`object-cover absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
             priority={index === 0}
           />
+          <div className="absolute inset-0 bg-black/10 backdrop-blur-xs z-20" />
         </Parallax>
       ))}
     </section>

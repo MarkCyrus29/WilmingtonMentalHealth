@@ -41,7 +41,7 @@ export default function Footer() {
         {/* Contact Info */}
         <div className="space-y-2 text-sm">
           <h4 className="!font-semibold  mb-2">Our Clinic</h4>
-          <address className="not-italic text-base text-gray">
+          <address className="not-italic text-base text-dark/60">
             3825 Market St, Suite 4<br />
             Wilmington, NC 28403
           </address>
@@ -95,7 +95,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom copyright */}
-      <div className="mt-10 border-t border-gray pt-6 text-center text-xs text-gray-500">
+      <div className="mt-10 border-t border-dark/40 pt-6 text-center text-xs text-gray-500">
         © 2025 Wilmington Mental Health & Medical Care
       </div>
     </footer>

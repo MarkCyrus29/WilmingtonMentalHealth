@@ -2,18 +2,19 @@ import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
+      {/* HERO SECTION */}
       <section className="relative overflow-hidden h-[calc(100vh-100px)] w-screen flex items-center justify-center">
         <div className="h-full w-full relative">
           <HeroSlideshow />
-          <div className="absolute inset-0 bg-black/30 backdrop-blur-xs z-20" />
 
           <div className="absolute top-1/2 left-24 -translate-y-1/2 z-30 max-w-2xl text-white">
-            <h1 className="!text-white mb-4 ">Welcome to Wilmington</h1>
-            <p className="!text-white/80 drop-shadow-sm drop-shadow-white">
+            <h1 className="!text-white mb-4">Welcome to Wilmington</h1>
+            <p className="!text-white/80">
               Compassionate mental health and medical care designed for you.
             </p>
           </div>
@@ -26,45 +27,78 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-full w-full py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 ">Integrated Care</h2>
-          <p className=" text-lg max-w-3xl mx-auto ">
-            We do Whole Person Health. Our diverse team of providers
-            collaborates to support both your mental and physical well-being.
+      {/* WHO WE ARE SECTION */}
+      <section className="max-w-7xl mx-auto py-24 px-6 flex flex-col md:flex-row items-stretch md:items-center gap-10">
+        <div className="relative w-full md:w-1/2 h-64 md:h-[450px] flex-shrink-0">
+          <Image
+            src={"/slideshow-images/hero1.JPG"}
+            alt={"Introduction Picture"}
+            fill
+            className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
+            sizes="(min-width: 768px) 50vw, 100vw"
+            priority
+          />
+        </div>
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-4xl font-bold mb-6">WHO WE ARE</h2>
+          <h4 className="text-2xl font-semibold mb-4">
+            Wilmington Mental Health
+          </h4>
+          <p className="max-w-3xl mx-auto md:mx-0 text-lg leading-relaxed text-gray-700">
+            Wilmington Mental Health’s mission is to create more access to care
+            to help you and your community. We offer outpatient services to help
+            care for those who are struggling with chronic illness, medical
+            conditions, substance use disorders, complex mental illness, and
+            most mental health disorders.
+          </p>
+          <p className="max-w-3xl mx-auto md:mx-0 mt-6 text-lg leading-relaxed text-gray-700">
+            We want you to achieve stability at any stage in your life. With our
+            diverse team of providers, we work to address your concerns and help
+            ensure that you are provided with resources to reach your goals.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 pb-20">
+      {/* INTEGRATED CARE SECTION */}
+      <section className="w-full py-24 ">
+        <h2 className="text-4xl font-bold mb-10 text-center">
+          Our Approach to Care
+        </h2>
+        <div className="flex flex-col md:flex-row items-stretch justify-around gap-10 px-36">
           <Card
-            title="Psychotherapy"
+            title="Mental Health"
             img="https://picsum.photos/1000?1"
-            desc="Behavioral health focuses on the connection between behaviors,
-              emotions, and overall well-being, addressing mental health and
-              substance use concerns through therapy and support."
+            desc="Wilmington Mental Health offers a range of services to provide you with the utmost care. We address mental health, substance use, behaviors, and emotions through therapy, support, and interventions."
           />
-
           <Card
-            title="Psychotropics"
+            title="Interdisciplinary Care"
             img="https://picsum.photos/1000?2"
-            desc="Psychiatry treats mental health disorders through therapy and medications. We offer telepsychiatry consultations to ensure access and convenience."
-          />
-
-          <Card
-            title="Primary Care"
-            img="https://picsum.photos/1000?3"
-            desc="Your first point of contact for health. We manage general healthcare, chronic conditions, and provide preventive services—built around whole-body wellness."
+            desc="Wilmington Mental Health aims to establish whole-person care and support that considers emotional, social, and physical well-being."
           />
         </div>
       </section>
-      <section className="w-screen h-auto flex flex-col pb-20 items-center">
-        <h2 className="">Why Choose Us?</h2>
-        <p className="w-[55%] text-center pb-10">
-          At Wilmington Mental Health, we’re on a mission to make care more
-          accessible and inclusive. We provide outpatient services for those
-          facing chronic illness, substance use, and complex mental health
-          conditions—because true stability means caring for both body and mind.
-        </p>
+
+      {/* VIDEO SECTION */}
+      <section className="w-screen h-auto flex flex-col py-24 items-center">
+        <div className="mb-32 w-[75%] flex flex-col items-center">
+          <h2 className="text-xl font-semibold mb-4 text-slate-800">
+            Find a Provider
+          </h2>
+          <form className="w-full flex flex-col sm:flex-row items-center gap-4">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search by name, specialty, or location"
+                className="w-full px-12 py-3 rounded-lg border border-gray focus:ring-2 focus:ring-primary focus:outline-none text-base"
+              />
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                🔍
+              </span>
+            </div>
+            <Button title="Search" type="submit" className="py-2 px-4" />
+          </form>
+        </div>
+        <h2 className="pb-8">Why Choose Us?</h2>
         <video
           src="/videos/introductionVideo.mp4"
           autoPlay
@@ -75,22 +109,29 @@ export default function Home() {
         ></video>
       </section>
 
-      <section className="w-screen h-52  text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border border-[rgba(255,255,255,0.18)]">
+      {/* CTA SECTION */}
+      <section className="w-screen h-52 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)]">
         <h2 className="!font-normal">
           We offer <strong>In-Person or Virtual visits.</strong>
         </h2>
-        <h4 className="!font-normal">
-          Ready to make a change? <strong>Call us Today!</strong>
-        </h4>
-        <p className="font-bold !text-dark/80">910 - 777 - 5575</p>
+        <h5 className="!font-normal">
+          Ready to make the first step in your mental health journey?{" "}
+          <strong>Call us Today!</strong>
+        </h5>
+        <h3 className="font-bold border-2 border-dark/60 py-2 px-4 rounded mt-2">
+          <a href="tel:9107775575" className="hover:underline !text-dark/80">
+            910 - 777 - 5575
+          </a>
+        </h3>
       </section>
 
-      <section className="w-screen h-auto bg-secondary flex flex-col justify-center pb-10">
-        <h1 className="text-center !text-white py-10">Get In Touch</h1>
+      {/* GET IN TOUCH SECTION */}
+      <section className="w-screen h-auto bg-secondary flex flex-col justify-center py-24">
+        <h1 className="text-center pb-10">Get In Touch</h1>
         <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:justify-around px-6 md:px-16">
           {/* Map Section */}
           <div className="w-full md:w-[50%] flex justify-center">
-            <div className="w-[90%]  bg-white rounded-xl shadow-lg p-6 flex flex-col items-center gap-4">
+            <div className="w-[90%] bg-background rounded-xl shadow-lg p-6 flex flex-col items-center gap-4">
               <h2 className="text-xl font-semibold text-slate-800">
                 Find Us on the Map
               </h2>
@@ -114,7 +155,7 @@ export default function Home() {
 
           {/* News Section */}
           <div className="w-full md:w-[50%] flex justify-center">
-            <div className="w-[90%] bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <div className="w-[90%] bg-background rounded-xl shadow-lg p-6 flex flex-col gap-4">
               <h2 className="text-xl font-semibold text-slate-800 text-center">
                 Stay Updated
               </h2>
