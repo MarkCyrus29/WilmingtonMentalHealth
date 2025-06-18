@@ -6,8 +6,8 @@ function Button({
   className,
   type,
 }: {
-  title: String;
-  className: String;
+  title: string;
+  className: string;
   type?: "button" | "submit" | "reset";
 }) {
   return (
