@@ -5,7 +5,7 @@ export interface NavItem {
 }
 
 export const NAVLINKS: NavItem[] = [
-  { title: "Home" },
+  { title: "Home", link: "/" },
   {
     title: "Patient Care",
     children: [
@@ -13,7 +13,7 @@ export const NAVLINKS: NavItem[] = [
       {
         title: "Mental Health",
         children: [
-          { title: "Child Therapy" },
+          { title: "Child Therapy", link: "/child-therapy" },
           { title: "Adult Therapy", link: "/adult-therapy" },
           { title: "Couples Therapy", link: "/couples-therapy" },
           { title: "Group Therapy", link: "/group-therapy" },

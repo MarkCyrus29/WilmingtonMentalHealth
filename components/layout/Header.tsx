@@ -14,13 +14,13 @@ function Header() {
         priority
       />
 
-      <nav className="flex gap-2 items-center">
+      <nav className="flex gap-2 items-center ">
         {NAVLINKS.map((item, index) => (
           <div key={index} className="relative group">
             {/* Main Link */}
             <a
               href={item.link || "#"}
-              className="flex items-center transition-opacity duration-100 hover:bg-gray/60 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+              className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
               tabIndex={0}
             >
               {item.title}
@@ -44,7 +44,7 @@ function Header() {
                       {/* The parent link is the peer */}
                       <a
                         href={child.link || "#"}
-                        className="relative flex items-center px-4 py-2 text-sm hover:bg-gray/60 rounded whitespace-nowrap peer"
+                        className="relative flex items-center px-4 py-2 text-sm hover:bg-gray/50 rounded whitespace-nowrap peer"
                         tabIndex={0}
                       >
                         {child.title}
@@ -67,7 +67,7 @@ function Header() {
                             <li key={subIndex}>
                               <a
                                 href={subChild.link || "#"}
-                                className="block px-4 py-1 text-sm text-gray-600 hover:bg-gray/60 rounded whitespace-nowrap"
+                                className="block px-4 py-1 text-sm text-gray-600 hover:bg-gray/50 rounded whitespace-nowrap"
                                 tabIndex={0}
                               >
                                 {subChild.title}
