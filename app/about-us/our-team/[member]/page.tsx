@@ -13,6 +13,10 @@ import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import type { Metadata } from "next";
 
+type Props = {
+  params: Promise<{ member: string }>;
+};
+
 export async function generateStaticParams(): Promise<{ member: string }[]> {
   return teamData.map((member) => ({ member: member.id }));
 }
@@ -38,12 +42,9 @@ export async function generateMetadata({
     },
   };
 }
-export default async function Page({
-  params,
-}: {
-  params: { member: string };
-}) {
-  const member = teamData.find((m) => m.id === params.member);
+export default async function Page({ params }: Props) {
+  const { member: memberId } = await params; 
+  const member = teamData.find((m) => m.id === memberId);
   if (!member) return notFound();
 
   return (
