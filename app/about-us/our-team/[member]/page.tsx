@@ -1,4 +1,4 @@
-import teamData from "@/constants/team.json";
+import teamData from "@/app/data/teamData.json";
 import {
   Users,
   BookOpen,
@@ -13,10 +13,8 @@ import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import type { Metadata } from "next";
 
-export async function generateStaticParams() {
-  return teamData.map((member) => ({
-    member: member.id,
-  }));
+export async function generateStaticParams(): Promise<{ member: string }[]> {
+  return teamData.map((member) => ({ member: member.id }));
 }
 
 export async function generateMetadata({
@@ -25,8 +23,12 @@ export async function generateMetadata({
   params: { member: string };
 }): Promise<Metadata> {
   const member = teamData.find((m) => m.id === params.member);
-
-  if (!member) return notFound(); // This is fine to keep
+  if (!member) {
+    return {
+      title: "Member Not Found | Wilmington Mental Health",
+      description: "The requested team member could not be found.",
+    };
+  }
 
   return {
     title: `${member.name} | Wilmington Mental Health`,
@@ -45,7 +47,9 @@ interface PageProps {
 
 export default async function Page({ params }: PageProps) {
   const member = teamData.find((m) => m.id === params.member);
-  if (!member) return notFound();
+  if (!member) {
+    return notFound();
+  }
 
   return (
     <main className="min-h-screen bg-background ">
@@ -213,7 +217,7 @@ export default async function Page({ params }: PageProps) {
 
       <CallBanner
         title=""
-        subtitle="Call to make an appointment today with Brooke Maple by calling our office at "
+        subtitle={`Call to make an appointment today with ${member.name}e by calling our office at `}
       />
     </main>
   );

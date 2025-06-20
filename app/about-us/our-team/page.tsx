@@ -1,4 +1,4 @@
-import teamData from "@/constants/team.json";
+import teamData from "@/app/data/teamData.json";
 import Link from "next/link";
 import Image from "next/image";
 import PageBanner from "@/components/ui/PageBanner";
