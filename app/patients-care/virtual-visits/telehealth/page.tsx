@@ -104,8 +104,8 @@ function Page() {
       </section>
 
       {/* Join Meeting Section */}
-      <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20">
-        <div className="w-[85%] text-left">
+      <section className="flex flex-col gap-10 items-center justify-center my-20 max-w-[900px] mx-auto px-4">
+        <div className="w-full text-left">
           <h2>How to Join a Meeting:</h2>
           <p>
             You can join a video call from Google Meet, Google Calendar, Gmail,
@@ -115,7 +115,7 @@ function Page() {
         </div>
 
         {/* Computer Join Card */}
-        <div className="h-full w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
+        <div className="w-full rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col md:flex-row w-full p-6 gap-6">
             <div className="w-full md:w-1/2 p-4 md:p-8 space-y-5">
               <div className="flex items-center">
@@ -126,9 +126,8 @@ function Page() {
               </div>
               <p className="text-gray-600 leading-relaxed text-sm md:text-[15px]">
                 If you plan to use a <strong>desktop or laptop</strong>,
-                there&#39;s
-                <strong> no need to download anything</strong> prior to your
-                appointment.
+                there&#39;s <strong>no need to download anything</strong> prior
+                to your appointment.
                 <br />
                 <br />
                 For new patients, please ensure you&#39;ve provided a{" "}
@@ -148,28 +147,30 @@ function Page() {
                 until they arrive.
               </p>
             </div>
-            <div className="relative w-full md:w-1/2 h-64 md:h-auto">
+            <div className="relative w-full md:w-1/2 aspect-[4/3]">
               <Image
                 src="/images/patients-care/girl-using-cellphone.jpg"
                 alt="Girl Using a Cellphone"
                 fill
                 className="object-cover rounded-xl md:rounded-r-2xl"
                 loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
         </div>
 
         {/* Mobile Join Card */}
-        <div className="h-full w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
+        <div className="w-full rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col-reverse md:flex-row w-full p-6 gap-6">
-            <div className="relative w-full md:w-1/2 h-64 md:h-auto">
+            <div className="relative w-full md:w-1/2 aspect-[4/3]">
               <Image
                 src="/images/patients-care/girl-using-laptop.jpg"
                 alt="Girl Using a Laptop"
                 fill
                 className="object-cover rounded-xl md:rounded-r-2xl"
                 loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="w-full md:w-1/2 p-4 md:p-8 space-y-5 text-left md:text-right">
@@ -205,7 +206,7 @@ function Page() {
         </div>
 
         {/* Note Box */}
-        <div className="w-full md:w-[85%] mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+        <div className="w-full mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
           <p className="text-blue-800 mb-4">
             <strong>Note:</strong> There may be a slight delay for your provider
             to join the appointment if they are finishing up with a previous
@@ -227,7 +228,7 @@ function Page() {
             allowFullScreen
             loading="lazy"
             className="w-full h-full rounded-lg"
-          ></iframe>
+          />
         </div>
       </section>
 
