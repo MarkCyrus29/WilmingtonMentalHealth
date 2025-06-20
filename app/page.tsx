@@ -27,7 +27,7 @@ export default function Home() {
           <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
             <Link href={"/"}>
               <Button
-                title={"Request Appointment"}
+                title={"Request an Appointment"}
                 className="w-full md:w-auto border border-secondary !bg-primary/90 backdrop-blur-[4px] rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
               />
             </Link>

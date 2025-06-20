@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./Button";
+import Link from "next/link";
 
 interface CallBannerProps {
   title?: React.ReactNode;
@@ -26,10 +28,20 @@ export default function CallBanner({
     >
       <h2 className="!font-normal">{title}</h2>
       <h4 className="!font-normal">{subtitle}</h4>
-      <h3 className="font-bold border-2 border-dark/60 py-2 px-4 rounded mt-2">
-        <a href={`tel:9107775575`} className="hover:underline !text-dark/80">
+      <h3 className="font-bold mt-4">
+        <a
+          href={`tel:9107775575`}
+          className="hover:underline transition-opacity hover:opacity-80 !text-dark/80 border-2 border-dark/60 py-2 px-4 rounded shadow-sm"
+        >
           910 - 777 - 5575
-        </a>
+        </a>{" "}
+        or{" "}
+        <Link href={"/"}>
+          <Button
+            title={"Request an Appointment"}
+            className="!text-dark/80 border-2 border-dark/60 !py-2 !px-4 !rounded !text-[clamp(1.25rem,3vw,2rem)] hover:underline !bg-transparent !shadow-sm"
+          />
+        </Link>
       </h3>
     </section>
   );

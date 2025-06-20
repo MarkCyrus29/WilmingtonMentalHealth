@@ -4,6 +4,7 @@ import { teamData, TeamMember } from "@/app/data/teamData";
 import Link from "next/link";
 import Image from "next/image";
 import PageBanner from "@/components/ui/PageBanner";
+import CallBanner from "@/components/ui/CallBanner";
 
 // Group team members by their framework
 const groupedByFramework = teamData.reduce<Record<string, TeamMember[]>>(
@@ -69,6 +70,7 @@ export default function OurTeamPage() {
           ))}
         </div>
       </div>
+      <CallBanner />
     </main>
   );
 }
