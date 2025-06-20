@@ -11,7 +11,6 @@ import {
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
-import type { Metadata } from "next";
 
 type Props = {
   params: Promise<{ member: string }>;
