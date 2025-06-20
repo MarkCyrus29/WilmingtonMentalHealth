@@ -40,10 +40,10 @@ export async function generateMetadata({
 }
 type Props = {
   params: { member: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  _searchParams?: { [key: string]: string | string[] | undefined };
 };
 
-export default async function Page({ params, searchParams }: Props) {
+export default async function Page({ params, _searchParams }: Props) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
