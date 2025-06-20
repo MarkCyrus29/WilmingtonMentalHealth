@@ -41,8 +41,7 @@ export async function generateMetadata({
 export default async function Page({
   params,
 }: {
-  params: { member: string | string[] };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: { member: string };
 }) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
