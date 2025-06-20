@@ -1,4 +1,4 @@
-import teamData from "@/app/data/teamData.json";
+import { teamData } from "@/app/data/teamData";
 import {
   Users,
   BookOpen,
@@ -39,7 +39,6 @@ export async function generateMetadata({
   };
 }
 
-// Fix here: inline type for props
 export default async function Page({ params }: { params: { member: string } }) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
@@ -58,7 +57,7 @@ export default async function Page({ params }: { params: { member: string } }) {
             />
           </div>
 
-          {/* Profile Picture - overlaps more deeply */}
+          {/* Profile Picture */}
           <figure className="w-32 h-32 mx-auto -mt-24 overflow-hidden rounded-full relative z-10 border-4 border-white shadow-lg flex items-center justify-center bg-[var(--color-gray)]">
             <Image
               src={member.pictureSrc}
