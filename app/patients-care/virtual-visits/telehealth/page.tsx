@@ -104,8 +104,8 @@ function Page() {
       </section>
 
       {/* Join Meeting Section */}
-      <section className="flex flex-col gap-10 items-center justify-center my-20 max-w-[900px] mx-auto px-4">
-        <div className="w-full text-left">
+      <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20 mx-auto">
+        <div className="w-[85%] text-left">
           <h2>How to Join a Meeting:</h2>
           <p>
             You can join a video call from Google Meet, Google Calendar, Gmail,
@@ -115,7 +115,7 @@ function Page() {
         </div>
 
         {/* Computer Join Card */}
-        <div className="w-full rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
+        <div className="w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col md:flex-row w-full p-6 gap-6">
             <div className="w-full md:w-1/2 p-4 md:p-8 space-y-5">
               <div className="flex items-center">
@@ -161,7 +161,7 @@ function Page() {
         </div>
 
         {/* Mobile Join Card */}
-        <div className="w-full rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
+        <div className="w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col-reverse md:flex-row w-full p-6 gap-6">
             <div className="relative w-full md:w-1/2 aspect-[4/3]">
               <Image
