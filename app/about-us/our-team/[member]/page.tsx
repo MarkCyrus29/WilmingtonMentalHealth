@@ -219,3 +219,5 @@ const Page: React.FC<Props> = ({ params }) => {
     </main>
   );
 };
+
+export default Page;
