@@ -39,17 +39,10 @@ export async function generateMetadata({
   };
 }
 
-interface PageProps {
-  params: {
-    member: string;
-  };
-}
-
-export default async function Page({ params }: PageProps) {
+// Fix here: inline type for props
+export default async function Page({ params }: { params: { member: string } }) {
   const member = teamData.find((m) => m.id === params.member);
-  if (!member) {
-    return notFound();
-  }
+  if (!member) return notFound();
 
   return (
     <main className="min-h-screen bg-background ">
@@ -217,7 +210,7 @@ export default async function Page({ params }: PageProps) {
 
       <CallBanner
         title=""
-        subtitle={`Call to make an appointment today with ${member.name}e by calling our office at `}
+        subtitle={`Call to make an appointment today with ${member.name} by calling our office at `}
       />
     </main>
   );
