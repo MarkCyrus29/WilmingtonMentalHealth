@@ -43,7 +43,7 @@ type Props = {
   _searchParams?: { [key: string]: string | string[] | undefined };
 };
 
-export default async function Page({ params, _searchParams }: Props) {
+export default async function Page({ params }: Props) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
