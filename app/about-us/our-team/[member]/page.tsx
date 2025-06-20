@@ -39,7 +39,7 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({ params }: { params: { member: string } }) {
+ async function Page({ params }: { params: { member: string } }) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
