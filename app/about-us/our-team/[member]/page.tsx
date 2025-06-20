@@ -12,15 +12,15 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 
-type Props = {
-  params: { member: string };
-};
-
 export async function generateStaticParams() {
   return teamData.map((member) => ({ member: member.id }));
 }
 
-export default async function MemberDetailPage({ params }: Props) {
+export default async function MemberDetailPage({
+  params,
+}: {
+  params: { member: string };
+}) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
