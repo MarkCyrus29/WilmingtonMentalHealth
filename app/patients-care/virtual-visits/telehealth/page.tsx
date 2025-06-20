@@ -1,4 +1,3 @@
-"use client";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
@@ -114,7 +113,8 @@ function Page() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-sm md:text-[15px]">
-                If you plan to use a <strong>desktop or laptop</strong>, there&#39;s
+                If you plan to use a <strong>desktop or laptop</strong>,
+                there&#39;s
                 <strong> no need to download anything</strong> prior to your
                 appointment.
                 <br />
@@ -130,10 +130,10 @@ function Page() {
                 <strong>copy and paste</strong> the link into your browser.
                 <br />
                 <br />
-                Once the screen opens, click <strong>&#39;Join Now&#39;</strong>. You
-                will either see your provider immediately, or if they haven&#39;t
-                joined yet, you&#39;ll be in the meeting room alone until they
-                arrive.
+                Once the screen opens, click <strong>&#39;Join Now&#39;</strong>
+                . You will either see your provider immediately, or if they
+                haven&#39;t joined yet, you&#39;ll be in the meeting room alone
+                until they arrive.
               </p>
             </div>
             <div className="relative w-full md:w-1/2 h-64 md:h-auto">
@@ -170,9 +170,10 @@ function Page() {
                 prior to joining the video call.
                 <br />
                 <br />
-                Once the app is installed, <strong>click the unique link</strong> sent
-                via email or text reminder to join the Telehealth meeting.
-                Tapping the link will automatically open the Google Meet app.
+                Once the app is installed,{" "}
+                <strong>click the unique link</strong> sent via email or text
+                reminder to join the Telehealth meeting. Tapping the link will
+                automatically open the Google Meet app.
                 <br />
                 <br />
                 If your provider has already joined, you will{" "}
