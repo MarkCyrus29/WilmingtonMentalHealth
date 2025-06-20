@@ -1,9 +1,9 @@
-import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
-import TeletherapyAccordion from "@/components/ui/FAQAccordion";
 import CallBanner from "@/components/ui/CallBanner";
 import PageBanner from "@/components/ui/PageBanner";
+import HorizontalCard from "@/components/client/HorizontalCardClient";
+import TeletherapyAccordion from "@/components/client/TeletheraphyAccordionClient";
 
 function Page() {
   return (
