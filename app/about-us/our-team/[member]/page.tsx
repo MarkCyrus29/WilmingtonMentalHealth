@@ -12,7 +12,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 
-interface PageProps {
+interface MemberPageProps {
   params: {
     member: string;
   };
@@ -21,7 +21,7 @@ export async function generateStaticParams(): Promise<{ member: string }[]> {
   return teamData.map((member) => ({ member: member.id }));
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: MemberPageProps) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
