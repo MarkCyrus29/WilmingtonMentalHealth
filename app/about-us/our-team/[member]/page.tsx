@@ -13,6 +13,11 @@ import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import type { Metadata } from "next";
 
+type Props = {
+  params: { member: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
+
 export async function generateStaticParams(): Promise<{ member: string }[]> {
   return teamData.map((member) => ({ member: member.id }));
 }
@@ -39,7 +44,7 @@ export async function generateMetadata({
   };
 }
 
- async function Page({ params }: { params: { member: string } }) {
+const Page: React.FC<Props> = ({ params }) => {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
@@ -213,4 +218,4 @@ export async function generateMetadata({
       />
     </main>
   );
-}
+};
