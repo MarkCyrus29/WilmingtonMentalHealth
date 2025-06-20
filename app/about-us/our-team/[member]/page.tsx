@@ -21,7 +21,7 @@ export async function generateStaticParams(): Promise<{ member: string }[]> {
   return teamData.map((member) => ({ member: member.id }));
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
