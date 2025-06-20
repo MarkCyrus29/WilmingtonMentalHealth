@@ -10,7 +10,7 @@ function Page() {
     <main>
       <PageBanner
         title="Virtual Appointment & Remote Care"
-        imageSrc="/images/patients-care/phone.jpg"
+        imageSrc="/images/patients-care/phone.webp"
         alt="Phone Image"
         subtitle="What is Telehealth?"
       />
@@ -149,7 +149,7 @@ function Page() {
             </div>
             <div className="relative w-full md:w-1/2 aspect-[4/3]">
               <Image
-                src="/images/patients-care/girl-using-cellphone.jpg"
+                src="/images/patients-care/girl-using-cellphone.webp"
                 alt="Girl Using a Cellphone"
                 fill
                 className="object-cover rounded-xl md:rounded-r-2xl"
@@ -165,7 +165,7 @@ function Page() {
           <div className="flex flex-col-reverse md:flex-row w-full p-6 gap-6">
             <div className="relative w-full md:w-1/2 aspect-[4/3]">
               <Image
-                src="/images/patients-care/girl-using-laptop.jpg"
+                src="/images/patients-care/girl-using-laptop.webp"
                 alt="Girl Using a Laptop"
                 fill
                 className="object-cover rounded-xl md:rounded-r-2xl"
