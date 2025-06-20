@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import PageBanner from "@/components/ui/PageBanner";
 
-// Group team members by framework
 const groupedByFramework = teamData.reduce(
   (acc: Record<string, typeof teamData>, member) => {
     if (!acc[member.framework]) {
