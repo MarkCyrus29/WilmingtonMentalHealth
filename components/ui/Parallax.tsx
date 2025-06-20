@@ -20,6 +20,7 @@ function ImageParallax({
         src={src}
         alt={alt}
         fill
+        loading="eager"
         className={`object-cover absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${
           index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
         }`}
