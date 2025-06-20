@@ -1,7 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
 import imageData from "@/constants/images.json";
 import ImageParallax from "./Parallax";
 

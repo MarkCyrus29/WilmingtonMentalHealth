@@ -1,4 +1,3 @@
-import ImageParallax from "@/components/ui/Parallax";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
