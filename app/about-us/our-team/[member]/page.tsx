@@ -11,12 +11,39 @@ import {
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
+import type { Metadata } from "next";
 
-export async function generateStaticParams(): Promise<{ member: string }[]> {
-  return teamData.map((member) => ({ member: member.id }));
+export async function generateStaticParams() {
+  return teamData.map((member) => ({
+    member: member.id,
+  }));
 }
 
-export default async function Page({ params }: { params: { member: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { member: string };
+}): Promise<Metadata> {
+  const member = teamData.find((m) => m.id === params.member);
+
+  if (!member) return notFound(); // This is fine to keep
+
+  return {
+    title: `${member.name} | Wilmington Mental Health`,
+    description: `${member.name} is a ${member.role} specializing in ${member.specialties}.`,
+    openGraph: {
+      images: [member.pictureSrc],
+    },
+  };
+}
+
+interface PageProps {
+  params: {
+    member: string;
+  };
+}
+
+export default async function Page({ params }: PageProps) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
@@ -30,7 +57,7 @@ export default async function Page({ params }: { params: { member: string } }) {
               src={member.bannerSrc}
               alt="Profile banner"
               fill
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full p-5"
             />
           </div>
 

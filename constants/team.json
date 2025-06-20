@@ -18,7 +18,7 @@
     "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
     "joined": "February 2022",
     "location": "Wilmington, NC",
-      "bannerSrc": "/images/our-team/banner-default.jpg"
+      "bannerSrc": "/images/our-team/banner.svg"
   },
   {
     "id": "brooke-maple-psychiatry",
@@ -39,7 +39,7 @@
     "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
     "joined": "February 2022",
     "location": "Wilmington, NC",
-      "bannerSrc": "/images/our-team/banner-default.jpg"
+      "bannerSrc": "/images/our-team/banner.svg"
   },
   {
     "id": "brooke-maple-behavioral1",
@@ -60,7 +60,7 @@
     "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
     "joined": "February 2022",
     "location": "Wilmington, NC",
-      "bannerSrc": "/images/our-team/banner-default.jpg"
+      "bannerSrc": "/images/our-team/banner.svg"
   },
   {
     "id": "brooke-maple-behavioral2",
@@ -81,6 +81,6 @@
     "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
     "joined": "February 2022",
     "location": "Wilmington, NC",
-      "bannerSrc": "/images/our-team/banner-default.jpg"
+      "bannerSrc": "/images/our-team/banner.svg"
   }
 ]
