@@ -38,12 +38,12 @@ export async function generateMetadata({
     },
   };
 }
-type Props = {
+export default async function Page({
+  params,
+}: {
   params: { member: string };
-  _searchParams?: { [key: string]: string | string[] | undefined };
-};
-
-export default async function Page({ params }: Props) {
+  searchParams?: { [key: string]: string | string[] | undefined };
+}) {
   const member = teamData.find((m) => m.id === params.member);
   if (!member) return notFound();
 
