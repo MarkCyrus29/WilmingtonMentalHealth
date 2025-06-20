@@ -22,13 +22,13 @@ function Page() {
           Telepsychiatry, allows for you to schedule and meet with our providers
           directly through the Internet here at Wilmington Mental Health and
           Medical Care. These online audio and video visits connect us directly
-          through your computer or mobile device (iOS or Android) — it's your
-          choice!
+          through your computer or mobile device (iOS or Android) — it&#39;s
+          your choice!
           <br />
           <br />
           Our providers use Meet, a real-time video-communication service
-          developed by Google. Meet's platform comes with automated security and
-          HIPAA compliance to personal health information.
+          developed by Google. Meet&#39;s platform comes with automated security
+          and HIPAA compliance to personal health information.
           <br />
           <br />
           This guide outlines basic tips, instructions on how to join your video
@@ -107,7 +107,7 @@ function Page() {
           align="left"
         >
           <>
-            If you plan to use a <strong>desktop or laptop</strong>, there's
+            If you plan to use a <strong>desktop or laptop</strong>, there&#39;s
             <strong> no need to download anything</strong> prior to your
             appointment.
             <br />
@@ -121,8 +121,8 @@ function Page() {
             Your video call screen will open in a new browser tab.
             <br />
             <br />
-            Once the screen opens, click <strong>'Join Now'</strong>. You may be
-            placed in a waiting room until your provider joins.
+            Once the screen opens, click <strong>&#39;Join Now&#39;</strong>.
+            You may be placed in a waiting room until your provider joins.
           </>
         </JoinCard>
 
@@ -139,8 +139,8 @@ function Page() {
             <br />
             <br />
             Tap the <strong>link sent via email or text</strong> to open the
-            Meet app. If your provider has already joined, you’ll see them on
-            the screen.
+            Meet app. If your provider has already joined, you&#39;ll see them
+            on the screen.
             <br />
             <br />
             <strong>Note:</strong> Your provider may be finishing up with
@@ -152,7 +152,7 @@ function Page() {
         <div className="w-full md:w-[85%] mt-8 bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
           <p className="text-blue-800 mb-4">
             <strong>Note:</strong> There may be a short delay if your provider
-            is with another patient. Please wait — they’ll join shortly.
+            is with another patient. Please wait — they&#39;ll join shortly.
           </p>
           <p className="text-blue-800">
             <strong>Need help?</strong> Watch this step-by-step Google Meet
