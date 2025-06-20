@@ -2,9 +2,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
-import { IMAGES } from "@/constants/data";
+import imageData from "@/constants/images.json";
+import ImageParallax from "./Parallax";
 
 export default function HeroSlideshow() {
+  const IMAGES: string[] = imageData.IMAGES;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -17,22 +19,13 @@ export default function HeroSlideshow() {
   return (
     <section className="relative overflow-hidden h-[calc(100vh-100px)] w-screen">
       {IMAGES.map((src, index) => (
-        <Parallax
-          speed={-30}
-          className="absolute inset-0 top-7 -z-10"
+        <ImageParallax
           key={index}
-        >
-          <Image
-            src={src}
-            alt={`Hero Image ${index + 1}`}
-            fill
-            className={`object-cover absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
-            priority={index === 0}
-          />
-          <div className="absolute inset-0 bg-black/10 backdrop-blur-xs z-20" />
-        </Parallax>
+          src={src}
+          index={index}
+          currentIndex={currentIndex}
+          alt={`Hero Image ${index ? index + 1 : ""}`}
+        />
       ))}
     </section>
   );

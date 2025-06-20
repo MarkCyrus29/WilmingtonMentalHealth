@@ -6,6 +6,7 @@ import ParallaxProviderWrapper from "@/components/ParallaxProviderWrapper";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import Footer from "@/components/layout/Footer";
 import { Poppins } from "next/font/google";
+import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -35,7 +36,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased `}>
+      <body className={`${poppins.variable} antialiased  `}>
+        <span className="fixed h-72 w-72 -z-50 bottom-[25%]  left-[80%] -translate-x-1/2 translate-y-1/2 opacity-30 blur-[2px]  pointer-events-none transform scale-x-[-1]">
+          <Image
+            src="/favicon.webp"
+            fill
+            alt="Logo Image"
+            className="object-contain grayscale brightness-150 contrast-125"
+            priority
+          />
+        </span>
+
         <Header />
         <ParallaxProviderWrapper>{children}</ParallaxProviderWrapper>
         <ScrollToTopButton />

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FOOTERLINKS } from "@/constants/data";
+import footerData from "@/constants/links.json";
+import type { FooterLink } from "@/app/types/types";
 
 export default function Footer() {
+  const FOOTERLINKS: FooterLink[] = footerData.FOOTERLINKS;
   const LEGALLINKS = [
     {
       href: "/privacy-policy",
@@ -18,7 +20,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className=" px-8 md:px-20 py-12 flex-col items-center">
+    <footer className=" px-8 md:px-20 py-12 flex-col items-center border-t border-gray">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo & Description */}
         <div className="space-y-4">
@@ -41,7 +43,7 @@ export default function Footer() {
         {/* Contact Info */}
         <div className="space-y-2 text-sm">
           <h4 className="!font-semibold  mb-2">Our Clinic</h4>
-          <address className="not-italic text-base text-dark/60">
+          <address className="not-italic text-base text-dark/70">
             3825 Market St, Suite 4<br />
             Wilmington, NC 28403
           </address>

@@ -1,31 +1,36 @@
 import React from "react";
 import Image from "next/image";
 import { ChevronDown, Search } from "lucide-react";
-import { NAVLINKS } from "@/constants/data";
+import navData from "@/constants/links.json";
+import type { NavItem } from "@/app/types/types";
+import Link from "next/link";
 
 function Header() {
+  const NAVLINKS: NavItem[] = navData.NAVLINKS;
   return (
     <header className="flex px-20 h-[100px] justify-between items-center border-b border-b-primary/20 sticky top-0 z-50 bg-background/50 backdrop-blur-[3px] shadow-sm-primary">
-      <Image
-        src={"/logo.svg"}
-        alt="Wilmington Logo Image"
-        width={300}
-        height={150}
-        priority
-      />
+      <Link href={"/"}>
+        <Image
+          src={"/logo.svg"}
+          alt="Wilmington Logo Image"
+          width={300}
+          height={150}
+          priority
+        />
+      </Link>
 
       <nav className="flex gap-2 items-center ">
         {NAVLINKS.map((item, index) => (
           <div key={index} className="relative group">
             {/* Main Link */}
-            <a
+            <Link
               href={item.link || "#"}
               className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
               tabIndex={0}
             >
               {item.title}
               {item.children && <ChevronDown className="w-4 h-4" />}
-            </a>
+            </Link>
 
             {/* Dropdown (1st level) */}
             {item.children && (
@@ -42,7 +47,7 @@ function Header() {
                   {item.children.map((child, childIndex) => (
                     <li key={childIndex} className="relative">
                       {/* The parent link is the peer */}
-                      <a
+                      <Link
                         href={child.link || "#"}
                         className="relative flex items-center px-4 py-2 text-sm hover:bg-gray/50 rounded whitespace-nowrap peer"
                         tabIndex={0}
@@ -51,7 +56,7 @@ function Header() {
                         {child.children && (
                           <ChevronDown className="w-4 h-4 ml-1" />
                         )}
-                      </a>
+                      </Link>
                       {/* The sub-submenu shows when hovering/focusing the peer <a> OR when hovering the submenu itself */}
                       {child.children && (
                         <ul
@@ -65,13 +70,13 @@ function Header() {
                         >
                           {child.children.map((subChild, subIndex) => (
                             <li key={subIndex}>
-                              <a
+                              <Link
                                 href={subChild.link || "#"}
                                 className="block px-4 py-1 text-sm text-gray-600 hover:bg-gray/50 rounded whitespace-nowrap"
                                 tabIndex={0}
                               >
                                 {subChild.title}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>

@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
+import CallBanner from "@/components/ui/CallBanner";
 
 export default function Home() {
   return (
@@ -12,18 +13,31 @@ export default function Home() {
         <div className="h-full w-full relative">
           <HeroSlideshow />
 
-          <div className="absolute top-1/2 left-24 -translate-y-1/2 z-30 max-w-2xl text-white">
-            <h1 className="!text-white mb-4">Welcome to Wilmington</h1>
-            <p className="!text-white/80">
+          {/* Text */}
+          <div className="absolute z-30 max-w-2xl text-white left-6 right-6 top-1/2 -translate-y-1/2 md:left-24 md:right-auto text-center md:text-left">
+            <h1 className="!text-white text-3xl sm:text-4xl md:text-5xl mb-4">
+              Welcome to Wilmington
+            </h1>
+            <p className="!text-white/80 text-base sm:text-lg">
               Compassionate mental health and medical care designed for you.
             </p>
           </div>
-          <Link href={"/contact"}>
-            <Button
-              title={"Request Appointment"}
-              className={"absolute bottom-32 left-24 z-30"}
-            />
-          </Link>
+
+          {/* Buttons */}
+          <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
+            <Link href={"/"}>
+              <Button
+                title={"Request Appointment"}
+                className="w-full md:w-auto border border-secondary !bg-primary/90 backdrop-blur-[4px] rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
+              />
+            </Link>
+            <Link href={"/"}>
+              <Button
+                title={"Pre-register"}
+                className="w-full md:w-auto !bg-white/10 backdrop-blur-[4px] rounded-[20px] !border !border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
+              />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -40,7 +54,7 @@ export default function Home() {
           />
         </div>
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-6">WHO WE ARE</h2>
+          <h2 className="text-4xl font-bold mb-6">Who we are</h2>
           <h4 className="text-2xl font-semibold mb-4">
             Wilmington Mental Health
           </h4>
@@ -60,11 +74,32 @@ export default function Home() {
       </section>
 
       {/* INTEGRATED CARE SECTION */}
-      <section className="w-full py-24 ">
-        <h2 className="text-4xl font-bold mb-10 text-center">
+      <div className="w-screen h-52 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)] ">
+        <div className=" w-[75%] flex flex-col items-center">
+          <h2 className="text-xl font-semibold mb-4 !text-background">
+            Find a Provider
+          </h2>
+          <form className="w-full flex flex-col sm:flex-row items-center gap-4">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search by name, specialty, or location"
+                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
+              />
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                🔍
+              </span>
+            </div>
+            <Button title="Search" type="submit" className="py-2 px-4" />
+          </form>
+        </div>
+      </div>
+
+      <section className="w-full py-24">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
           Our Approach to Care
         </h2>
-        <div className="flex flex-col md:flex-row items-stretch justify-around gap-10 px-36">
+        <div className="flex flex-col md:flex-row md:items-stretch justify-center items-center gap-10 px-4 sm:px-6 md:px-12 lg:px-24">
           <Card
             title="Mental Health"
             img="https://picsum.photos/1000?1"
@@ -80,24 +115,6 @@ export default function Home() {
 
       {/* VIDEO SECTION */}
       <section className="w-screen h-auto flex flex-col py-24 items-center">
-        <div className="mb-32 w-[75%] flex flex-col items-center">
-          <h2 className="text-xl font-semibold mb-4 text-slate-800">
-            Find a Provider
-          </h2>
-          <form className="w-full flex flex-col sm:flex-row items-center gap-4">
-            <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="Search by name, specialty, or location"
-                className="w-full px-12 py-3 rounded-lg border border-gray focus:ring-2 focus:ring-primary focus:outline-none text-base"
-              />
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                🔍
-              </span>
-            </div>
-            <Button title="Search" type="submit" className="py-2 px-4" />
-          </form>
-        </div>
         <h2 className="pb-8">Why Choose Us?</h2>
         <video
           src="/videos/introductionVideo.mp4"
@@ -110,20 +127,7 @@ export default function Home() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="w-screen h-52 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)]">
-        <h2 className="!font-normal">
-          We offer <strong>In-Person or Virtual visits.</strong>
-        </h2>
-        <h5 className="!font-normal">
-          Ready to make the first step in your mental health journey?{" "}
-          <strong>Call us Today!</strong>
-        </h5>
-        <h3 className="font-bold border-2 border-dark/60 py-2 px-4 rounded mt-2">
-          <a href="tel:9107775575" className="hover:underline !text-dark/80">
-            910 - 777 - 5575
-          </a>
-        </h3>
-      </section>
+      <CallBanner />
 
       {/* GET IN TOUCH SECTION */}
       <section className="w-screen h-auto bg-secondary flex flex-col justify-center py-24">

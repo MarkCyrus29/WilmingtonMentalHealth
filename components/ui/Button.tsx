@@ -14,7 +14,7 @@ function Button({
     <button
       type={type}
       className={
-        `hover:cursor-pointer bg-primary py-3 px-6 rounded-xl text-xl text-white shadow-lg transition-opacity hover:opacity-80 z-10 ` +
+        `hover:cursor-pointer bg-primary py-3 px-6 rounded-xl text-xl text-white shadow-lg transition-opacity hover:opacity-80  ` +
         className
       }
     >

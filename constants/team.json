@@ -1,0 +1,86 @@
+[
+  {
+    "id": "brooke-maple",
+    "pictureSrc": "/images/our-team/Brooke.png",
+    "name": "Brooke Maple",
+    "role": "Family Nurse Practitioner",
+    "idealPopulation": "Late Teens, Adults",
+    "framework": "Primary Care",
+    "credentials": ["FNP"],
+    "insurance": "Currently waiting to receive insurance information. Please contact our office for the most up-to-date coverage details.",
+    "about": [
+      "Brooke Maple is a Family Nurse Practitioner (FNP) here at Wilmington Mental Health & Medical Care. She has been working for 13 years as an FNP and wants to provide the utmost care for you. Brooke has worked in a variety of specialties including oncology, infectious disease, medical-surgical, urology, primary care, women's health, and now mental health.",
+      "She strives to make sure that all of her patients feel heard and comfortable during and after their visit. She makes sure to take the time to get to know all of her patients on a personal level to understand their needs better. Brooke encourages her patients to ask questions and bring up their concerns. She is committed to providing high-quality care for all of her patients."
+    ],
+    "experience": "13 years as Family Nurse Practitioner",
+    "specialties": "Oncology, Infectious Disease, Primary Care, Mental Health",
+    "background": "Brooke moved from Pensacola, FL with her husband and youngest daughter to Wilmington, NC in 2017. She has a master's degree in nursing and is certified with BSN, MSN, and FNP credentials. She has been working with Wilmington Mental Health since February 2022.",
+    "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
+    "joined": "February 2022",
+    "location": "Wilmington, NC",
+      "bannerSrc": "/images/our-team/banner-default.jpg"
+  },
+  {
+    "id": "brooke-maple-psychiatry",
+    "pictureSrc": "/images/our-team/Brooke.png",
+    "name": "Brooke Maple",
+    "role": "Family Nurse Practitioner",
+    "idealPopulation": "Late Teens, Adults",
+    "framework": "Psychiatry",
+    "credentials": ["FNP-BC", "PMHNP-BC"],
+    "insurance": "Currently waiting to receive insurance information. Please contact our office for the most up-to-date coverage details.",
+    "about": [
+      "Brooke Maple is a Family Nurse Practitioner (FNP) here at Wilmington Mental Health & Medical Care. She has been working for 13 years as an FNP and wants to provide the utmost care for you. Brooke has worked in a variety of specialties including oncology, infectious disease, medical-surgical, urology, primary care, women's health, and now mental health.",
+      "She strives to make sure that all of her patients feel heard and comfortable during and after their visit. She makes sure to take the time to get to know all of her patients on a personal level to understand their needs better. Brooke encourages her patients to ask questions and bring up their concerns. She is committed to providing high-quality care for all of her patients."
+    ],
+    "experience": "13 years as Family Nurse Practitioner",
+    "specialties": "Oncology, Infectious Disease, Primary Care, Mental Health",
+    "background": "Brooke moved from Pensacola, FL with her husband and youngest daughter to Wilmington, NC in 2017. She has a master's degree in nursing and is certified with BSN, MSN, and FNP credentials. She has been working with Wilmington Mental Health since February 2022.",
+    "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
+    "joined": "February 2022",
+    "location": "Wilmington, NC",
+      "bannerSrc": "/images/our-team/banner-default.jpg"
+  },
+  {
+    "id": "brooke-maple-behavioral1",
+    "pictureSrc": "/images/our-team/Brooke.png",
+    "name": "Brooke Maple",
+    "role": "Family Nurse Practitioner",
+    "idealPopulation": "Late Teens, Adults",
+    "framework": "Behavioral Health",
+    "credentials": ["FNP-C", "MSN", "C-DBT"],
+    "insurance": "Currently waiting to receive insurance information. Please contact our office for the most up-to-date coverage details.",
+    "about": [
+      "Brooke Maple is a Family Nurse Practitioner (FNP) here at Wilmington Mental Health & Medical Care. She has been working for 13 years as an FNP and wants to provide the utmost care for you. Brooke has worked in a variety of specialties including oncology, infectious disease, medical-surgical, urology, primary care, women's health, and now mental health.",
+      "She strives to make sure that all of her patients feel heard and comfortable during and after their visit. She makes sure to take the time to get to know all of her patients on a personal level to understand their needs better. Brooke encourages her patients to ask questions and bring up their concerns. She is committed to providing high-quality care for all of her patients."
+    ],
+    "experience": "13 years as Family Nurse Practitioner",
+    "specialties": "Oncology, Infectious Disease, Primary Care, Mental Health",
+    "background": "Brooke moved from Pensacola, FL with her husband and youngest daughter to Wilmington, NC in 2017. She has a master's degree in nursing and is certified with BSN, MSN, and FNP credentials. She has been working with Wilmington Mental Health since February 2022.",
+    "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
+    "joined": "February 2022",
+    "location": "Wilmington, NC",
+      "bannerSrc": "/images/our-team/banner-default.jpg"
+  },
+  {
+    "id": "brooke-maple-behavioral2",
+    "pictureSrc": "/images/our-team/Brooke.png",
+    "name": "Brooke Maple",
+    "role": "Family Nurse Practitioner",
+    "idealPopulation": "Late Teens, Adults",
+    "framework": "Behavioral Health",
+    "credentials": ["FNP-BC", "CCM", "CCTP"],
+    "insurance": "Currently waiting to receive insurance information. Please contact our office for the most up-to-date coverage details.",
+    "about": [
+      "Brooke Maple is a Family Nurse Practitioner (FNP) here at Wilmington Mental Health & Medical Care. She has been working for 13 years as an FNP and wants to provide the utmost care for you. Brooke has worked in a variety of specialties including oncology, infectious disease, medical-surgical, urology, primary care, women's health, and now mental health.",
+      "She strives to make sure that all of her patients feel heard and comfortable during and after their visit. She makes sure to take the time to get to know all of her patients on a personal level to understand their needs better. Brooke encourages her patients to ask questions and bring up their concerns. She is committed to providing high-quality care for all of her patients."
+    ],
+    "experience": "13 years as Family Nurse Practitioner",
+    "specialties": "Oncology, Infectious Disease, Primary Care, Mental Health",
+    "background": "Brooke moved from Pensacola, FL with her husband and youngest daughter to Wilmington, NC in 2017. She has a master's degree in nursing and is certified with BSN, MSN, and FNP credentials. She has been working with Wilmington Mental Health since February 2022.",
+    "interests": "When she is not working, Brooke enjoys gardening, tending to her indoor plants, going to the beach, and spending time outside.",
+    "joined": "February 2022",
+    "location": "Wilmington, NC",
+      "bannerSrc": "/images/our-team/banner-default.jpg"
+  }
+]
