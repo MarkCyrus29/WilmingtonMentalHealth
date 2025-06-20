@@ -39,26 +39,29 @@ export default function OurTeamPage() {
               {/* Member Cards */}
               <div className="space-y-6 flex flex-col">
                 {members.map((member) => (
-                  <Link key={member.id} href={`/about-us/our-team/${member.id}`}>
-                    <a className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                      <div className="relative w-24 h-24 bg-[var(--color-gray)] rounded-full flex items-center justify-center border border-dark overflow-hidden">
-                        <Image
-                          src={member.pictureSrc}
-                          alt={`Portrait of ${member.name}`}
-                          fill
-                          className="object-cover rounded-full"
-                          sizes="96px"
-                          priority={true}
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-normal text-[var(--color-foreground)]">
-                          <strong>{member.name}</strong>
-                          {member.credentials.length > 0 && `, ${member.credentials.join(", ")}`}
-                        </h3>
-                        <p className="text-sm text-dark/60">{member.role}</p>
-                      </div>
-                    </a>
+                  <Link
+                    key={member.id}
+                    href={`/about-us/our-team/${member.id}`}
+                    className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                  >
+                    <div className="relative w-24 h-24 bg-[var(--color-gray)] rounded-full flex items-center justify-center border border-dark overflow-hidden">
+                      <Image
+                        src={member.pictureSrc}
+                        alt={`Portrait of ${member.name}`}
+                        fill
+                        className="object-cover rounded-full"
+                        sizes="96px"
+                        priority={true}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-normal text-[var(--color-foreground)]">
+                        <strong>{member.name}</strong>
+                        {member.credentials.length > 0 &&
+                          `, ${member.credentials.join(", ")}`}
+                      </h3>
+                      <p className="text-sm text-dark/60">{member.role}</p>
+                    </div>
                   </Link>
                 ))}
               </div>

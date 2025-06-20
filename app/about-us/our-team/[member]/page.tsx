@@ -1,48 +1,36 @@
 import { teamData } from "@/app/data/teamData";
+import {
+  Users,
+  BookOpen,
+  Shield,
+  MapPin,
+  Calendar,
+  Heart,
+  Leaf,
+} from "lucide-react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import type { Metadata } from "next";
 
-interface Props {
+type Props = {
   params: Promise<{ member: string }>;
-}
+};
+
 export async function generateStaticParams(): Promise<{ member: string }[]> {
   return teamData.map((member) => ({ member: member.id }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { member: string };
-}): Promise<Metadata> {
-  const member = teamData.find((m) => m.id === params.member);
-  if (!member) {
-    return {
-      title: "Member Not Found | Wilmington Mental Health",
-      description: "The requested team member could not be found.",
-    };
-  }
-
-  return {
-    title: `${member.name} | Wilmington Mental Health`,
-    description: `${member.name} is a ${member.role} specializing in ${member.specialties}.`,
-    openGraph: {
-      images: [member.pictureSrc],
-    },
-  };
-}
-
 export default async function Page({ params }: Props) {
   const { member: memberId } = await params;
-  const member = teamData.find(m => m.id === memberId);
+  const member = teamData.find((m) => m.id === memberId);
   if (!member) return notFound();
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background ">
       <article className="max-w-4xl mx-auto space-y-8 my-8">
         {/* Profile Header */}
-        <header className="bg-white rounded-xl shadow-lg overflow-hidden text-center animate-fade-in">
+        <header className="bg-white rounded-xl shadow-lg overflow-hidden text-center animate-fade-in ">
           <div className="relative h-44 w-full bg-gray-200">
             <Image
               src={member.bannerSrc}
@@ -79,9 +67,11 @@ export default async function Page({ params }: Props) {
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             <span className="inline-flex items-center bg-primary text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-primary/30 hover:text-primary transition-all">
+              <Users className="w-4 h-4 mr-1" />
               {member.idealPopulation}
             </span>
             <span className="inline-flex items-center bg-accent text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-accent/30 hover:text-accent transition-all">
+              <BookOpen className="w-4 h-4 mr-1" />
               {member.framework}
             </span>
           </div>
@@ -91,12 +81,14 @@ export default async function Page({ params }: Props) {
         <section className="grid md:grid-cols-2 gap-6">
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
+              <Users className="w-5 h-5 mr-2 text-primary" />
               Ideal Population
             </h4>
             <p className="text-dark/60">{member.idealPopulation}</p>
           </article>
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
+              <BookOpen className="w-5 h-5 mr-2 text-accent" />
               Theoretical Framework
             </h4>
             <p className="text-dark/60">{member.framework}</p>
@@ -106,6 +98,7 @@ export default async function Page({ params }: Props) {
         {/* Insurance Info */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-2 text-foreground">
+            <Shield className="w-5 h-5 mr-2 text-primary" />
             Insurance Information
           </h3>
           <p className="italic text-dark/60">{member.insurance}</p>
@@ -114,6 +107,7 @@ export default async function Page({ params }: Props) {
         {/* About Section */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-4 text-foreground">
+            <Heart className="w-5 h-5 mr-2 text-accent" />
             About {member.name.split(",")[0]}
           </h3>
           <div className="space-y-4 mb-6">
@@ -140,12 +134,14 @@ export default async function Page({ params }: Props) {
         {/* Background Section */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-4 text-foreground">
+            <MapPin className="w-5 h-5 mr-2 text-secondary" />
             Background
           </h3>
           <p className="text-dark/60 mb-6">{member.background}</p>
 
           <aside className="bg-[var(--color-gray)]/30 p-4 rounded-lg mb-6">
             <h4 className="font-semibold text-foreground mb-2 flex items-center">
+              <Leaf className="w-4 h-4 mr-2 text-secondary" />
               Personal Interests
             </h4>
             <p className="text-dark/60 text-sm">{member.interests}</p>
@@ -153,9 +149,11 @@ export default async function Page({ params }: Props) {
 
           <div className="flex items-center gap-4 text-sm text-dark/60">
             <div className="flex items-center">
+              <Calendar className="w-4 h-4 mr-1" />
               <span>Joined {member.joined}</span>
             </div>
             <div className="flex items-center">
+              <MapPin className="w-4 h-4 mr-1" />
               <span>{member.location}</span>
             </div>
           </div>
