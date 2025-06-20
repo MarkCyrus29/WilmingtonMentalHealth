@@ -1,13 +1,4 @@
 import { teamData } from "@/app/data/teamData";
-import {
-  Users,
-  BookOpen,
-  Shield,
-  MapPin,
-  Calendar,
-  Heart,
-  Leaf,
-} from "lucide-react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
@@ -42,19 +33,20 @@ export async function generateMetadata({
     },
   };
 }
+
 export default async function Page({ params }: Props) {
-  const { member: memberId } = await params; 
-  const member = teamData.find((m) => m.id === memberId);
-  if (!member) return notFound();
+  const { member } = await params;
+  const memberData = teamData.find((m) => m.id === member);
+  if (!memberData) return notFound();
 
   return (
-    <main className="min-h-screen bg-background ">
+    <main className="min-h-screen bg-background">
       <article className="max-w-4xl mx-auto space-y-8 my-8">
         {/* Profile Header */}
-        <header className="bg-white rounded-xl shadow-lg overflow-hidden text-center animate-fade-in ">
+        <header className="bg-white rounded-xl shadow-lg overflow-hidden text-center animate-fade-in">
           <div className="relative h-44 w-full bg-gray-200">
             <Image
-              src={member.bannerSrc}
+              src={memberData.bannerSrc}
               alt="Profile banner"
               fill
               className="object-contain w-full h-full p-5"
@@ -64,8 +56,8 @@ export default async function Page({ params }: Props) {
           {/* Profile Picture */}
           <figure className="w-32 h-32 mx-auto -mt-24 overflow-hidden rounded-full relative z-10 border-4 border-white shadow-lg flex items-center justify-center bg-[var(--color-gray)]">
             <Image
-              src={member.pictureSrc}
-              alt={`Portrait of ${member.name}`}
+              src={memberData.pictureSrc}
+              alt={`Portrait of ${memberData.name}`}
               width={128}
               height={128}
               className="block object-cover rounded-full"
@@ -74,26 +66,24 @@ export default async function Page({ params }: Props) {
 
           {/* Name */}
           <h2 className="text-xl font-semibold text-[var(--color-foreground)] mt-4">
-            {member.name}
+            {memberData.name}
           </h2>
 
           {/* Credentials */}
-          {member.credentials?.length > 0 && (
-            <p className="!text-dark !mb-0">{member.credentials.join(", ")}</p>
+          {memberData.credentials?.length > 0 && (
+            <p className="!text-dark !mb-0">{memberData.credentials.join(", ")}</p>
           )}
 
           {/* Role */}
-          <p>{member.role}</p>
+          <p>{memberData.role}</p>
 
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             <span className="inline-flex items-center bg-primary text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-primary/30 hover:text-primary transition-all">
-              <Users className="w-4 h-4 mr-1" />
-              {member.idealPopulation}
+              {memberData.idealPopulation}
             </span>
             <span className="inline-flex items-center bg-accent text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-accent/30 hover:text-accent transition-all">
-              <BookOpen className="w-4 h-4 mr-1" />
-              {member.framework}
+              {memberData.framework}
             </span>
           </div>
         </header>
@@ -102,37 +92,33 @@ export default async function Page({ params }: Props) {
         <section className="grid md:grid-cols-2 gap-6">
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
-              <Users className="w-5 h-5 mr-2 text-primary" />
               Ideal Population
             </h4>
-            <p className="text-dark/60">{member.idealPopulation}</p>
+            <p className="text-dark/60">{memberData.idealPopulation}</p>
           </article>
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
-              <BookOpen className="w-5 h-5 mr-2 text-accent" />
               Theoretical Framework
             </h4>
-            <p className="text-dark/60">{member.framework}</p>
+            <p className="text-dark/60">{memberData.framework}</p>
           </article>
         </section>
 
         {/* Insurance Info */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-2 text-foreground">
-            <Shield className="w-5 h-5 mr-2 text-primary" />
             Insurance Information
           </h3>
-          <p className="italic text-dark/60">{member.insurance}</p>
+          <p className="italic text-dark/60">{memberData.insurance}</p>
         </section>
 
         {/* About Section */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-4 text-foreground">
-            <Heart className="w-5 h-5 mr-2 text-accent" />
-            About {member.name.split(",")[0]}
+            About {memberData.name.split(",")[0]}
           </h3>
           <div className="space-y-4 mb-6">
-            {member.about.map((p, idx) => (
+            {memberData.about.map((p, idx) => (
               <p key={idx} className="text-dark/60">
                 {p}
               </p>
@@ -143,11 +129,11 @@ export default async function Page({ params }: Props) {
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
             <div className="bg-primary/10 p-4 rounded-lg">
               <h4 className="font-semibold !text-primary mb-2">Experience</h4>
-              <p className="!text-secondary text-sm">{member.experience}</p>
+              <p className="!text-secondary text-sm">{memberData.experience}</p>
             </div>
             <div className="bg-primary/10 p-4 rounded-lg">
               <h4 className="font-semibold !text-primary mb-2">Specialties</h4>
-              <p className="!text-secondary text-sm">{member.specialties}</p>
+              <p className="!text-secondary text-sm">{memberData.specialties}</p>
             </div>
           </div>
         </section>
@@ -155,27 +141,23 @@ export default async function Page({ params }: Props) {
         {/* Background Section */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold flex items-center mb-4 text-foreground">
-            <MapPin className="w-5 h-5 mr-2 text-secondary" />
             Background
           </h3>
-          <p className="text-dark/60 mb-6">{member.background}</p>
+          <p className="text-dark/60 mb-6">{memberData.background}</p>
 
           <aside className="bg-[var(--color-gray)]/30 p-4 rounded-lg mb-6">
             <h4 className="font-semibold text-foreground mb-2 flex items-center">
-              <Leaf className="w-4 h-4 mr-2 text-secondary" />
               Personal Interests
             </h4>
-            <p className="text-dark/60 text-sm">{member.interests}</p>
+            <p className="text-dark/60 text-sm">{memberData.interests}</p>
           </aside>
 
           <div className="flex items-center gap-4 text-sm text-dark/60">
             <div className="flex items-center">
-              <Calendar className="w-4 h-4 mr-1" />
-              <span>Joined {member.joined}</span>
+              <span>Joined {memberData.joined}</span>
             </div>
             <div className="flex items-center">
-              <MapPin className="w-4 h-4 mr-1" />
-              <span>{member.location}</span>
+              <span>{memberData.location}</span>
             </div>
           </div>
         </section>
@@ -183,7 +165,7 @@ export default async function Page({ params }: Props) {
         {/* Video Placeholder */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold mb-5 text-foreground">
-            Meet {member.name.split(",")[0]}
+            Meet {memberData.name.split(",")[0]}
           </h3>
           <div className="aspect-video bg-[var(--color-gray)]/20 rounded-lg flex items-center justify-center border-2 border-dashed border-[var(--color-gray)]">
             <div className="text-center">
@@ -204,7 +186,7 @@ export default async function Page({ params }: Props) {
                 Video will be placed here
               </p>
               <p className="text-[var(--color-dark)]/40 text-sm">
-                Introduction video from {member.name}
+                Introduction video from {memberData.name}
               </p>
             </div>
           </div>
@@ -213,7 +195,7 @@ export default async function Page({ params }: Props) {
 
       <CallBanner
         title=""
-        subtitle={`Call to make an appointment today with ${member.name} by calling our office at `}
+        subtitle={`Call to make an appointment today with ${memberData.name} by calling our office at `}
       />
     </main>
   );
