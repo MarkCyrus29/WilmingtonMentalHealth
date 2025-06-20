@@ -12,7 +12,7 @@ export default function HeroSlideshow() {
       setCurrentIndex((prev) => (prev + 1) % IMAGES.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [IMAGES.length]);
 
   return (
     <section className="relative overflow-hidden h-[calc(100vh-100px)] w-screen">

@@ -45,7 +45,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto py-24 px-6 flex flex-col md:flex-row items-stretch md:items-center gap-10">
         <div className="relative w-full md:w-1/2 h-64 md:h-[450px] flex-shrink-0">
           <Image
-            src={"/slideshow-images/hero1.JPG"}
+            src={"/images/home/slideshow-images/hero1.JPG"}
             alt={"Introduction Picture"}
             fill
             className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
@@ -102,12 +102,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-stretch justify-center items-center gap-10 px-4 sm:px-6 md:px-12 lg:px-24">
           <Card
             title="Mental Health"
-            img="https://picsum.photos/1000?1"
+            img="https://picsum.photos/600"
             desc="Wilmington Mental Health offers a range of services to provide you with the utmost care. We address mental health, substance use, behaviors, and emotions through therapy, support, and interventions."
           />
           <Card
             title="Interdisciplinary Care"
-            img="https://picsum.photos/1000?2"
+            img="https://picsum.photos/600?2"
             desc="Wilmington Mental Health aims to establish whole-person care and support that considers emotional, social, and physical well-being."
           />
         </div>

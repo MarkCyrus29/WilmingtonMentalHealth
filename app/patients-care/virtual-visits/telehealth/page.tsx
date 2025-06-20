@@ -1,3 +1,4 @@
+"use client";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
@@ -14,9 +15,10 @@ function Page() {
         alt="Phone Image"
         subtitle="What is Telehealth?"
       />
+
       {/* What is telehealth section */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-20">
-        <div className="h-full w-[85%]  text-left ">
+        <div className="h-full w-[85%] text-left">
           <h2>What is Telehealth?</h2>
           <p>
             Telehealth, also known as Telemedicine, Teletherapy, or
@@ -24,12 +26,12 @@ function Page() {
             providers directly through the Internet here at Wilmington Mental
             Health and Medical Care. These online audio and video visits connect
             us directly through your computer or mobile device (iOS or Android)
-            – it's your choice!
+            &#39;it&#39;s your choice!
             <br />
             <br />
             Our providers use Meet, a real-time video-communication service
-            developed by Google. Meet's platform comes with automated security
-            and HIPAA compliance to personal health information.
+            developed by Google. Meet&#39;s platform comes with automated
+            security and HIPAA compliance to personal health information.
             <br />
             <br />
             This guide outlines basic tips, instructions on how to join your
@@ -93,14 +95,15 @@ function Page() {
 
       {/* Join Meeting Section */}
       <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20">
-        <div className="w-[85%] text-left ">
+        <div className="w-[85%] text-left">
           <h2>How to Join a Meeting:</h2>
           <p>
             You can join a video call from Google Meet, Google Calendar, Gmail,
             etc. You can also dial-in to a meeting from a phone or a meeting
-            room. You can use Google Meet without a Google account.{" "}
+            room. You can use Google Meet without a Google account.
           </p>
         </div>
+
         <div className="h-full w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col md:flex-row w-full p-6 gap-6">
             <div className="w-full md:w-1/2 p-4 md:p-8 space-y-5">
@@ -111,26 +114,25 @@ function Page() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-sm md:text-[15px]">
-                If you plan to use a <strong>desktop or laptop</strong>, there's
+                If you plan to use a <strong>desktop or laptop</strong>, there&#39;s
                 <strong> no need to download anything</strong> prior to your
                 appointment.
                 <br />
                 <br />
-                For new patients, please ensure you’ve provided a{" "}
-                <strong>valid and up-to-date</strong>
-                email address or mobile number so we can send appointment
-                reminders.
+                For new patients, please ensure you&#39;ve provided a{" "}
+                <strong>valid and up-to-date</strong> email address or mobile
+                number so we can send appointment reminders.
                 <br />
                 <br />
                 Click the <strong>unique link</strong> included in the reminder.
                 Your video call screen will open in a new browser tab. If it
-                doesn’t open automatically, you may need to{" "}
+                doesn&#39;t open automatically, you may need to{" "}
                 <strong>copy and paste</strong> the link into your browser.
                 <br />
                 <br />
-                Once the screen opens, click <strong>'Join Now'</strong>. You
-                will either see your provider immediately, or if they haven’t
-                joined yet, you’ll be in the meeting room alone until they
+                Once the screen opens, click <strong>&#39;Join Now&#39;</strong>. You
+                will either see your provider immediately, or if they haven&#39;t
+                joined yet, you&#39;ll be in the meeting room alone until they
                 arrive.
               </p>
             </div>
@@ -144,6 +146,7 @@ function Page() {
             </div>
           </div>
         </div>
+
         <div className="h-full w-[85%] rounded-2xl bg-background shadow-lg border border-gray-200 overflow-hidden">
           <div className="flex flex-col-reverse md:flex-row w-full p-6 gap-6">
             <div className="relative w-full md:w-1/2 h-64 md:h-auto">
@@ -163,26 +166,23 @@ function Page() {
               </div>
               <p className="text-gray-600 leading-relaxed text-sm md:text-[15px]">
                 If you plan to use a <strong>mobile device or tablet</strong>,
-                you will need to
-                <strong> download the Google Meet app</strong> prior to joining
-                the video call.
+                you will need to <strong>download the Google Meet app</strong>{" "}
+                prior to joining the video call.
                 <br />
                 <br />
-                Once the app is installed,{" "}
-                <strong>click the unique link</strong> sent via email or text
-                reminder to join the Telehealth meeting. Tapping the link will
-                automatically open the Google Meet app.
+                Once the app is installed, <strong>click the unique link</strong> sent
+                via email or text reminder to join the Telehealth meeting.
+                Tapping the link will automatically open the Google Meet app.
                 <br />
                 <br />
                 If your provider has already joined, you will{" "}
-                <strong>see them on the screen</strong>. If not, you'll see
+                <strong>see them on the screen</strong>. If not, you&#39;ll see
                 yourself until they arrive.
                 <br />
                 <br />
                 <strong>Note:</strong> Your provider might be finishing up with
-                another patient.
-                <strong> Please be patient</strong> — they will join the meeting
-                shortly.
+                another patient. <strong>Please be patient</strong> — they will
+                join the meeting shortly.
               </p>
             </div>
           </div>
@@ -214,13 +214,14 @@ function Page() {
         </div>
       </section>
 
-      {/* FAQ*/}
+      {/* FAQ */}
       <section className="h-full w-screen flex flex-col gap-10 items-center justify-center my-20">
-        <div className="w-[85%] ">
+        <div className="w-[85%]">
           <h2>Common Teletherapy Questions:</h2>
           <TeletherapyAccordion />
         </div>
       </section>
+
       <CallBanner
         title={
           <>
