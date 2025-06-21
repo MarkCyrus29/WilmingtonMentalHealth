@@ -7,12 +7,12 @@ import PageBanner from "@/components/ui/PageBanner";
 import CallBanner from "@/components/ui/CallBanner";
 
 // Group team members by their framework
-const groupedByFramework = teamData.reduce<Record<string, TeamMember[]>>(
+const groupedByDepartment = teamData.reduce<Record<string, TeamMember[]>>(
   (acc, member) => {
-    if (!acc[member.framework]) {
-      acc[member.framework] = [];
+    if (!acc[member.department]) {
+      acc[member.department] = [];
     }
-    acc[member.framework].push(member);
+    acc[member.department].push(member);
     return acc;
   },
   {}
@@ -27,14 +27,14 @@ export default function OurTeamPage() {
         alt="Phone Image"
         subtitle="Meet Our Team"
       />
-      <div className="min-h-screen py-12 px-4 bg-[var(--color-background)]">
+      <div className="min-h-screen py-12 px-4 ">
         <h2 className="text-center">Meet Our Team</h2>
         <div className="max-w-6xl mx-auto space-y-12">
-          {Object.entries(groupedByFramework).map(([framework, members]) => (
-            <section key={framework}>
-              {/* Framework Separator */}
+          {Object.entries(groupedByDepartment).map(([department, members]) => (
+            <section key={department}>
+              {/* department Separator */}
               <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-6 border-b border-[var(--color-gray)] pb-2">
-                {framework}
+                {department}
               </h3>
 
               {/* Member Cards */}

@@ -1,7 +1,7 @@
 {
   "NAVLINKS": [
     {
-      "title": "Patients & Visitors",
+      "title": "Your Visit",
       "children": [
         { "title": "Online Check-In", "link": "/patients-visitors/online-check-in" },
         { "title": "Patient Registration", "link": "/patients-visitors/patient-registration" },
@@ -33,7 +33,7 @@
           "title": "Mental Health",
           "link": "/patients-care/mental-health",
           "children": [
-            { "title": "Child Therapy", "link": "/patients-care/mental-health/child-therapy" },
+            { "title": "Child & Adolescent Therapy", "link": "/patients-care/mental-health/child-therapy" },
             { "title": "Adult Therapy", "link": "/patients-care/mental-health/adult-therapy" },
             { "title": "Couples Therapy", "link": "/patients-care/mental-health/couples-therapy" },
             { "title": "Group Therapy", "link": "/patients-care/mental-health/group-therapy" },

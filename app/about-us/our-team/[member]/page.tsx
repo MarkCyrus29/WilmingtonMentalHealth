@@ -35,7 +35,7 @@ export default async function Page({ params }: Props) {
               src={member.bannerSrc}
               alt="Profile banner"
               fill
-              className="object-contain w-full h-full p-5"
+              className="object-contain w-full h-full p-6"
             />
           </div>
 
@@ -65,13 +65,13 @@ export default async function Page({ params }: Props) {
 
           {/* Tags */}
           <div className="flex flex-wrap justify-center gap-2 mb-4">
+            <span className="inline-flex items-center bg-accent text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-accent/30 hover:text-accent transition-all">
+              <BookOpen className="w-4 h-4 mr-1" />
+              {member.frameworkTag}
+            </span>
             <span className="inline-flex items-center bg-primary text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-primary/30 hover:text-primary transition-all">
               <Users className="w-4 h-4 mr-1" />
               {member.idealPopulation}
-            </span>
-            <span className="inline-flex items-center bg-accent text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-accent/30 hover:text-accent transition-all">
-              <BookOpen className="w-4 h-4 mr-1" />
-              {member.framework}
             </span>
           </div>
         </header>
@@ -80,17 +80,17 @@ export default async function Page({ params }: Props) {
         <section className="grid md:grid-cols-2 gap-6">
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
-              <Users className="w-5 h-5 mr-2 text-primary" />
-              Ideal Population
-            </h4>
-            <p className="text-dark/60">{member.idealPopulation}</p>
-          </article>
-          <article className="bg-white rounded-xl shadow p-6">
-            <h4 className="font-semibold flex items-center mb-2 text-foreground">
               <BookOpen className="w-5 h-5 mr-2 text-accent" />
               Theoretical Framework
             </h4>
             <p className="text-dark/60">{member.framework}</p>
+          </article>
+          <article className="bg-white rounded-xl shadow p-6">
+            <h4 className="font-semibold flex items-center mb-2 text-foreground">
+              <Users className="w-5 h-5 mr-2 text-primary" />
+              Ideal Population
+            </h4>
+            <p className="text-dark/60">{member.idealPopulation}</p>
           </article>
         </section>
 
@@ -158,34 +158,70 @@ export default async function Page({ params }: Props) {
           </div>
         </section>
 
-        {/* Video Placeholder */}
+        {/* Media Section (Video or Images) */}
+        {/* Media Section (Video or Images) */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold mb-5 text-foreground">
-            Meet {member.name.split(",")[0]}
+            {member.mediaVideo
+              ? `Meet ${member.name.split(" ")[0]}`
+              : member.mediaImages && member.mediaImages.length > 0
+              ? `${member.name.split(" ")[0]}'s Workspace`
+              : "Media Coming Soon"}
           </h3>
-          <div className="aspect-video bg-[var(--color-gray)]/20 rounded-lg flex items-center justify-center border-2 border-dashed border-[var(--color-gray)]">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-[var(--color-gray)] rounded-full flex items-center justify-center mb-4">
-                <svg
-                  className="w-8 h-8 text-[var(--color-dark)]/40"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+
+          {member.mediaVideo ? (
+            <video
+              src={member.mediaVideo}
+              controls
+              className="w-full rounded-lg shadow-md aspect-video"
+            />
+          ) : member.mediaImages && member.mediaImages.length > 0 ? (
+            <div
+              className={`grid gap-4 ${
+                member.mediaImages.length === 1
+                  ? "grid-cols-1"
+                  : "grid-cols-1 sm:grid-cols-2"
+              }`}
+            >
+              {member.mediaImages.map((src, idx) => (
+                <div
+                  key={idx}
+                  className="relative aspect-video overflow-hidden rounded-lg"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clipRule="evenodd"
+                  <Image
+                    src={src}
+                    alt={`${member.name} work area image ${idx + 1}`}
+                    fill
+                    className="object-cover"
                   />
-                </svg>
-              </div>
-              <p className="text-[var(--color-dark)]/60 font-medium">
-                Video will be placed here
-              </p>
-              <p className="text-[var(--color-dark)]/40 text-sm">
-                Introduction video from {member.name}
-              </p>
+                </div>
+              ))}
             </div>
-          </div>
+          ) : (
+            <div className="aspect-video bg-[var(--color-gray)]/20 rounded-lg flex items-center justify-center border-2 border-dashed border-[var(--color-gray)]">
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto bg-[var(--color-gray)] rounded-full flex items-center justify-center mb-4">
+                  <svg
+                    className="w-8 h-8 text-[var(--color-dark)]/40"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p className="text-[var(--color-dark)]/60 font-medium">
+                  No media available
+                </p>
+                <p className="text-[var(--color-dark)]/40 text-sm">
+                  This section will feature a video or workspace images.
+                </p>
+              </div>
+            </div>
+          )}
         </section>
       </article>
 

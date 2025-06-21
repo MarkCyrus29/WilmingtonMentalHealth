@@ -27,14 +27,14 @@ export default function Home() {
           <div className="absolute z-30 bottom-16 w-full px-6 flex flex-col items-center gap-4 md:flex-row md:left-18 md:bottom-32 md:gap-8 md:items-start">
             <Link href={"/"}>
               <Button
-                title={"Request an Appointment"}
-                className="w-full md:w-auto border border-secondary !bg-primary/90 backdrop-blur-[4px] rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
+                title={"Pre-register"}
+                className="w-full md:w-auto not-even:!bg-primary/90 backdrop-blur-[4px] rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
               />
             </Link>
             <Link href={"/"}>
               <Button
-                title={"Pre-register"}
-                className="w-full md:w-auto !bg-white/10 backdrop-blur-[4px] rounded-[20px] !border !border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
+                title={"Request an Appointment"}
+                className="w-full md:w-auto !bg-primary/90 backdrop-blur-[4px] rounded-[20px] shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_14px_7px_rgba(255,255,255,0.7)] overflow-hidden"
               />
             </Link>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
           />
         </div>
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-6">Who we are</h2>
+          <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
           <h4 className="text-2xl font-semibold mb-4">
             Wilmington Mental Health
           </h4>
@@ -74,22 +74,65 @@ export default function Home() {
       </section>
 
       {/* INTEGRATED CARE SECTION */}
-      <div className="w-screen h-52 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)] ">
-        <div className=" w-[75%] flex flex-col items-center">
+      <div className="w-screen h-auto py-10 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)]">
+        <div className="w-[75%] flex flex-col items-center">
           <h2 className="text-xl font-semibold mb-4 !text-background">
             Find a Provider
           </h2>
-          <form className="w-full flex flex-col sm:flex-row items-center gap-4">
-            <div className="relative w-full">
+          <form className="w-full flex flex-col sm:flex-row items-center gap-4 flex-wrap">
+            {/* Name Search */}
+            <div className="relative flex-1 min-w-[200px]">
               <input
                 type="text"
-                placeholder="Search by name, specialty, or location"
+                placeholder="Search by name"
                 className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
               />
               <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 🔍
               </span>
             </div>
+
+            {/* Specialty Dropdown + Search */}
+            <div className="relative flex-1 min-w-[200px]">
+              <input
+                type="text"
+                list="specialties"
+                placeholder="Search by specialty"
+                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
+              />
+              <datalist id="specialties">
+                <option value="Psychologist" />
+                <option value="Psychiatrist" />
+                <option value="Therapist" />
+                <option value="Counselor" />
+                <option value="Social Worker" />
+              </datalist>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                🩺
+              </span>
+            </div>
+
+            {/* Insurance Dropdown + Search */}
+            <div className="relative flex-1 min-w-[200px]">
+              <input
+                type="text"
+                list="insurances"
+                placeholder="Search by insurance"
+                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
+              />
+              <datalist id="insurances" className="bg-background text-dark">
+                <option value="PhilHealth" />
+                <option value="Maxicare" />
+                <option value="Intellicare" />
+                <option value="Pacific Cross" />
+                <option value="Medicare Plus" />
+              </datalist>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                💳
+              </span>
+            </div>
+
+            {/* Submit Button */}
             <Button title="Search" type="submit" className="py-2 px-4" />
           </form>
         </div>
