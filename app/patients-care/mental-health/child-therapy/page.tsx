@@ -5,10 +5,12 @@ import { CheckCircle, Heart } from "lucide-react";
 function ServicesCard({ title, color }: { title: string; color: string }) {
   return (
     <div
-      className={`w-full h-full border-l-4 border-${color} p-6 flex items-start gap-4 rounded-xl bg-gray/10`}
+      className={`w-full h-full bg-[#F6F6F6] border border-dark/50 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 flex items-start gap-4 transform hover:-translate-y-1`}
     >
-      <CheckCircle className={`h-6 w-6 mt-1 text-${color} flex-shrink-0`} />
-      <h4 className="text-base sm:text-lg font-medium text-left leading-snug">
+      <div className={`p-2 rounded-full bg-${color}/10 text-${color}`}>
+        <CheckCircle className="h-5 w-5" />
+      </div>
+      <h4 className="text-sm sm:text-base font-medium leading-snug text-foreground">
         {title}
       </h4>
     </div>
@@ -39,7 +41,7 @@ function TherapySection({
         <h3 className="mt-10 mb-5 text-left">Our Approach</h3>
         <p>{description}</p>
         <h3 className="mt-10 mb-5 text-left">Services We Provide</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {services.map(({ title }, i) => (
             <ServicesCard title={title} key={i} color={color} />
           ))}

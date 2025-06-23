@@ -159,13 +159,12 @@ export default async function Page({ params }: Props) {
         </section>
 
         {/* Media Section (Video or Images) */}
-        {/* Media Section (Video or Images) */}
         <section className="bg-white rounded-xl shadow p-6">
           <h3 className="font-semibold mb-5 text-foreground">
             {member.mediaVideo
               ? `Meet ${member.name.split(" ")[0]}`
               : member.mediaImages && member.mediaImages.length > 0
-              ? `${member.name.split(" ")[0]}'s Workspace`
+              ? `${member.name.split(" ")[0]}'s Office`
               : "Media Coming Soon"}
           </h3>
 

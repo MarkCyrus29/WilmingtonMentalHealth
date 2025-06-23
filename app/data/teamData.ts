@@ -105,7 +105,7 @@ export const teamData: TeamMember[] = [
     joined: "----",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
-    mediaImages: ["/images/our-team/adam-1.JPG", "/images/our-team/adam-2.JPG"],
+    mediaImages: [],
   },
   {
     id: "richard-howard",
