@@ -80,7 +80,7 @@ p {
 }
 p,
 a {
-  @apply text-dark/60;
+  @apply text-dark/75;
 }
 
 @keyframes fade-in {

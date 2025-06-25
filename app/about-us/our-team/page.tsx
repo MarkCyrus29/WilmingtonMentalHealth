@@ -39,20 +39,19 @@ export default function OurTeamPage() {
 
               {/* Member Cards */}
               <div className="space-y-6 flex flex-col">
-                {members.map((member) => (
+                {members.map((member, index) => (
                   <Link
-                    key={member.id}
+                    key={member.id + index}
                     href={`/about-us/our-team/${member.id}`}
                     className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                   >
-                    <div className="relative w-24 h-24 bg-[var(--color-gray)] rounded-full flex items-center justify-center border border-dark overflow-hidden">
+                    <div className="relative w-24 h-24 bg-[var(--color-gray)] rounded-full flex items-center justify-center border border-dark overflow-hidden flex-shrink-0">
                       <Image
                         src={member.pictureSrc}
                         alt={`Portrait of ${member.name}`}
                         fill
                         className="object-cover rounded-full"
                         sizes="96px"
-                        priority={true}
                       />
                     </div>
                     <div>

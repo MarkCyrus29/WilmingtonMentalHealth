@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased  `}>
-        <span className="fixed h-72 w-72 -z-50 bottom-[25%]  left-[80%] -translate-x-1/2 translate-y-1/2 opacity-30 blur-[2px]  pointer-events-none transform scale-x-[-1]">
+        {/* <span className="fixed h-72 w-72 -z-50 bottom-[25%]  left-[80%] -translate-x-1/2 translate-y-1/2 opacity-30 blur-[2px]  pointer-events-none transform scale-x-[-1]">
           <Image
             src="/favicon.webp"
             fill
@@ -45,7 +45,7 @@ export default function RootLayout({
             className="object-contain grayscale brightness-150 contrast-125"
             priority
           />
-        </span>
+        </span> */}
 
         <Header />
         <ParallaxProviderWrapper>{children}</ParallaxProviderWrapper>

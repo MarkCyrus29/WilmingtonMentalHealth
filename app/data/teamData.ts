@@ -170,4 +170,110 @@ export const teamData: TeamMember[] = [
     bannerSrc: "/images/our-team/banner.svg",
     mediaImages: ["/images/our-team/kailyn-1.JPG"],
   },
+  {
+    id: "stacy-tarantino",
+    pictureSrc: "/images/our-team/Stacy Tarantino.JPG",
+    name: "Stacy Tarantino",
+    role: "Licensed Clinical Mental Health Counselor Associate",
+    idealPopulation: "Adults",
+    department: "Behavioral Health",
+    frameworkTag: "Trauma & Women's Health",
+    framework:
+      "Cognitive Behavioral Therapy, Dialectical Behavioral Therapy, Existential Therapy, Mindfulness, Trauma-Focused Therapy",
+    credentials: [
+      "LCMHCA",
+      "NCC",
+      "Certified Trauma Professional",
+      "EMDR Certified",
+    ],
+    insurance:
+      "Please contact our office for the most up-to-date insurance coverage details.",
+    about: [
+      "Stacy is a certified trauma professional, certified in EMDR, and women's health. She helps clients with depression, anxiety, trauma, grief, and loss.",
+      "She uses evidence-based modalities including Cognitive Behavioral Therapy, Dialectical Behavioral Therapy, existentialism, mindfulness, and trauma-focused therapies.",
+      "Stacy is passionate about partnering with you to help identify issues, develop treatment plans, and help you move toward your goals. ",
+      "Everyone deserves happiness and peace. With mutual respect, compassion, non-judgmental curiosity, and motivation, counseling can build resilience, develop coping strategies and propel you into a happier and healthier life.",
+      "Stacy believes that the counselor-client relationship should be a collaborative effort. She welcomes adult clients of all genders, ethnicities, orientations, and religions",
+      "Stacy will help you make meaningful steps toward purpose and healing.",
+    ],
+    experience: "Almost three years of counseling experience",
+    specialties: "Anxiety, Depression, Trauma, Grief, Women's Health",
+    background:
+      "Stacy is originally from Pennsylvania but has lived in Charlotte, NC for over 30 years. She received her Master's in Counseling from the University of North Carolina Charlotte in 2023.",
+    interests: "----",
+    joined: "----",
+    location: "Charlotte, NC",
+    bannerSrc: "/images/our-team/banner.svg",
+    mediaImages: [],
+  },
+
+  {
+    id: "havah-henzler",
+    pictureSrc: "/images/our-team/Havah.png",
+    name: "Havah Henzler",
+    role: "Licensed Clinical Social Worker & Service Worker",
+    idealPopulation: "----",
+    department: "Behavioral Health",
+    frameworkTag: "Trauma Therapy",
+    framework:
+      "Cognitive Behavioral Therapy (CBT), Parent Child Interaction Therapy (PCIT), Eye Movement Desensitization and Reprocessing (EMDR)",
+    credentials: ["LCSW", "LCAS"],
+    insurance:
+      "Please contact our office for the most up-to-date insurance coverage details.",
+    about: [
+      "Life can be tough sometimes. Let me be the person you can trust, the one who is going to listen to you without judgement.",
+      " I am a vibrant Latina originally from Mexico City and I specialize in treating patients who have experienced trauma.",
+      "I started in the human services field in 2005 in Child Protective Services at DHHS. My love and passion for “hurting people” led me into this profession.",
+      ". I utilize several therapeutic tools to help others achieve their goals and objectives, such as Cognitive Behavioral Therapy (CBT) and Parent Child Interaction Therapy (PCIT).",
+      "I am specialized in treating trauma issues. One technique that I use is Eye Movement Desensitization and Reprocessing (EMDR). This technique is effective in helping individuals move forward in their lives from a past trauma event that has caused them to become “stuck” in their current daily life. I am also trained in EMDR (Eye Movement Desensitization and Reprocessing), a highly effective technique to help individuals move forward from past traumatic events that keep them feeling stuck.",
+      "Together, we will design a program that applies to your needs. I will help develop a future-oriented character to enhance your healthier lifestyle. Our therapeutic encounters are an opportunity to learn more about your inner power.  ",
+    ],
+    experience:
+      "Since 2005 in the human services field, including CPS and clinical work",
+    specialties: "Trauma, CBT, PCIT, EMDR",
+    background:
+      "Havah has been living in Wilmington, NC since 2003 and graduated with a Master in social work from East Carolina University in 2009. She is a Licensed Clinical Social Worker (LCSW) and a Licensed Addition Specialist (LCAS).",
+    interests:
+      " In her free time, Havah enjoys spending time with the ones she loves and cares for. She loves to enrich her professional growth by learning about human behavior. She loves to travel and learn about other cultures, cuisines, language, and cuisines. She enjoys living life to the fullest and it has taught her how ephemeral it can be.",
+    joined: "----",
+    location: "Wilmington, NC",
+    bannerSrc: "/images/our-team/banner.svg",
+    mediaImages: [],
+  },
+  {
+    id: "perry-stanley",
+    pictureSrc: "/images/our-team/Perry.jpg",
+    name: "Dr. Perry Stanley",
+    role: "Marriage & Family Counselor",
+    idealPopulation: "Couples, Families, Individuals with Chronic Pain",
+    department: "Behavioral Health",
+    frameworkTag: "Marriage & Family Counseling",
+    framework:
+      "Person-Centered Therapy, Marriage Counseling, Family Counseling, Clinical Hypnosis, Self-Hypnosis for Chronic Pain Management",
+    credentials: [
+      "PhD",
+      "Clinical Fellow - AAMFT",
+      "Approved Supervisor - AAMFT",
+      "Certified in Clinical Hypnosis - ASCH",
+    ],
+    insurance:
+      "Please contact our office for the most up-to-date insurance coverage details.",
+    about: [
+      "Dr. Perry G. Stanley has been practicing counseling psychology for over 30 years in West Virginia, Ohio, and North Carolina.",
+      "A specialist in marriage and family counseling, Dr. Stanley has worked successfully with hundreds of couples and family over in the span of his career.",
+      "Adhering to a person-centered approach to counseling, Dr. Stanley listens carefully to the client's concerns and issues before working with the client to identify treatment goals and developing a therapy plan.",
+      "In addition to traditional counseling, Dr. Stanley utilizes clinical hypnosis to alleviate pain and maximize comfort for those with chronic pain. He treats a range of conditions including gastrointestinal issues, sleep disturbances, and fibromyalgia. ",
+      "He works with cancer patients as well as those who are preparing for a medical procedure.  ",
+    ],
+    experience: "Over 30 years in counseling psychology and clinical hypnosis",
+    specialties:
+      "Marriage Counseling, Family Counseling, Chronic Pain, Clinical Hypnosis, Cancer Support, Sleep Disturbances, Gastrointestinal Issues",
+    background:
+      "A Clinical Fellow and designated Approved Supervisor with the American Association with Marriage and Family Therapy, Dr. Stanley has served on the faculty of the Western  Pennsylvania Family Center in Pittsburgh. In addition, he has taught marriage and family therapy to graduate students at West Virginia University, and supervised, trained, and consulted with scores of therapists and psychologists. Having attained certification in clinical hypnosis with the American Society of Clinical Hypnosis, Dr. Stanley has specialized in teaching self-hypnosis for the management of chronic pain and other chronic physical and psychological conditions. Having recently relocated to Wilmington, Dr. Stanley lives with his wife of 30 years, a second marriage for each of them. They both have four children and three grandchildren.  ",
+    interests: "----",
+    joined: "----",
+    location: "Wilmington, NC",
+    bannerSrc: "/images/our-team/banner.svg",
+    mediaImages: [],
+  },
 ];

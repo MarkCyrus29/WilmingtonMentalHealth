@@ -40,13 +40,13 @@ export default async function Page({ params }: Props) {
           </div>
 
           {/* Profile Picture */}
-          <figure className="w-32 h-32 mx-auto -mt-24 overflow-hidden rounded-full relative z-10 border-4 border-white shadow-lg flex items-center justify-center bg-[var(--color-gray)]">
+          <figure className="w-32 h-32 mx-auto -mt-24 overflow-hidden rounded-full relative z-10 border-4 border-white shadow-lg flex items-center justify-center bg-[var(--color-gray)] ">
             <Image
               src={member.pictureSrc}
               alt={`Portrait of ${member.name}`}
               width={128}
               height={128}
-              className="block object-cover rounded-full"
+              className="block object-cover rounded-full "
             />
           </figure>
 
@@ -57,7 +57,9 @@ export default async function Page({ params }: Props) {
 
           {/* Credentials */}
           {member.credentials?.length > 0 && (
-            <p className="!text-dark !mb-0">{member.credentials.join(", ")}</p>
+            <p className="!text-dark !mb-2 px-10">
+              {member.credentials.join(", ")}
+            </p>
           )}
 
           {/* Role */}
@@ -83,14 +85,14 @@ export default async function Page({ params }: Props) {
               <BookOpen className="w-5 h-5 mr-2 text-accent" />
               Theoretical Framework
             </h4>
-            <p className="text-dark/60">{member.framework}</p>
+            <p className="">{member.framework}</p>
           </article>
           <article className="bg-white rounded-xl shadow p-6">
             <h4 className="font-semibold flex items-center mb-2 text-foreground">
               <Users className="w-5 h-5 mr-2 text-primary" />
               Ideal Population
             </h4>
-            <p className="text-dark/60">{member.idealPopulation}</p>
+            <p className="">{member.idealPopulation}</p>
           </article>
         </section>
 
@@ -100,7 +102,7 @@ export default async function Page({ params }: Props) {
             <Shield className="w-5 h-5 mr-2 text-primary" />
             Insurance Information
           </h3>
-          <p className="italic text-dark/60">{member.insurance}</p>
+          <p className="italic">{member.insurance}</p>
         </section>
 
         {/* About Section */}
@@ -111,7 +113,7 @@ export default async function Page({ params }: Props) {
           </h3>
           <div className="space-y-4 mb-6">
             {member.about.map((p, idx) => (
-              <p key={idx} className="text-dark/60">
+              <p key={idx} className="">
                 {p}
               </p>
             ))}
@@ -136,17 +138,17 @@ export default async function Page({ params }: Props) {
             <MapPin className="w-5 h-5 mr-2 text-secondary" />
             Background
           </h3>
-          <p className="text-dark/60 mb-6">{member.background}</p>
+          <p className=" mb-6">{member.background}</p>
 
           <aside className="bg-[var(--color-gray)]/30 p-4 rounded-lg mb-6">
             <h4 className="font-semibold text-foreground mb-2 flex items-center">
               <Leaf className="w-4 h-4 mr-2 text-secondary" />
               Personal Interests
             </h4>
-            <p className="text-dark/60 text-sm">{member.interests}</p>
+            <p className=" text-sm">{member.interests}</p>
           </aside>
 
-          <div className="flex items-center gap-4 text-sm text-dark/60">
+          <div className="flex items-center gap-4 text-sm ">
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-1" />
               <span>Joined {member.joined}</span>
