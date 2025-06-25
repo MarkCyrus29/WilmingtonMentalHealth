@@ -6,7 +6,7 @@ import ParallaxProviderWrapper from "@/components/ParallaxProviderWrapper";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import Footer from "@/components/layout/Footer";
 import { Poppins } from "next/font/google";
-import Image from "next/image";
+// import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
