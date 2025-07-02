@@ -63,16 +63,16 @@ function Page() {
   return (
     <main className="scroll-smooth">
       <PageBanner
-        title="Couples Therapy & Relationship Counseling"
+        title="Couples Counseling & Relationship Counseling"
         imageSrc="/images/patients-care/couples-therapy.webp"
-        alt="Couples Therapy Image"
-        subtitle="Couples Therapy"
+        alt="Couples Counseling Image"
+        subtitle="Couples Counseling"
       />
 
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%]">
-          <h2 className="text-center">Couples Therapy</h2>
+          <h2 className="text-center">Couples Counseling</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
             At Wilmington Mental Health, we are here to help couples recognize
             and resolve their conflicts to better their relationship. Working
@@ -102,8 +102,8 @@ function Page() {
                 {
                   href: "#premarital-counseling",
                   title: "Premarital Counseling",
-                  gradient: "from-accent to-accent/80",
-                  hoverGradient: "hover:from-accent/90 hover:to-accent/70",
+                  gradient: "from-primary to-primary/80",
+                  hoverGradient: "hover:from-primary/90 hover:to-primary/70",
                 },
                 {
                   href: "#family-systems",
@@ -341,10 +341,10 @@ function Page() {
             </div>
 
             {/* Emotionally Focused Therapy */}
-            <div className="bg-accent/5 border-l-4 border-accent p-6 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
               <span className="flex flex-row items-center mb-4">
-                <Heart className="h-6 w-6 text-accent mr-2" />
-                <h3 className="!text-accent">Emotionally Focused Therapy</h3>
+                <Heart className="h-6 w-6 text-primary mr-2" />
+                <h3 className="!text-primary">Emotionally Focused Therapy</h3>
               </span>
               <p className="text-lg leading-relaxed">
                 Learn how to express deep, underlying emotions from a place of
@@ -355,10 +355,10 @@ function Page() {
             </div>
 
             {/* IMAGO Approach */}
-            <div className="bg-secondary/5 border-l-4 border-secondary p-6 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
               <span className="flex flex-row items-center mb-4">
-                <Users className="h-6 w-6 text-secondary mr-2" />
-                <h3 className="!text-secondary">IMAGO Approach</h3>
+                <Users className="h-6 w-6 text-primary mr-2" />
+                <h3 className="!text-primary">IMAGO Approach</h3>
               </span>
               <p className="text-lg leading-relaxed">
                 Learn how to transform conflicts into opportunities for healing

@@ -60,12 +60,12 @@ function Page() {
         title="Professional Therapy Services for Children & Adolescents"
         imageSrc="/images/patients-care/child-therapy.webp"
         alt="Phone Image"
-        subtitle="Child & Adolescent Therapy"
+        subtitle="Child & Adolescent Counseling"
       />
 
       {/* ─── Child Therapy ─── */}
       <TherapySection
-        title="Child Therapy"
+        title="Child Counseling"
         ageRange="Ages 3 - 12"
         color="primary"
         description={
@@ -105,7 +105,7 @@ function Page() {
 
       {/* ─── Adolescent Therapy ─── */}
       <TherapySection
-        title="Adolescent Therapy"
+        title="Adolescent Counseling"
         ageRange="Ages 13 - 17"
         color="accent"
         description={

@@ -44,7 +44,7 @@ export default function OurTeamPage() {
                 {members.map((member, index) => (
                   <Link
                     key={member.id + index}
-                    href={`/our-team/providers/${member.id}`}
+                    href={`/our-team/${member.id}`}
                     className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                   >
                     {/* Avatar */}

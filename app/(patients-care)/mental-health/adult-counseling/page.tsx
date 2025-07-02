@@ -286,12 +286,12 @@ function Page() {
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%] ">
-          <h2 className="text-center">Adult Therapy</h2>
+          <h2 className="text-center">Adult Counseling</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Adult therapy, also known as psychotherapy and individual therapy,
-            is best suited for your needs. Here at Wilmington Health, we can
-            help you overcome personal obstacles, make healthy decisions, and
-            cope with difficulties better. Life can feel fast-paced,
+            Adult Counseling, also known as psychotherapy and individual
+            therapy, is best suited for your needs. Here at Wilmington Health,
+            we can help you overcome personal obstacles, make healthy decisions,
+            and cope with difficulties better. Life can feel fast-paced,
             overwhelming, and stressful, that is why we are here to provide
             one-on-one support for a wide range of emotional, cognitive, and
             behavioral issues.
@@ -299,9 +299,9 @@ function Page() {
           <p className="mt-4 text-lg leading-relaxed text-center">
             We want to help you focus on developing skills, taking steps towards
             personal change, reduce symptoms, and enhance the overall quality of
-            your life. Wilmington Mental Health&apos;s holistic and integrated care
-            is implemented by healthcare professionals with extensive training
-            and whose primary purpose is to promote healing for you.
+            your life. Wilmington Mental Health&apos;s holistic and integrated
+            care is implemented by healthcare professionals with extensive
+            training and whose primary purpose is to promote healing for you.
           </p>
 
           {/* ─── Therapy Navigation Buttons ─── */}
@@ -317,8 +317,8 @@ function Page() {
                 {
                   href: "#depression",
                   title: "Depression Therapy",
-                  gradient: "from-accent to-accent/80",
-                  hoverGradient: "hover:from-accent/90 hover:to-accent/70",
+                  gradient: "from-primary to-primary/80",
+                  hoverGradient: "hover:from-primary/90 hover:to-primary/70",
                 },
                 {
                   href: "#anxiety",
@@ -440,7 +440,7 @@ function Page() {
       <TherapySection
         id="depression"
         title="Depression Therapy"
-        color="accent"
+        color="primary"
         description={
           <>
             Learn how to address persistent feelings of sadness and loss of

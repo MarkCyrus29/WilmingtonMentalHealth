@@ -30,15 +30,15 @@
           "title": "Mental Health",
           "link": "/mental-health",
           "children": [
-            { "title": "Child & Adolescent Therapy", "link": "/mental-health/child-therapy" },
-            { "title": "Adult Therapy", "link": "/mental-health/adult-therapy" },
-            { "title": "Couples Therapy", "link": "/mental-health/couples-therapy" },
-            { "title": "Group Therapy", "link": "/mental-health/group-therapy" },
-            { "title": "Military Counseling", "link": "/mental-health/military-counseling" },
-            { "title": "LGBTQ Counseling", "link": "/mental-health/lgbtq-counseling" }
+            { "title": "Adult Counseling", "link": "/mental-health/adult-counseling" },
+            { "title": "Child & Adolescent Counseling", "link": "/mental-health/child-counseling" },
+            { "title": "Couples Counseling", "link": "/mental-health/couples-counseling" },
+            { "title": "Group Counseling", "link": "/mental-health/group-counseling" },
+            { "title": "LGBTQ Counseling", "link": "/mental-health/lgbtq-counseling" },
+            { "title": "Military Counseling", "link": "/mental-health/military-counseling" }
           ]
         },
-        {
+        { 
           "title": "Substance Use Disorders",
           "link": "/substance-use",
           "children": [
@@ -100,10 +100,7 @@
         { "title": "What We Treat", "link": "/what-we-treat" },
         {
           "title": "Our Team",
-          "children": [
-            { "title": "Providers", "link": "/our-team/providers" },
-            { "title": "Associates", "link": "/our-team/associates" }
-          ]
+          "link": "/our-team"
         }
       ]
     },

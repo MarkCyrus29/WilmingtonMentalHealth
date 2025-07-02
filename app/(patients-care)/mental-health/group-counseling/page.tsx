@@ -16,10 +16,10 @@ function Page() {
         />
         <div className="absolute top-30 w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Group Therapy & Support Groups
+            Group Counseling & Support Groups
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
-            Group Therapy
+            Group Counseling
           </h1>
         </div>
       </div>
@@ -27,9 +27,9 @@ function Page() {
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%]">
-          <h2 className="text-center">Group Therapy</h2>
+          <h2 className="text-center">Group Counseling</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Group therapy encourages individuals to come together in a group to
+            Group Counseling encourages individuals to come together in a group to
             discuss particular issues together. Providers observe the group
             dynamic closely noting how the group interacts with one another,
             give feedback regarding their reactions (e.g., behaviors and words),
@@ -48,7 +48,7 @@ function Page() {
             id="benefits"
             className="h-full w-full flex flex-col items-start scroll-mt-[100px]"
           >
-            <h2>Benefits of Group Therapy</h2>
+            <h2>Benefits of Group Counseling</h2>
             <span className="flex flex-row items-center">
               <Users className="h-8 w-8 text-primary mr-2" />
               <h4 className="!text-primary">Therapeutic Advantages</h4>
@@ -121,7 +121,7 @@ function Page() {
         className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px] bg-gray-50"
       >
         <div className="w-[85%]">
-          <h2 className="text-center">Group Therapy Schedule</h2>
+          <h2 className="text-center">Group Counseling Schedule</h2>
           <span className="flex flex-row items-center justify-center">
             <Calendar className="h-8 w-8 text-secondary mr-2" />
             <h4 className="!text-secondary">Live Calendar</h4>

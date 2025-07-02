@@ -1,7 +1,7 @@
 import CallBanner from "@/components/ui/CallBanner";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
-import { TherapySection } from "../adult-therapy/page";
+import { TherapySection } from "../adult-counseling/page";
 import Link from "next/link";
 
 function Page() {
@@ -159,7 +159,7 @@ function Page() {
       <TherapySection
         id="depression"
         title="Depression Therapy"
-        color="accent"
+        color="primary"
         description={
           <>
             Learn how to address persistent feelings of sadness and loss of

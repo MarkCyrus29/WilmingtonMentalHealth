@@ -145,7 +145,7 @@ export default function WhoWeServe() {
         {/* Vulnerable Populations */}
         <section className="w-full h-full flex flex-col justify-center items-center py-24">
           <div className="md:w-[85%] sm:w-[95%] w-full ">
-            <div>
+            <div className="mb-12">
               <h2 className="flex items-center gap-2">
                 <Shield className="h-8 w-8 text-emerald-600" />
                 Serving Vulnerable and Underserved Populations
@@ -226,8 +226,8 @@ export default function WhoWeServe() {
                     Families & Women
                   </h4>
                   <p className="text-sm text-rose-700">
-                    Comprehensive care for family dynamics and women&apos;s mental
-                    health across life phases.
+                    Comprehensive care for family dynamics and women&apos;s
+                    mental health across life phases.
                   </p>
                 </div>
                 <div className="p-4 bg-amber-50 rounded-lg border border-amber-100 transition-all hover:border-amber-300">
