@@ -299,7 +299,7 @@ function Page() {
           <p className="mt-4 text-lg leading-relaxed text-center">
             We want to help you focus on developing skills, taking steps towards
             personal change, reduce symptoms, and enhance the overall quality of
-            your life. Wilmington Mental Health's holistic and integrated care
+            your life. Wilmington Mental Health&apos;s holistic and integrated care
             is implemented by healthcare professionals with extensive training
             and whose primary purpose is to promote healing for you.
           </p>

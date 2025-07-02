@@ -25,37 +25,6 @@ function ServicesCard({ title, color }: { title: string; color: string }) {
   );
 }
 
-function ApproachSection({
-  id,
-  title,
-  color,
-  description,
-  icon: Icon,
-}: {
-  id: string;
-  title: string;
-  color: string;
-  description: React.ReactNode;
-  icon: React.ElementType;
-}) {
-  return (
-    <section
-      id={id}
-      className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px]"
-    >
-      <div className="w-[85%]">
-        <span className="flex flex-row items-center mb-6">
-          <Icon className={`h-8 w-8 text-${color} mr-2`} />
-          <h3 className={`!text-${color}`}>{title}</h3>
-        </span>
-        <div className="bg-gray-50 border-l-4 border-primary p-6 rounded-r-lg">
-          <p className="text-lg leading-relaxed">{description}</p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Page() {
   const conflictResolutionSteps = [
     "Expression of initial positions",

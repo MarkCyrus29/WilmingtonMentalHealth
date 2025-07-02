@@ -57,7 +57,7 @@ function Page() {
             <p className="text-lg leading-relaxed mb-6">
               Group therapy offers unique therapeutic benefits that individual
               therapy alone cannot provide. By participating in a supportive
-              group environment, you'll experience healing through shared
+              group environment, you&apos;ll experience healing through shared
               experiences and mutual support.
             </p>
 
@@ -151,7 +151,7 @@ function Page() {
             <p className="text-lg leading-relaxed">
               Contact Wilmington Mental Health to learn more about our current
               group therapy offerings and find the right group for your needs.
-              We'll help match you with a group that aligns with your
+              We&apos;ll help match you with a group that aligns with your
               therapeutic goals.
             </p>
           </div>
