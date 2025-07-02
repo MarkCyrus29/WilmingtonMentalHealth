@@ -67,7 +67,7 @@ export default function page() {
               <p>
                 Our treatment programs are person-centered specific. Our team
                 includes likeminded providers whose personal experiences and
-                worldviews align with the company's philosophy. We use
+                worldviews align with the company&apos;s philosophy. We use
                 evidence-based methods and follow individualized treatment plans
                 to offer solutions to our patients, their families, and their
                 significant others so that they can achieve life balance once

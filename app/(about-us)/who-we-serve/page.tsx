@@ -226,7 +226,7 @@ export default function WhoWeServe() {
                     Families & Women
                   </h4>
                   <p className="text-sm text-rose-700">
-                    Comprehensive care for family dynamics and women's mental
+                    Comprehensive care for family dynamics and women&apos;s mental
                     health across life phases.
                   </p>
                 </div>
