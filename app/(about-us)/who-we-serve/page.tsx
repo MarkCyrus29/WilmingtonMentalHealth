@@ -1,4 +1,4 @@
-import { Heart, Users, Shield, Calendar, Phone, FileText } from "lucide-react";
+import { Users, Shield, Calendar, Phone, FileText } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import CallBanner from "@/components/ui/CallBanner";
 

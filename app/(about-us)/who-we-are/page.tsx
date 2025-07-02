@@ -3,7 +3,6 @@ import {
   Heart,
   Users,
   Shield,
-  Home,
   Sparkles,
   Globe,
   UserCheck,
