@@ -8,7 +8,8 @@ export interface TeamMember {
   framework: string;
   department: string;
   credentials: string[];
-  insurance: string;
+  insurance: string[];
+  languages?: string[];
   about: string[];
   experience: string;
   specialties: string;
@@ -32,8 +33,26 @@ export const teamData: TeamMember[] = [
     frameworkTag: "Primary Care",
     framework: "Primary Care",
     credentials: ["FNP"],
-    insurance:
-      "Currently waiting to receive insurance information. Please contact our office for the most up-to-date coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "TriCare",
+      "Multiplan",
+    ],
     about: [
       "Brooke Maple is a Family Nurse Practitioner (FNP) here at Wilmington Mental Health & Medical Care. She has been working for 13 years as an FNP and wants to provide the utmost care for you. Brooke has worked in a variety of specialties including oncology, infectious disease, medical-surgical, urology, primary care, women's health, and now mental health.",
       "She strives to make sure that all of her patients feel heard and comfortable during and after their visit. She makes sure to take the time to get to know all of her patients on a personal level to understand their needs better. Brooke encourages her patients to ask questions and bring up their concerns. She is committed to providing high-quality care for all of her patients.",
@@ -59,8 +78,31 @@ export const teamData: TeamMember[] = [
     frameworkTag: "CBT & Behavioral",
     framework: "CBT, Behavioral Therapy, Motivational Interviewing",
     credentials: ["LCMHC", "MS"],
-    insurance:
-      "Please contact our office for the most up-to-date insurance coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "Optum",
+      "UMR",
+      "Sunrest",
+      "TriCare",
+      "EAP’s",
+      "Humana",
+      "Compsych",
+    ],
     about: [
       "Adam Howell is a licensed clinical mental health counselor here at Wilmington Mental Health & Medical Care. Adam works with ages 6-10, preteens, teens, and adults to provide therapy services that range from Cognitive Behavioral Therapy (CBT) to motivational interviewing.",
       "He works with patients from a range of needs from ADHD, grief, coping skills, life transitions, school issues, stress, and more.",
@@ -89,8 +131,9 @@ export const teamData: TeamMember[] = [
     framework:
       "Solution-Focused Therapy, Existential Therapy, CBT, Positive Psychology",
     credentials: ["CMHC Intern"],
-    insurance:
+    insurance: [
       "Currently completing practicum and internship. Please contact our office for the most up-to-date insurance coverage details.",
+    ],
     about: [
       "I am currently completing my practicum and internship as I pursue my Master's in Clinical Mental Health Counseling through Capella University.",
       "My passion for mental health is driven by a deep curiosity about the human experience and a drive for helping others build fulfilling lives through self-awareness, personal growth, and practical, goal-oriented techniques.",
@@ -102,7 +145,7 @@ export const teamData: TeamMember[] = [
     background:
       "Anna is a graduate student at Capella University in the Clinical Mental Health Counseling program. She is currently completing her practicum and internship at Wilmington Mental Health & Medical Care.",
     interests: "----",
-    joined: "----",
+    joined: "Less than 1 year",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
     mediaImages: [],
@@ -117,8 +160,30 @@ export const teamData: TeamMember[] = [
     frameworkTag: "CBT & Solution-Focused",
     framework: "Person-Centered, CBT, Solution-Focused Therapy",
     credentials: ["LCMHC", "NCC"],
-    insurance:
-      "Please contact our office for the most up-to-date insurance coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "Optum",
+      "UMR",
+      "Sunrest",
+      "TriCare",
+      "EAP’s",
+      "Humana",
+    ],
     about: [
       "Richard (Gage) Howard is a Licensed Clinical Mental Health Counselor (LCMHC) in North Carolina. His counseling practices combine a person-centered approach with Cognitive Behavioral Therapy (CBT) and solution-focused therapy.",
       "Richard tends to have a direct approach to his counseling style rather than 'beating around the bush,' however; he demonstrates this method respectfully and professionally.",
@@ -149,8 +214,9 @@ export const teamData: TeamMember[] = [
     framework:
       "Cognitive Behavioral Therapy, Trauma Therapy, Adlerian Therapy (Childhood/Family Therapy)",
     credentials: ["NCC", "LCMHCA"],
-    insurance:
+    insurance: [
       "Please contact our office for the most up-to-date insurance coverage details.",
+    ],
     about: [
       "Kailyn Mattingly has a passion for helping people and believes that everyone deserves the opportunity to feel confident in themselves and fulfillment in their lives.",
       "She aims to provide a safe, non-judgmental environment to aid patients in finding a renewed sense of self. Her goal is to guide patients through difficult times and support them in rediscovering joy, fulfillment, and positive emotions.",
@@ -186,8 +252,23 @@ export const teamData: TeamMember[] = [
       "Certified Trauma Professional",
       "EMDR Certified",
     ],
-    insurance:
-      "Please contact our office for the most up-to-date insurance coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+    ],
     about: [
       "Stacy is a certified trauma professional, certified in EMDR, and women's health. She helps clients with depression, anxiety, trauma, grief, and loss.",
       "She uses evidence-based modalities including Cognitive Behavioral Therapy, Dialectical Behavioral Therapy, existentialism, mindfulness, and trauma-focused therapies.",
@@ -201,12 +282,11 @@ export const teamData: TeamMember[] = [
     background:
       "Stacy is originally from Pennsylvania but has lived in Charlotte, NC for over 30 years. She received her Master's in Counseling from the University of North Carolina Charlotte in 2023.",
     interests: "----",
-    joined: "----",
-    location: "Charlotte, NC",
+    joined: "Less than 1 year",
+    location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
     mediaImages: [],
   },
-
   {
     id: "havah-henzler",
     pictureSrc: "/images/our-team/Havah.png",
@@ -218,8 +298,32 @@ export const teamData: TeamMember[] = [
     framework:
       "Cognitive Behavioral Therapy (CBT), Parent Child Interaction Therapy (PCIT), Eye Movement Desensitization and Reprocessing (EMDR)",
     credentials: ["LCSW", "LCAS"],
-    insurance:
-      "Please contact our office for the most up-to-date insurance coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "Optum",
+      "UMR",
+      "Sunrest",
+      "TriCare",
+      "EAP’s",
+      "Humana",
+      "Magellan",
+      "Compsych",
+    ],
     about: [
       "Life can be tough sometimes. Let me be the person you can trust, the one who is going to listen to you without judgement.",
       " I am a vibrant Latina originally from Mexico City and I specialize in treating patients who have experienced trauma.",
@@ -256,8 +360,30 @@ export const teamData: TeamMember[] = [
       "Approved Supervisor - AAMFT",
       "Certified in Clinical Hypnosis - ASCH",
     ],
-    insurance:
-      "Please contact our office for the most up-to-date insurance coverage details.",
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "Optum",
+      "UMR",
+      "Sunrest",
+      "TriCare",
+      "EAp’s",
+      "Humana",
+    ],
     about: [
       "Dr. Perry G. Stanley has been practicing counseling psychology for over 30 years in West Virginia, Ohio, and North Carolina.",
       "A specialist in marriage and family counseling, Dr. Stanley has worked successfully with hundreds of couples and family over in the span of his career.",
@@ -271,6 +397,60 @@ export const teamData: TeamMember[] = [
     background:
       "A Clinical Fellow and designated Approved Supervisor with the American Association with Marriage and Family Therapy, Dr. Stanley has served on the faculty of the Western  Pennsylvania Family Center in Pittsburgh. In addition, he has taught marriage and family therapy to graduate students at West Virginia University, and supervised, trained, and consulted with scores of therapists and psychologists. Having attained certification in clinical hypnosis with the American Society of Clinical Hypnosis, Dr. Stanley has specialized in teaching self-hypnosis for the management of chronic pain and other chronic physical and psychological conditions. Having recently relocated to Wilmington, Dr. Stanley lives with his wife of 30 years, a second marriage for each of them. They both have four children and three grandchildren.  ",
     interests: "----",
+    joined: "----",
+    location: "Wilmington, NC",
+    bannerSrc: "/images/our-team/banner.svg",
+    mediaImages: [],
+  },
+  {
+    id: "joseph-rengifo",
+    pictureSrc: "/images/our-team/Joseph.png", // Update with correct image path
+    name: "Joseph Rengifo",
+    role: "Licensed Clinical Mental Health Counselor Associate",
+    idealPopulation: "13 and up",
+    department: "Behavioral Health",
+    frameworkTag: "Person-Centered, CBT & Solution-Focused",
+    framework:
+      "Combination of person-centered approach with Cognitive Behavioral Therapy (CBT) and solution-focused therapy",
+    credentials: ["MA", "LCMHC", "LCSW", "CAMS-II", "CCMC", "CCSI"],
+    insurance: [
+      "BlueCross Blueshield",
+      "Cigna",
+      "Aetena",
+      "HealthyBlue",
+      "WellCare",
+      "AmeriHealth Caritas",
+      "UnitedHealthCare Community Plan",
+      "Carolina Complete Health",
+      "AmBetter",
+      "Medcost",
+      "Caresource",
+      "ChampVA",
+      "Meritain Health",
+      "Carolina Behavioral Health Alliance",
+      "North Carolina State Health Plan",
+      "Medicare",
+      "Optum",
+      "UMR",
+      "Sunrest",
+      "TriCare",
+      "EAP’s",
+      "Humana",
+      "Magellan",
+      "Compsych",
+    ],
+    languages: ["English", "Español (Spanish)"],
+    about: [
+      "Joseph works with clients to explore the causes and mechanisms that make up problems and create a plan to confront and resolve those issues to protect his clients' mental health.",
+      "He uses an integrative approach to therapy that he calls 'behavior medicine.' Clients will learn how to develop and apply a treatment plan to pave the road toward maintenance and independence from therapy.",
+    ],
+    experience:
+      "8+ years of experience in substance abuse and mental health treatment for disadvantaged communities. Offers services from brief screenings, treatment planning, case management, outpatient drug and alcohol treatment, to long-term sex offender treatment.",
+    specialties: "Autism Spectrum Disorder, ADHD, Anxiety, Depression, Anger",
+    background:
+      "Graduated from Regent University in Virginia Beach, VA in 2016. Additional credentials include: Certificate from American Psychological Association (2005), Certificate from North Carolina (2017), and Certificate from NC Substance Abuse Professional Practice Board (2017).",
+    interests:
+      "I love traveling and spend my free/vacation times visiting new towns, cities or countries.",
     joined: "----",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",

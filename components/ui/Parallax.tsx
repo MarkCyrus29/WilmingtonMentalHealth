@@ -2,6 +2,7 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
+import { memo } from "react";
 
 function ImageParallax({
   src,
@@ -26,9 +27,9 @@ function ImageParallax({
         }`}
         priority={index === 0}
       />
-      <div className="absolute inset-0 bg-black/10 backdrop-blur-xs z-20" />
+      <div className="absolute inset-0 bg-black/10 pointer-events-none z-20 " />
     </Parallax>
   );
 }
 
-export default ImageParallax;
+export default memo(ImageParallax);

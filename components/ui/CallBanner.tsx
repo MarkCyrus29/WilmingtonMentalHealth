@@ -24,14 +24,14 @@ export default function CallBanner({
 }: CallBannerProps) {
   return (
     <section
-      className={`w-screen h-52 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)] ${className}`}
+      className={`w-screen h-full py-14 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)] ${className}`}
     >
-      <h2 className="!font-normal">{title}</h2>
-      <h4 className="!font-normal">{subtitle}</h4>
-      <h3 className="font-bold mt-4">
+      <h2 className="!font-normal pb-2">{title}</h2>
+      <h4 className="!font-normal pb-2">{subtitle}</h4>
+      <h3 className="font-bold mt-4 flex md:inline flex-col">
         <a
           href={`tel:9107775575`}
-          className="hover:underline transition-opacity hover:opacity-80 !text-dark/80 border-2 border-dark/60 py-2 px-4 rounded shadow-sm"
+          className="hover:underline transition-opacity hover:opacity-80 !text-background border-2 border-background/45 py-2 px-4 rounded shadow-sm bg-primary"
         >
           910 - 777 - 5575
         </a>{" "}
@@ -39,7 +39,7 @@ export default function CallBanner({
         <Link href={"/"}>
           <Button
             title={"Request an Appointment"}
-            className="!text-dark/80 border-2 border-dark/60 !py-2 !px-4 !rounded !text-[clamp(1.25rem,3vw,2rem)] hover:underline !bg-transparent !shadow-sm"
+            className="!text-background border-2 border-background/45 !py-2 !px-4 !rounded !text-[clamp(1.25rem,3vw,2rem)] hover:underline  !shadow-sm "
           />
         </Link>
       </h3>

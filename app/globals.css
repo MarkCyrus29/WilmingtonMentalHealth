@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* {
-  outline: dotted red 1px;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 @theme {
   --color-background: #f9f9f9;
