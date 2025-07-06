@@ -41,7 +41,7 @@ function Page() {
         <div className="w-[85%]">
           <h2 className="text-center">Comprehensive Substance Use Treatment</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Substance and process addictions are one of our nation's major
+            Substance and process addictions are one of our nation&apos;s major
             problems that affects more than 20 million Americans. At Wilmington
             Mental Health, we are well equipped with our Outpatient Program to
             help individuals from all walks of life find a sober, more

@@ -33,7 +33,7 @@ function page() {
         <div className="w-[85%]">
           <h1 className="text-center">Mental Health</h1>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Wilmington Mental Health's holistic and integrative care model is
+            Wilmington Mental Health&apos;s holistic and integrative care model is
             implemented by healthcare professionals with extensive training in
             psychology and whose primary purpose is to promote and encourage
             stabilization and healing in our patients. We use a person-centered
