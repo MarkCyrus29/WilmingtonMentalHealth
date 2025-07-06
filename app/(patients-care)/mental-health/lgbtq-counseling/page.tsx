@@ -3,7 +3,7 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Heart, Brain } from "lucide-react";
 import CallBanner from "@/components/ui/CallBanner";
-import Link from "next/link";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 function page() {
   return (
@@ -18,7 +18,7 @@ function page() {
             "/images/patients-care/lgbtq-counseling (5).jpg",
           ]}
         />
-        <div className="absolute top-30 w-screen flex flex-col items-center text-center pt-16 z-30">
+        <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">LGBTQIA+</h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             LGBTQIA+ Counseling
@@ -60,7 +60,7 @@ function page() {
             id="benefits"
             className="h-full w-full flex flex-col items-start scroll-mt-[100px]"
           >
-            <h2>Benefits of Therapy:</h2>
+            <h2>Benefits of Counseling:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-10 w-full">
               {[
                 {
@@ -189,8 +189,8 @@ function page() {
                 href: "#",
               },
               {
-                title: "Couples Therapy",
-                href: "/mental-health/couples-therapy",
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
               },
               {
                 title: "Family Therapy",
@@ -217,35 +217,11 @@ function page() {
                 href: "#",
               },
             ].map((service, i) => (
-              <Link
-                key={i}
+              <RelatedServices
                 href={service.href}
-                className="group block bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:border-primary/30"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
-                      {service.title}
-                    </h4>
-                    <div className=" flex items-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-sm font-medium">Learn more</span>
-                      <svg
-                        className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                title={service.title}
+                key={i}
+              />
             ))}
           </div>
         </div>

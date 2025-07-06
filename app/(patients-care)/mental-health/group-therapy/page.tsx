@@ -2,6 +2,7 @@ import CallBanner from "@/components/ui/CallBanner";
 import { Users, Calendar } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 function Page() {
   return (
@@ -14,22 +15,21 @@ function Page() {
             "/images/patients-care/group-therapy (3).jpg",
           ]}
         />
-        <div className="absolute top-30 w-screen flex flex-col items-center text-center pt-16 z-30">
+        <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Group Counseling & Support Groups
+            Group Therapy & Support Groups
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
-            Group Counseling
+            Group Therapy
           </h1>
         </div>
       </div>
-
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%]">
-          <h2 className="text-center">Group Counseling</h2>
+          <h2 className="text-center">Group Therapy</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Group Counseling encourages individuals to come together in a group to
+            Group therapy encourages individuals to come together in a group to
             discuss particular issues together. Providers observe the group
             dynamic closely noting how the group interacts with one another,
             give feedback regarding their reactions (e.g., behaviors and words),
@@ -37,7 +37,6 @@ function Page() {
           </p>
         </div>
       </section>
-
       {/* ─── Benefits Section ─── */}
       <section
         id="benefits"
@@ -48,7 +47,7 @@ function Page() {
             id="benefits"
             className="h-full w-full flex flex-col items-start scroll-mt-[100px]"
           >
-            <h2>Benefits of Group Counseling</h2>
+            <h2>Benefits of Group Therapy</h2>
             <span className="flex flex-row items-center">
               <Users className="h-8 w-8 text-primary mr-2" />
               <h4 className="!text-primary">Therapeutic Advantages</h4>
@@ -114,14 +113,13 @@ function Page() {
           </section>
         </div>
       </section>
-
       {/* ─── Schedule Section with Calendar Integration ─── */}
       <section
         id="schedule"
         className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px] bg-gray-50"
       >
         <div className="w-[85%]">
-          <h2 className="text-center">Group Counseling Schedule</h2>
+          <h2 className="text-center">Group Therapy Schedule</h2>
           <span className="flex flex-row items-center justify-center">
             <Calendar className="h-8 w-8 text-secondary mr-2" />
             <h4 className="!text-secondary">Live Calendar</h4>
@@ -157,7 +155,46 @@ function Page() {
           </div>
         </div>
       </section>
-
+      {/* ─── Other Services Section ─── */}
+      <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
+        <div className="w-[85%]">
+          <h2>Other Services at Wilmington Mental Health</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[
+              {
+                title: "Adult Therapy",
+                href: "/mental-health/adult-therapy",
+              },
+              {
+                title: "Couples Therapy",
+                href: "/mental-health/couples-therapy",
+              },
+              {
+                title: "Substance Use Disorders",
+                href: "/mental-health/substance-use",
+              },
+              {
+                title: "Medication Management",
+                href: "#",
+              },
+              {
+                title: "Wellness Exam",
+                href: "/health-services/wellness-exam",
+              },
+              {
+                title: "Assesments",
+                href: "/tests-evaluations/assessments",
+              },
+            ].map((service, i) => (
+              <RelatedServices
+                href={service.href}
+                title={service.title}
+                key={i}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
       <CallBanner />
     </main>
   );

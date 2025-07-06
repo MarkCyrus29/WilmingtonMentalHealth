@@ -8,22 +8,9 @@ import {
   Users,
   MessageCircle,
 } from "lucide-react";
-import Link from "next/link";
-
-function ServicesCard({ title, color }: { title: string; color: string }) {
-  return (
-    <div
-      className={`w-full h-full bg-[#F6F6F6] border border-dark/50 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 flex items-start gap-4 transform hover:-translate-y-1`}
-    >
-      <div className={`p-2 rounded-full bg-${color}/10 text-${color}`}>
-        <CheckCircle className="h-5 w-5" />
-      </div>
-      <h4 className="text-sm sm:text-base font-medium leading-snug text-foreground">
-        {title}
-      </h4>
-    </div>
-  );
-}
+import { ServicesCard } from "@/components/ui/ServicesCard";
+import HeroSlideshow from "@/components/ui/HeroSlideshow";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 function Page() {
   const conflictResolutionSteps = [
@@ -62,13 +49,26 @@ function Page() {
 
   return (
     <main className="scroll-smooth">
-      <PageBanner
-        title="Couples Counseling & Relationship Counseling"
-        imageSrc="/images/patients-care/couples-therapy.webp"
-        alt="Couples Counseling Image"
-        subtitle="Couples Counseling"
-      />
-
+      <div className="h-full w-full relative">
+        <HeroSlideshow
+          images={[
+            "/images/patients-care/couples-therapy.webp",
+            "/images/patients-care/couples-counseling (1).jpg",
+            "/images/patients-care/couples-counseling (2).jpg",
+            "/images/patients-care/couples-counseling (3).jpg",
+            "/images/patients-care/couples-counseling (4).jpg",
+            "/images/patients-care/couples-counseling (5).jpg",
+          ]}
+        />
+        <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
+          <h4 className="!text-background text-lg drop-shadow-2xl">
+            Working Together Towards a Stronger Bond
+          </h4>
+          <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
+            Couples Counseling
+          </h1>
+        </div>
+      </div>
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%]">
@@ -220,7 +220,7 @@ function Page() {
         className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px]"
       >
         <PageBanner
-          title="THERAPHY"
+          title="THERAPY"
           imageSrc="/images/patients-care/premarital-counseling.webp"
           alt="Premarital Counseling Image"
           subtitle="Conflict Resolution"
@@ -242,9 +242,9 @@ function Page() {
           </p>
 
           <h3 className="mt-10 mb-5 text-left">Topics Discussed</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 s gap-4 mt-6">
             {premaritalTopics.map((topic, i) => (
-              <ServicesCard title={topic} key={i} color="accent" />
+              <ServicesCard title={topic} key={i} />
             ))}
           </div>
 
@@ -401,35 +401,11 @@ function Page() {
                 href: "/services/salud-latina",
               },
             ].map((service, i) => (
-              <Link
-                key={i}
+              <RelatedServices
                 href={service.href}
-                className="group block bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:border-primary/30"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
-                      {service.title}
-                    </h4>
-                    <div className="flex items-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-sm font-medium">Learn more</span>
-                      <svg
-                        className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                title={service.title}
+                key={i}
+              />
             ))}
           </div>
         </div>

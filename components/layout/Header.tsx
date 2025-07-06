@@ -23,14 +23,26 @@ function Header() {
         {NAVLINKS.map((item, index) => (
           <div key={index} className="relative group">
             {/* Main Link */}
-            <Link
-              href={item.link || "#"}
-              className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
-              tabIndex={0}
-            >
-              {item.title}
-              {item.children && <ChevronDown className="w-4 h-4" />}
-            </Link>
+            {item.site ? (
+              <a
+                href={item.site}
+                target="_blank"
+                className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                tabIndex={0}
+              >
+                {item.title}
+                {item.children && <ChevronDown className="w-4 h-4" />}
+              </a>
+            ) : (
+              <Link
+                href={item.link || "#"}
+                className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                tabIndex={0}
+              >
+                {item.title}
+                {item.children && <ChevronDown className="w-4 h-4" />}
+              </Link>
+            )}
 
             {/* Dropdown (1st level) */}
             {item.children && (
@@ -47,16 +59,30 @@ function Header() {
                   {item.children.map((child, childIndex) => (
                     <li key={childIndex} className="relative">
                       {/* The parent link is the peer */}
-                      <Link
-                        href={child.link || "#"}
-                        className="relative flex items-center px-4 py-2 text-sm hover:bg-gray/50 rounded whitespace-nowrap peer"
-                        tabIndex={0}
-                      >
-                        {child.title}
-                        {child.children && (
-                          <ChevronDown className="w-4 h-4 ml-1" />
-                        )}
-                      </Link>
+                      {child.site ? (
+                        <a
+                          href={child.site}
+                          target="_blank"
+                          className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                          tabIndex={0}
+                        >
+                          {child.title}
+                          {child.children && (
+                            <ChevronDown className="w-4 h-4" />
+                          )}
+                        </a>
+                      ) : (
+                        <Link
+                          href={child.link || "#"}
+                          className="flex items-center transition-opacity duration-100 hover:bg-gray/50 py-2 px-4 rounded h-full whitespace-nowrap peer justify-between"
+                          tabIndex={0}
+                        >
+                          {child.title}
+                          {child.children && (
+                            <ChevronDown className="w-4 h-4" />
+                          )}
+                        </Link>
+                      )}
                       {/* The sub-submenu shows when hovering/focusing the peer <a> OR when hovering the submenu itself */}
                       {child.children && (
                         <ul

@@ -4,15 +4,14 @@
       "title": "Your Visit",
       "children": [
         { "title": "Online Check-In", "link": "/patients-visitors/online-check-in" },
-        { "title": "Patient Registration", "link": "/patients-visitors/patient-registration" },
-        { "title": "Patient Portal", "link": "/patients-visitors/patient-portal" },
+        { "title": "Patient Registration", "site": "https://wmh.insynchcs.com/PatientRegistration/APIPatientRegistration?practiceID=v90n4IZfFGm2f9XLoBqmMg==" },
+        { "title": "Patient Portal", "site": "https://wmhintouch.insynchcs.com/" },
         { "title": "Intake Process", "link": "/patients-visitors/intake-process" },
-        { "title": "Appointment Request", "link": "/patients-visitors/appointment-request" },
-        { "title": "Consent Forms", "link": "/patients-visitors/consent-forms" },
+        { "title": "Appointment Request", "site": "https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg==" },
+        { "title": "Consent Forms", "site": "https://hipaa.jotform.com/wmhnc/roitwoway" },
         { "title": "Rates & Fees", "link": "/patients-visitors/rates-fees" },
         { "title": "Insurance Info", "link": "/patients-visitors/insurance-info" },
         { "title": "Price Transparency", "link": "/patients-visitors/price-transparency" },
-        { "title": "Appointment Requests", "link": "/patients-visitors/appointment-requests" },
         { "title": "Policies", "link": "/patients-visitors/policies" },
         { "title": "Resources", "link": "/patients-visitors/resources" },
         { "title": "Pay My Bill", "link": "/patients-visitors/pay-my-bill" },
@@ -30,10 +29,10 @@
           "title": "Mental Health",
           "link": "/mental-health",
           "children": [
-            { "title": "Adult Counseling", "link": "/mental-health/adult-counseling" },
-            { "title": "Child & Adolescent Counseling", "link": "/mental-health/child-counseling" },
+            { "title": "Adult Therapy", "link": "/mental-health/adult-therapy" },
+            { "title": "Child & Adolescent Therapy", "link": "/mental-health/child-therapy" },
             { "title": "Couples Counseling", "link": "/mental-health/couples-counseling" },
-            { "title": "Group Counseling", "link": "/mental-health/group-counseling" },
+            { "title": "Group Therapy", "link": "/mental-health/group-therapy" },
             { "title": "LGBTQ Counseling", "link": "/mental-health/lgbtq-counseling" },
             { "title": "Military Counseling", "link": "/mental-health/military-counseling" }
           ]
@@ -109,10 +108,10 @@
       "link": "/get-in-touch",
       "children": [
         { "title": "Contact Information", "link": "/get-in-touch/contact-information" },
-        { "title": "Refer A Patient", "link": "/get-in-touch/refer-a-patient" },
+        { "title": "Refer A Patient", "site": "https://hipaa.jotform.com/wmhnc/orf" },
         { "title": "Medical Records", "link": "/get-in-touch/medical-records" },
         { "title": "Job Opportunities", "link": "/get-in-touch/job-opportunities" },
-        { "title": "Patient Satisfaction", "link": "/get-in-touch/patient-satisfaction" },
+        { "title": "Patient Satisfaction", "site": "https://form.jotform.com/231805340764050" },
         { "title": "Partnership", "link": "/get-in-touch/partnership" }
       ]
     }

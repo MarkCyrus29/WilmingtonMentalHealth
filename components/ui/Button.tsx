@@ -1,19 +1,24 @@
 import React from "react";
 
+interface ButtonProps {
+  title: string;
+  className?: string;
+  type?: "button" | "submit" | "reset";
+  onClick?: React.MouseEventHandler<HTMLButtonElement>; // <- new
+}
+
 function Button({
   title,
-  className,
-  type,
-}: {
-  title: string;
-  className: string;
-  type?: "button" | "submit" | "reset";
-}) {
+  className = "",
+  type = "button",
+  onClick,
+}: ButtonProps) {
   return (
     <button
       type={type}
+      onClick={onClick}                                   // <- wire it up
       className={
-        `hover:cursor-pointer bg-primary py-3 px-6 rounded-xl text-xl text-white shadow-lg transition-opacity hover:opacity-80  ` +
+        `hover:cursor-pointer bg-primary py-3 px-6 rounded-xl text-xl text-white shadow-lg transition-opacity hover:opacity-80 ` +
         className
       }
     >

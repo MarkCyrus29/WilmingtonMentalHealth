@@ -38,7 +38,7 @@ function HorizontalCard({
 
   return (
     <div
-      className={`w-full h-full border-l-4 p-4 flex items-start gap-4 rounded-xl bg-gray/10 ${border}`}
+      className={`w-full h-full border-l-4 p-4 flex items-start gap-4 rounded-xl shadow-sm bg-gray/10 ${border}`}
     >
       <IconComponent className={`h-6 w-6 mt-1 flex-shrink-0 ${textColor}`} />
       <div className="w-full">

@@ -1,23 +1,9 @@
 import React from "react";
 import CallBanner from "@/components/ui/CallBanner";
-import PageBanner from "@/components/ui/PageBanner";
 import { CheckCircle, Heart, AlertTriangle } from "lucide-react";
-import Link from "next/link";
-
-function ServicesCard({ title, color }: { title: string; color: string }) {
-  return (
-    <div
-      className={`w-full h-full bg-[#F6F6F6] border border-dark/50 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-200 flex items-start gap-4 transform hover:-translate-y-1`}
-    >
-      <div className={`p-2 rounded-full bg-${color}/10 text-${color}`}>
-        <CheckCircle className="h-5 w-5" />
-      </div>
-      <h4 className="text-sm sm:text-base font-medium leading-snug text-foreground">
-        {title}
-      </h4>
-    </div>
-  );
-}
+import HeroSlideshow from "@/components/ui/HeroSlideshow";
+import { ServicesCard } from "@/components/ui/ServicesCard";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 export function TherapySection({
   id,
@@ -56,9 +42,9 @@ export function TherapySection({
         {disorders.length > 0 && (
           <>
             <h3 className="mt-10 mb-5 text-left">Related Disorders</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mt-6">
               {disorders.map((disorder, i) => (
-                <ServicesCard title={disorder} key={i} color={color} />
+                <ServicesCard title={disorder} key={i} />
               ))}
             </div>
           </>
@@ -276,13 +262,26 @@ function Page() {
 
   return (
     <main className="scroll-smooth ">
-      <PageBanner
-        title="Individual Psychotherapy & Counseling"
-        imageSrc="/images/patients-care/adult-therapy.webp"
-        alt="Adult Therapy Image"
-        subtitle="Adult Therapy"
-      />
-
+      <div className="h-full w-full relative">
+        <HeroSlideshow
+          images={[
+            "/images/patients-care/adult-therapy.webp",
+            "/images/patients-care/adult-therapy (1).jpg",
+            "/images/patients-care/adult-therapy (2).jpg",
+            "/images/patients-care/adult-therapy (3).jpg",
+            "/images/patients-care/adult-therapy (4).jpg",
+            "/images/patients-care/adult-therapy (5).jpg",
+          ]}
+        />
+        <div className="absolute  top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
+          <h4 className="!text-background text-lg drop-shadow-2xl">
+            Individual Psychotherapy & Counseling
+          </h4>
+          <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
+            Adult Therapy
+          </h1>
+        </div>
+      </div>
       {/* ─── Introduction Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center my-26">
         <div className="w-[85%] ">
@@ -559,80 +558,31 @@ function Page() {
                 href: "/mental-health/family-therapy",
               },
               {
-                title: "LGBTQIA+ Therapy",
-                href: "/mental-health/lgbtqia-therapy",
+                title: "LGBTQIA+ Counseling",
+                href: "/mental-health/lgbtq-counseling",
               },
               {
                 title: "Group Therapy",
                 href: "/mental-health/group-therapy",
               },
               {
-                title: "Couples Therapy",
-                href: "/mental-health/couples-therapy",
-              },
-              {
-                title: "Military Therapy",
-                href: "/mental-health/military-therapy",
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
               },
               {
                 title: "Substance Use Disorders",
-                href: "/services/substance-use-disorders",
-              },
-
-              {
-                title: "Sex Offender Treatment",
-                href: "/services/sex-offender-treatment",
-              },
-              {
-                title: "Immigration Evaluations",
-                href: "/services/immigration-evaluations",
-              },
-              {
-                title: "Anger Management",
-                href: "/services/anger-management",
-              },
-              {
-                title: "Workers Compensation & Medical Leave",
-                href: "/services/workers-compensation",
-              },
-              {
-                title: "Emotional Support Animals (ESA)",
-                href: "/services/emotional-support-animals",
+                href: "/substance-use",
               },
               {
                 title: "Comprehensive Assessments",
-                href: "/services/comprehensive-assessments",
+                href: "#",
               },
             ].map((service, i) => (
-              <Link
-                key={i}
+              <RelatedServices
                 href={service.href}
-                className="group block bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:border-primary/30"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300 mb-2">
-                      {service.title}
-                    </h4>
-                    <div className=" flex items-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-sm font-medium">Learn more</span>
-                      <svg
-                        className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                title={service.title}
+                key={i}
+              />
             ))}
           </div>
         </div>

@@ -1,10 +1,9 @@
-// OurTeamPage.tsx
 import { teamData, TeamMember } from "@/app/data/teamData";
 import Link from "next/link";
 import Image from "next/image";
 import PageBanner from "@/components/ui/PageBanner";
 import CallBanner from "@/components/ui/CallBanner";
-import { Globe } from "lucide-react"; // NEW: icon for languages
+import { Globe } from "lucide-react";
 
 // Group team members by department
 const groupedByDepartment = teamData.reduce<Record<string, TeamMember[]>>(
