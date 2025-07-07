@@ -1,7 +1,6 @@
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import CallBanner from "@/components/ui/CallBanner";
-import Link from "next/link";
 import { Users, User, Calendar, Clock } from "lucide-react";
 
 function page() {
