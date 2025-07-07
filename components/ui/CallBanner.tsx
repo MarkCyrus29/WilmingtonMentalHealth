@@ -36,12 +36,17 @@ export default function CallBanner({
           910 - 777 - 5575
         </a>{" "}
         or{" "}
-        <Link href={"/"}>
+        <a
+          target="_blank"
+          href={
+            "https://wmh.insynchcs.com/APIAppointmentRequest/Index?practiceID=v90n4IZfFGm2f9XLoBqmMg=="
+          }
+        >
           <Button
             title={"Request an Appointment"}
             className="!text-background border-2 border-background/45 !py-2 !px-4 !rounded !text-[clamp(1.25rem,3vw,2rem)] hover:underline  !shadow-sm "
           />
-        </Link>
+        </a>
       </h3>
     </section>
   );
