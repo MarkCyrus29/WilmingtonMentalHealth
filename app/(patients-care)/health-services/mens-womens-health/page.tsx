@@ -23,17 +23,17 @@ function page() {
             Health Service
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
-            Men's & Women's Health
+            Men&apos;s & Women&apos;s Health
           </h1>
         </div>
       </div>
 
-      {/* ─── Women's Health Section ─── */}
+      {/* ─── Women&apos;s Health Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center py-26">
         <div className="w-[85%]">
           <div className="flex items-center justify-center gap-3 mb-6">
             <Heart className="w-8 h-8 text-pink-500" />
-            <h2 className="text-center ">Women's Health Screenings</h2>
+            <h2 className="text-center ">Women&apos;s Health Screenings</h2>
           </div>
           <p className="mt-6 text-lg leading-relaxed text-center">
             Many women struggle with addressing their mental and emotional needs
@@ -89,7 +89,7 @@ function page() {
             </div>
           </div>
 
-          {/* Women's Personalized Care Grid */}
+          {/* Women&apos;s Personalized Care Grid */}
           <div className="mt-26">
             <h3 className="text-xl font-semibold mb-6 text-center ">
               Personalized Care Services
@@ -189,12 +189,12 @@ function page() {
         </div>
       </section>
 
-      {/* ─── Men's Health Section ─── */}
+      {/* ─── Men&apos;s Health Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center py-26 bg-gray-50">
         <div className="w-[85%]">
           <div className="flex items-center justify-center gap-3 mb-6">
             <Shield className="w-8 h-8 text-blue-500" />
-            <h2 className="text-center">Men's Health Screenings</h2>
+            <h2 className="text-center">Men&apos;s Health Screenings</h2>
           </div>
           <p className="mt-6 text-lg leading-relaxed text-center">
             Due to the nature of their work, men often find themselves exposed
@@ -230,7 +230,7 @@ function page() {
             </div>
           </div>
 
-          {/* Men's Personalized Care Grid */}
+          {/* Men&apos;s Personalized Care Grid */}
           <div className="mt-26">
             <h3 className=" mb-6 text-center ">Personalized Care Services</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

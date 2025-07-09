@@ -67,7 +67,7 @@ function page() {
           <p className="mt-4 text-lg leading-relaxed text-center">
             We have a dedicated team that collaborates with other healthcare
             professionals to address your healthcare needs. We assess the
-            efficacy of medication and each patient's specificity regarding
+            efficacy of medication and each patient&apos;s specificity regarding
             their response to medication by using a person-centered approach.
             This promotes communication and offers continuity in the
             patient-clinician partnership.

@@ -65,9 +65,9 @@ function page() {
           <h2 className="text-center">Our Holistic Model of Care</h2>
           <p className="mt-6 text-lg leading-relaxed text-center">
             Our model of care is holistic and integrative in nature, based on
-            the World Health Organization's definition that health is "a state
-            of complete physical, mental, and social wellbeing" and wellness
-            "the optimal state of health of individuals."
+            the World Health Organization&apos;s definition that health is &quot;a state
+            of complete physical, mental, and social wellbeing&quot; and wellness
+            &quot;the optimal state of health of individuals.&quot;
           </p>
           <div className="mt-8 bg-blue-50 rounded-xl p-8 mx-auto">
             <div className="text-center">
@@ -75,11 +75,11 @@ function page() {
                 WHO Definition of Health
               </h3>
               <blockquote className="text-blue-700 text-lg italic mb-4">
-                "A state of complete physical, mental, and social wellbeing"
+                &quot;A state of complete physical, mental, and social wellbeing&quot;
               </blockquote>
               <p className="text-blue-600">
-                <strong>Wellness:</strong> "The optimal state of health of
-                individuals"
+                <strong>Wellness:</strong> &quot;The optimal state of health of
+                individuals&quot;
               </p>
             </div>
           </div>

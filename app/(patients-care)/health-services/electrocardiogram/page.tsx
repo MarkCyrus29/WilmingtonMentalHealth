@@ -1,13 +1,11 @@
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import CallBanner from "@/components/ui/CallBanner";
-import Link from "next/link";
 import {
   Heart,
   Activity,
   Clock,
   Shield,
-  Phone,
   AlertTriangle,
 } from "lucide-react";
 import RelatedServices from "@/components/ui/RelatedServices";
@@ -79,7 +77,7 @@ function page() {
             conditions that put people at risk. Physical exams that incorporate
             screenings with an electrocardiogram are six times more likely to
             detect a risky heart condition than screenings that involve only a
-            patient's history and physical.
+            patient&apos;s history and physical.
           </p>
 
           <div className="mt-8 bg-blue-50 rounded-xl p-8 max-w-4xl mx-auto">
@@ -127,7 +125,7 @@ function page() {
                   icon: 3,
                 },
                 {
-                  title: "Getting a baseline tracing of the heart's function",
+                  title: "Getting a baseline tracing of the heart&apos;s function",
                   border: "border-orange-500",
                   textColor: "text-orange-500",
                   icon: 4,
@@ -145,7 +143,7 @@ function page() {
                   icon: 6,
                 },
                 {
-                  title: "Checking if the heart's walls are too thick",
+                  title: "Checking if the heart&apos;s walls are too thick",
                   border: "border-indigo-500",
                   textColor: "text-indigo-500",
                   icon: 7,
@@ -297,7 +295,7 @@ function page() {
                   <li className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-sm">
-                      Electrodes detect heart's electrical signals
+                      Electrodes detect heart&apos;s electrical signals
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
