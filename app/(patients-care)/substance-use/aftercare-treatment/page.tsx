@@ -2,6 +2,7 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import CallBanner from "@/components/ui/CallBanner";
 import { Users, User, Calendar, Clock } from "lucide-react";
+import Image from "next/image";
 
 function page() {
   return (
@@ -11,7 +12,6 @@ function page() {
           images={[
             "/images/substance-use/aftercare-treatment (1).jpg",
             "/images/substance-use/aftercare-treatment (2).jpg",
-            "/images/substance-use/aftercare-treatment (3).jpg",
           ]}
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
@@ -40,36 +40,54 @@ function page() {
       </section>
 
       {/* ─── Level 1 Treatment Section ─── */}
-      <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
-        <div className="w-[85%]">
-          <h2 className="text-center">Level 1 - Outpatient Treatment</h2>
-          <p className="mt-6 text-lg leading-relaxed text-center">
-            This level of care typically follows rehabilitation or Substance
-            Abuse Intensive Outpatient (SAIOP) and is frequently offered several
-            times a week, but less than nine hours per week. Level 1 treatment
-            is organized to enhance your recovery and motivation to continue
-            your recovery.
-          </p>
+      <section className="max-w-7xl mx-auto py-24 px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="w-full lg:w-1/2">
+            <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src="/images/substance-use/aftercare-treatment (3).jpg"
 
-          <div className="mt-8 max-w-4xl mx-auto">
-            <ul className="space-y-4 text-lg">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span>
-                  You may be asked to continue working on, or developing, a
-                  relapse prevention plan that allows your relapse potential and
-                  apply the techniques you have learned
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <span>
-                  Your therapist may also evaluate your personal expectations so
-                  that they are in line with your treatment plan and motivation
-                  to stay on track with your recovery
-                </span>
-              </li>
-            </ul>
+                alt="Wilmington Substance Use Disorder: Aftercare Treatment"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Level 1 - Outpatient Treatment
+            </h2>
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <p className="mt-6 text-lg leading-relaxed ">
+                This level of care typically follows rehabilitation or Substance
+                Abuse Intensive Outpatient (SAIOP) and is frequently offered
+                several times a week, but less than nine hours per week. Level 1
+                treatment is organized to enhance your recovery and motivation
+                to continue your recovery.
+              </p>
+
+              <div className="mt-8 max-w-4xl mx-auto">
+                <ul className="space-y-4 text-lg">
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                    <span>
+                      You may be asked to continue working on, or developing, a
+                      relapse prevention plan that allows your relapse potential
+                      and apply the techniques you have learned
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                    <span>
+                      Your therapist may also evaluate your personal
+                      expectations so that they are in line with your treatment
+                      plan and motivation to stay on track with your recovery
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>

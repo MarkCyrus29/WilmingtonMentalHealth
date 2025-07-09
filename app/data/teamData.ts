@@ -115,7 +115,7 @@ export const teamData: TeamMember[] = [
       "Adam holds a Master of Science in Counseling and Human Development. He has extensive experience helping individuals navigate life’s challenges with evidence-based approaches.",
     interests:
       "When he is not at work, he enjoys listening to music, researching interesting topics, traveling, and learning new things.",
-    joined: "----",
+    joined: "2.5 years",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
     mediaImages: ["/images/our-team/adam-1.JPG", "/images/our-team/adam-2.JPG"],
@@ -197,8 +197,9 @@ export const teamData: TeamMember[] = [
       "ADHD, Trauma, Depression, Anxiety, Grief, Anger, Daily Life Struggles",
     background:
       "He earned his Bachelor's Degree in Psychology with a minor in Accounting from Campbell University, and his Master’s Degree in Clinical Mental Health Counseling from the University of North Carolina Pembroke.",
-    interests: "----",
-    joined: "----",
+    interests:
+      "Richard enjoys playing and watching sports, video games, watching movies, running, fishing and being outdoors.",
+    joined: "2 years",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",
     mediaImages: [],
@@ -281,7 +282,8 @@ export const teamData: TeamMember[] = [
     specialties: "Anxiety, Depression, Trauma, Grief, Women's Health",
     background:
       "Stacy is originally from Pennsylvania but has lived in Charlotte, NC for over 30 years. She received her Master's in Counseling from the University of North Carolina Charlotte in 2023.",
-    interests: "----",
+    interests:
+      "Stacy loves animals and all things with fur. In her free time, she likes to read and learn and spend time at the beach.",
     joined: "Less than 1 year",
     location: "Wilmington, NC",
     bannerSrc: "/images/our-team/banner.svg",

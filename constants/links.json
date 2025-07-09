@@ -50,8 +50,8 @@
           "title": "Health Services",
           "link": "/health-services",
           "children": [
-            { "title": "Wellness Exam", "link": "/health-services/wellness-exam" },
-            { "title": "Men’s & Women’s Health", "link": "/health-services/mens-womens-health" },
+            { "title": "Wellness Exams", "link": "/health-services/wellness-exams" },
+            { "title": "Men's & Women's Health", "link": "/health-services/mens-womens-health" },
             { "title": "Chronic Disease Management", "link": "/health-services/chronic-disease-management" },
             { "title": "STDs Treatment", "link": "/health-services/stds-treatment" },
             { "title": "Sprains & Minor Burns", "link": "/health-services/sprains-minor-burns" },

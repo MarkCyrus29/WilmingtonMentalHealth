@@ -2,6 +2,7 @@ import CallBanner from "@/components/ui/CallBanner";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { Users, BookOpen } from "lucide-react";
 import Image from "next/image";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 function Page() {
   return (
@@ -41,18 +42,18 @@ function Page() {
       {/* ─── Our Approach Section ─── */}
       <section className="max-w-7xl mx-auto py-24 px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/substance-use/psychoeducation (1).jpg"
-                alt="Wilmington Mental Health Psychoeducation"
+                alt="Wilmington Substance Use Disorders: Psychoeducation"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
           </div>
-          <div className="lg:w-1/2 space-y-6">
+          <div className="w-full lg:w-1/2space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Our Educational Approach
             </h2>
@@ -139,6 +140,46 @@ function Page() {
         </div>
       </section>
 
+      <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
+        <div className="w-[85%]">
+          <h2>Other Services at Wilmington Mental Health</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[
+              {
+                title: "Adult Therapy",
+                href: "/mental-health/adult-therapy",
+              },
+              {
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
+              },
+              {
+                title: "Group Therapy",
+                href: "/mental-health/group-therapy",
+              },
+              {
+                title: "Substance Use Disorders",
+                href: "/substance-use",
+              },
+              {
+                title: "Health Services",
+                href: "/health-services",
+              },
+              {
+                title: "Salud Latina",
+                href: "#",
+              },
+            ].map((service, i) => (
+              <RelatedServices
+                key={i}
+                href={service.href}
+                title={service.title}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      
       <CallBanner />
     </main>
   );

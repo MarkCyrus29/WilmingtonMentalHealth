@@ -4,7 +4,7 @@ interface ButtonProps {
   title: string;
   className?: string;
   type?: "button" | "submit" | "reset";
-  onClick?: React.MouseEventHandler<HTMLButtonElement>; // <- new
+  onClick?: React.MouseEventHandler<HTMLButtonElement>; 
 }
 
 function Button({
@@ -16,7 +16,7 @@ function Button({
   return (
     <button
       type={type}
-      onClick={onClick}                                   // <- wire it up
+      onClick={onClick}                                  
       className={
         `hover:cursor-pointer bg-primary py-3 px-6 rounded-xl text-xl text-white shadow-lg transition-opacity hover:opacity-80 ` +
         className

@@ -12,6 +12,7 @@ import {
   Heart,
   CheckCircle,
 } from "lucide-react";
+import RelatedServices from "@/components/ui/RelatedServices";
 
 function page() {
   return (
@@ -57,7 +58,7 @@ function page() {
 
       <section className="max-w-7xl mx-auto pb-26 px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/substance-use/relapse-prevention (1).jpg"
@@ -68,7 +69,7 @@ function page() {
               />
             </div>
           </div>
-          <div className="lg:w-1/2 space-y-6">
+          <div className="w-full lg:w-1/2 space-y-6">
             <h2 className=" ">Our Treatment Approach</h2>
             <p className="mt-6 text-lg leading-relaxed ">
               During relapse prevention treatment, you will learn skills to cope
@@ -299,6 +300,46 @@ function page() {
                 samples are collected based on your individual treatment plan.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
+        <div className="w-[85%]">
+          <h2>Other Services at Wilmington Mental Health</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {[
+              {
+                title: "Adult Therapy",
+                href: "/mental-health/adult-therapy",
+              },
+              {
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
+              },
+              {
+                title: "Group Therapy",
+                href: "/mental-health/group-therapy",
+              },
+              {
+                title: "Health Services",
+                href: "/health-services",
+              },
+              {
+                title: "Test & Evaluations",
+                href: "#",
+              },
+              {
+                title: "Salud Latina",
+                href: "#",
+              },
+            ].map((service, i) => (
+              <RelatedServices
+                key={i}
+                href={service.href}
+                title={service.title}
+              />
+            ))}
           </div>
         </div>
       </section>

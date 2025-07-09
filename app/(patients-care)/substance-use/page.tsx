@@ -1,7 +1,7 @@
 import CallBanner from "@/components/ui/CallBanner";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
-
+import Image from "next/image";
 import {
   Shield,
   AlertTriangle,
@@ -24,7 +24,6 @@ function Page() {
             "/images/substance-use/substance-use (1).jpg",
             "/images/substance-use/substance-use (2).jpg",
             "/images/substance-use/substance-use (3).jpg",
-            "/images/substance-use/substance-use (4).jpg",
           ]}
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
@@ -276,34 +275,50 @@ function Page() {
         </div>
       </section>
       {/* ─── Urine Testing Section ─── */}
-      <section
-        id="urine-testing"
-        className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px]"
-      >
-        <div className="w-[85%]">
-          <h2>Urine Testing</h2>
-          <p className="mt-6 text-lg leading-relaxed !mb-8">
-            Urine specimen collections may be collected during your treatment
-            and sent to the lab for testing. We use the results to:
-          </p>
-          <div className="grid grid-cols-1 gap-3">
-            {[
-              "Better determine your treatment plan.",
-              "Monitor your progress and adherence to treatment.",
-              "Identify needs for further assessment and substance abuse treatment.",
-              "Better coordinate your care.",
-            ].map((purpose, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-4  bg-gray-50 rounded-xl"
-              >
-                <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <p className="text-lg">{purpose}</p>
+      <section id="urine-testing" className="max-w-7xl mx-auto py-24 px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="w-full lg:w-1/2">
+            <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src="/images/substance-use/substance-use (4).jpg"
+                alt="Wilmington Substance Use Disorders: Urine Testing"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Urine Testing
+            </h2>
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+              <p className="mt-6 text-lg leading-relaxed !mb-8">
+                Urine specimen collections may be collected during your
+                treatment and sent to the lab for testing. We use the results
+                to:
+              </p>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  "Better determine your treatment plan.",
+                  "Monitor your progress and adherence to treatment.",
+                  "Identify needs for further assessment and substance abuse treatment.",
+                  "Better coordinate your care.",
+                ].map((purpose, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4  bg-gray-50 rounded-xl"
+                  >
+                    <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-lg">{purpose}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
+
       {/* ─── Concerned About Someone Section ─── */}
       <section className="h-full w-screen flex flex-col items-center justify-center py-26 bg-orange-50 border-l-4 border-orange-500">
         <div className="w-[85%]">
@@ -361,8 +376,8 @@ function Page() {
                 href: "/mental-health/group-therapy",
               },
               {
-                title: "Couples Therapy",
-                href: "/mental-health/couples-therapy",
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
               },
               {
                 title: "Military Counseling",
