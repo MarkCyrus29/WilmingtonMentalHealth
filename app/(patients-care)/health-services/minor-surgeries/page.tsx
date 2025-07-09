@@ -39,7 +39,7 @@ function page() {
               />
             </div>
           </div>
-          <div className="w-full lg:w-1/2 space-y-6">
+          <div className="w-full lg:w-1/2 text-center md:text-left space-y-6">
             <h2>Minor Surgeries</h2>
             <p className="mt-6 leading-relaxed ">
               Minor surgical procedures can be performed safely and quickly with
