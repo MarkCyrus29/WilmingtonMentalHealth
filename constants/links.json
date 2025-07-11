@@ -44,7 +44,7 @@
             { "title": "Psychoeducation", "link": "/substance-use/psychoeducation" },
             { "title": "Aftercare Treatment", "link": "/substance-use/aftercare-treatment" },
             { "title": "Relapse Prevention", "link": "/substance-use/relapse-prevention" }
-          ]
+          ] 
         },
         {
           "title": "Health Services",
@@ -57,6 +57,17 @@
             { "title": "Sprains & Minor Burns", "link": "/health-services/sprains-minor-burns" },
             { "title": "Minor Surgeries", "link": "/health-services/minor-surgeries" },
             { "title": "Electrocardiogram", "link": "/health-services/electrocardiogram" }
+          ]
+        },
+        {
+          "title": "Medication Management",
+          "link": "/medication-management",
+          "children": [
+            { "title": "Intake Evaluation", "link": "/medication-management/intake-evaluation" },
+            { "title": "MAT Program", "link": "/medication-management/mat-program" },
+            { "title": "Spravato", "link": "/medication-management/spravato" },
+            { "title": "Vivitrol", "link": "/medication-management/vivitrol" },
+            { "title": "Suboxone", "link": "/medication-management/suboxone" }
           ]
         },
         {
