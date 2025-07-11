@@ -21,9 +21,11 @@ export default function page() {
 
         <div className="space-y-4">
           <p>
+            {`
             This Notice applies to all the people who provide healthcare
             services at Wilmington Mental Health in North Carolina. These
             providers will be referred as "we" in this Notice.
+          `}
           </p>
 
           <div>
@@ -31,13 +33,13 @@ export default function page() {
               RESPONSIBILITIES OF WILMINGTON MENTAL HEALTH
             </h2>
             <p className="mb-3">
-              Wilmington Mental Health ("We" or "Us" or "Our") is required by
+             {` Wilmington Mental Health ("We" or "Us" or "Our") is required by
               state and federal law to protect the privacy of your health
               information that may identify you. This health information
               includes mental health, developmental disability and/or substance
               abuse services that are provided to you, payment for those health
               care services, or other health care operations provided on your
-              behalf.
+              behalf.`}
             </p>
             <p className="mb-3">
               This agency is required by law to inform you of our legal duties
@@ -54,10 +56,10 @@ export default function page() {
               you upon request.
             </p>
             <p>
-              If at any time, you have questions or concerns about the
+             {` If at any time, you have questions or concerns about the
               information in this Notice or about our agency's privacy policies,
               procedures and practices, you may contact our agency Privacy
-              Official at (910) 777-5575.
+              Official at (910) 777-5575.`}
             </p>
           </div>
 
@@ -112,7 +114,7 @@ export default function page() {
             <div className="mb-4">
               <h3 className="font-semibold mb-2">For Payment:</h3>
               <p>
-                The treatment provided to you will be shared with our agency's
+               {` The treatment provided to you will be shared with our agency's
                 billing department so a bill can be prepared for services
                 rendered. We may also share your health information with agency
                 staff who review services provided to you to make certain you
@@ -122,7 +124,7 @@ export default function page() {
                 your consent except in certain situations when we need to
                 determine if you are eligible for benefits, such as contacting
                 your local Department of Social Services to determine if you are
-                currently eligible for treatment.
+                currently eligible for treatment.`}
               </p>
             </div>
 
@@ -131,11 +133,11 @@ export default function page() {
                 For Health Care Operations:
               </h3>
               <p className="mb-2">
-                Wilmington Mental Health may use or disclose your health
+               {` Wilmington Mental Health may use or disclose your health
                 information in performing a variety of business activities that
                 we call "health care operations". Some examples of how we may
                 use or disclose your health information for health care
-                operations are:
+                operations are:`}
               </p>
               <ul className="list-disc pl-6 space-y-1">
                 <li>
@@ -253,8 +255,8 @@ export default function page() {
                 when you are in their custody.
               </li>
               <li>
-                For Worker's Compensation in cases pending before the Industrial
-                Commission.
+                {`For Worker's Compensation in cases pending before the Industrial
+                Commission.`}
               </li>
               <li>
                 For research purposes, including studying and comparing the
@@ -389,7 +391,7 @@ export default function page() {
                   To Get a Paper or Electronic Copy of this Notice.
                 </h3>
                 <p>
-                  At your first treatment encounter with this agency, you will
+                 {` At your first treatment encounter with this agency, you will
                   be given a copy of this Notice and asked to sign an
                   acknowledgement that you have received it. In the event of
                   emergency services, you will be provided the Notice as soon as
@@ -399,7 +401,7 @@ export default function page() {
                   Wilmington Mental Health's Internet web site at www.wmhwc.com.
                   You have the right to request a paper copy of this Notice at
                   any time from our agency Admissions Officer or our agency
-                  Privacy Official.
+                  Privacy Official.`}
                 </p>
               </div>
 
@@ -447,7 +449,7 @@ export default function page() {
                   The Right to See and Get Copies of Your PHI.
                 </h3>
                 <p>
-                  Other than "psychotherapy notes," you have the right to get an
+                 {` Other than "psychotherapy notes," you have the right to get an
                   electronic or paper copy of your medical record and other
                   information that we have about you. We will provide you with a
                   copy of your record, or a summary of it, if you agree to
@@ -455,7 +457,7 @@ export default function page() {
                   request. Your request may be denied by a professional
                   designated by our agency director under certain circumstances.
                   If your request is approved, you may be charged a fee to cover
-                  the costs of the copy.
+                  the costs of the copy.`}
                 </p>
               </div>
 
