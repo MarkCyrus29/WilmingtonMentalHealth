@@ -65,7 +65,7 @@ export const teamData: TeamMember[] = [
     ],
     experience: "15 years in counseling and human development",
     specialties:
-      "ADHD, grief, coping skills, life transitions, school issues, stress",
+      "ADHD, Grief, Coping Skills, Life Transitions, School Issues, Stress",
     background:
       "Adam holds a Master of Science in Counseling and Human Development. He has extensive experience helping individuals navigate life’s challenges with evidence-based approaches.",
     interests:
@@ -86,9 +86,7 @@ export const teamData: TeamMember[] = [
     framework:
       "Solution-Focused Therapy, Existential Therapy, CBT, Positive Psychology",
     credentials: ["CMHC Intern"],
-    insurance: [
-      "Currently completing practicum and internship. Please contact our office for the most up-to-date insurance coverage details.",
-    ],
+    insurance: [],
     about: [
       "I am currently completing my practicum and internship as I pursue my Master's in Clinical Mental Health Counseling through Capella University.",
       "My passion for mental health is driven by a deep curiosity about the human experience and a drive for helping others build fulfilling lives through self-awareness, personal growth, and practical, goal-oriented techniques.",
@@ -170,9 +168,7 @@ export const teamData: TeamMember[] = [
     framework:
       "Cognitive Behavioral Therapy, Trauma Therapy, Adlerian Therapy (Childhood/Family Therapy)",
     credentials: ["NCC", "LCMHCA"],
-    insurance: [
-      "Please contact our office for the most up-to-date insurance coverage details.",
-    ],
+    insurance: [],
     about: [
       "Kailyn Mattingly has a passion for helping people and believes that everyone deserves the opportunity to feel confident in themselves and fulfillment in their lives.",
       "She aims to provide a safe, non-judgmental environment to aid patients in finding a renewed sense of self. Her goal is to guide patients through difficult times and support them in rediscovering joy, fulfillment, and positive emotions.",
@@ -519,9 +515,7 @@ export const teamData: TeamMember[] = [
     frameworkTag: "Supervised Support Services",
     framework: "N/A – Provides services under supervision",
     credentials: ["Intern"],
-    insurance: [
-      "Please contact our office for the most up-to-date insurance coverage details.",
-    ],
+    insurance: [],
     about: [
       "Eunika is an MSW intern who serves people of all backgrounds, ages, and needs.",
       "She is eager to gain experience with a diverse range of individuals, including those facing mental health challenges, trauma, or major life transitions.",

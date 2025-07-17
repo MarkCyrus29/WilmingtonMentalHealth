@@ -4,6 +4,7 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
 import HeroButtons from "@/components/ui/HeroButtons";
+import ProviderSearch from "@/components/ui/FindAProvider";
 
 export default function Home() {
   const commonInsurances = [
@@ -84,72 +85,7 @@ export default function Home() {
       </section>
 
       {/* INTEGRATED CARE SECTION */}
-      <div className="w-screen h-auto py-10 pb-12 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)]">
-        <div className="w-[75%] flex flex-col items-center">
-          <h2 className="text-xl font-semibold mb-4 !text-background">
-            Find a Provider
-          </h2>
-          <form className="w-full flex flex-col sm:flex-row items-center gap-4 flex-wrap">
-            {/* Name Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                placeholder="Search by name"
-                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
-              />
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                🔍
-              </span>
-            </div>
-
-            {/* Specialty Dropdown + Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                list="specialties"
-                placeholder="Search by specialty"
-                className="w-full px-12 py-3 rounded-lg border border-background placeholder:text-background font-semibold focus:ring-2 focus:ring-primary focus:outline-none text-base text-background"
-              />
-              <datalist id="specialties">
-                <option value="Psychologist" />
-                <option value="Psychiatrist" />
-                <option value="Therapist" />
-                <option value="Counselor" />
-                <option value="Social Worker" />
-              </datalist>
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                🧠
-              </span>
-            </div>
-
-            {/* Insurance Dropdown + Search */}
-            <div className="relative flex-1 min-w-[200px]">
-              <input
-                type="text"
-                list="insurances"
-                placeholder="Search by insurance"
-                className="w-full px-12 py-3 rounded-lg border border-background
-               placeholder:text-background font-semibold
-               focus:ring-2 focus:ring-primary focus:outline-none
-               text-base text-background"
-              />
-
-              <datalist id="insurances" className="bg-background text-dark">
-                {commonInsurances.map((ins) => (
-                  <option key={ins} value={ins} />
-                ))}
-              </datalist>
-
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
-                💳
-              </span>
-            </div>
-
-            {/* Submit Button */}
-            <Button title="Search" type="submit" className="py-2 px-4" />
-          </form>
-        </div>
-      </div>
+      <ProviderSearch />
 
       <section className="w-full py-24">
         <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
