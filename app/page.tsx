@@ -1,4 +1,3 @@
-
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
@@ -46,15 +45,14 @@ export default function Home() {
               Welcome to Wilmington
             </h1>
             <p className="!text-white/80 text-base sm:text-lg">
-              Compassionate mental health and medical care designed for you.
+              Compassionate mental health care designed for you.
             </p>
           </div>
 
           {/* Buttons */}
-          <HeroButtons/>
+          <HeroButtons />
         </div>
       </section>
-      
 
       {/* WHO WE ARE SECTION */}
       <section className="max-w-7xl mx-auto py-24 px-6 flex flex-col md:flex-row items-stretch md:items-center gap-10">

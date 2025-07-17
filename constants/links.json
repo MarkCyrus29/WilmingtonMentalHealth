@@ -47,45 +47,10 @@
           ] 
         },
         {
-          "title": "Health Services",
-          "link": "/health-services",
-          "children": [
-            { "title": "Wellness Exams", "link": "/health-services/wellness-exams" },
-            { "title": "Men's & Women's Health", "link": "/health-services/mens-womens-health" },
-            { "title": "Chronic Disease Management", "link": "/health-services/chronic-disease-management" },
-            { "title": "STDs Treatment", "link": "/health-services/stds-treatment" },
-            { "title": "Sprains & Minor Burns", "link": "/health-services/sprains-minor-burns" },
-            { "title": "Minor Surgeries", "link": "/health-services/minor-surgeries" },
-            { "title": "Electrocardiogram", "link": "/health-services/electrocardiogram" }
-          ]
-        },
-        {
-          "title": "Medication Management",
-          "link": "/medication-management",
-          "children": [
-            { "title": "Intake Evaluation", "link": "/medication-management/intake-evaluation" },
-            { "title": "MAT Program", "link": "/medication-management/mat-program" },
-            { "title": "Spravato", "link": "/medication-management/spravato" },
-            { "title": "Vivitrol", "link": "/medication-management/vivitrol" },
-            { "title": "Suboxone", "link": "/medication-management/suboxone" }
-          ]
-        },
-        {
-          "title": "Lab Services",
-          "link": "/lab-services",
-          "children": [
-            { "title": "Genetic Testings", "link": "/lab-services/genetic-testings" },
-            { "title": "Urinalysis", "link": "/lab-services/urinalysis" },
-            { "title": "Blood Work", "link": "/lab-services/blood-work" },
-            { "title": "Cancer Genetic Testing", "link": "/lab-services/cancer-genetic-testing" },
-            { "title": "Lab Work", "link": "/lab-services/lab-work" },
-            { "title": "Alzheimer’s Genetic Testing", "link": "/lab-services/alzheimers-genetic-testing" }
-          ]
-        },
-        {
           "title": "Other Services",
           "link": "/other-services",
           "children": [
+            { "title": "Urinalysis", "link": "/lab-services/urinalysis" },
             { "title": "Clinical Hypnosis", "link": "/other-services/clinical-hypnosis" },
             { "title": "Emotional Support Animal", "link": "/other-services/emotional-support-animal" },
             { "title": "Salud Latina", "link": "/other-services/salud-latina" },

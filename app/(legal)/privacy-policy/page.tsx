@@ -387,7 +387,7 @@ export default function page() {
 
             <div className="space-y-3">
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   To Get a Paper or Electronic Copy of this Notice.
                 </h3>
                 <p>
@@ -406,7 +406,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">Disclosures of Your PHI.</h3>
+                <h3>Disclosures of Your PHI.</h3>
                 <p>
                   You have the right to ask us not to use or disclose certain
                   PHI for treatment, payment, or health care operations
@@ -416,7 +416,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   The Right to Request Restrictions for Out-of-Pocket Expenses
                   Paid for In Full.
                 </h3>
@@ -430,7 +430,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   The Right to Choose How I Send PHI to You.
                 </h3>
                 <p>
@@ -445,7 +445,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   The Right to See and Get Copies of Your PHI.
                 </h3>
                 <p>
@@ -462,7 +462,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   The Right to Get a List of the Disclosures We Have Made.
                 </h3>
                 <p>
@@ -480,7 +480,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   The Right to Correct or Update Your PHI.
                 </h3>
                 <p>
@@ -499,7 +499,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3 className="font-semibold">
+                <h3>
                   To Request Restrictions on Uses and Disclosures of Your PHI.
                 </h3>
                 <p>
@@ -534,7 +534,7 @@ export default function page() {
             </p>
 
             <div className="bg-gray-50 p-4 mb-4">
-              <p className="font-semibold">WILMINGTON MENTAL HEALTH, PLLC</p>
+              <p>WILMINGTON MENTAL HEALTH, PLLC</p>
               <p>3825 Market St. Ste 4, Wilmington, NC 28403</p>
               <p>Telephone: (910) 777-5273</p>
               <p>Fax: (910) 777-5273</p>
@@ -548,7 +548,7 @@ export default function page() {
             </p>
 
             <div className="bg-gray-50 p-4 mb-4">
-              <p className="font-semibold">CARE-LINK</p>
+              <p>CARE-LINK</p>
               <p>2012 Mail Service Center, Raleigh, NC 27699-2012</p>
               <p>
                 Telephone: (English and Spanish): (800) 622-7030 / (919)
@@ -563,7 +563,7 @@ export default function page() {
             </p>
 
             <div className="bg-gray-50 p-4 mb-4">
-              <p className="font-semibold">
+              <p>
                 U.S. Department of Health and Human Services
               </p>
               <p>Office for Civil Rights</p>

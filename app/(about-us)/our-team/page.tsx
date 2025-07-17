@@ -27,7 +27,7 @@ export default function OurTeamPage() {
         subtitle="Meet Our Team"
       />
 
-      <div className="min-h-screen py-12 px-4 ">
+      <div className="min-h-screen py-24 px-4 ">
         <h2 className="text-center">Meet Our Team</h2>
 
         <div className="max-w-6xl mx-auto space-y-12">
@@ -83,6 +83,38 @@ export default function OurTeamPage() {
               </div>
             </section>
           ))}
+          <section>
+            <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-6 border-b border-[var(--color-gray)] pb-2">
+              Staff
+            </h3>
+            <div className="flex flex-col gap-4">
+              {[
+                { name: "Dionya Hawkins", role: "Patient Care Specialist" },
+                { name: "Antonio Gamboa", role: "Medical Records" },
+                { name: "Payton Lintizinger", role: "Office Manager" },
+                { name: "Elaiza Landrito", role: "Patient Care Coordinator" },
+                { name: "Keith Jimeno", role: "Patient Care Coordinator" },
+                {
+                  name: "Samantha Hill",
+                  role: "Content & Outreach Coordinator",
+                },
+                { name: "Diane Domingo", role: "Social Media Marketing" },
+                { name: "Kimberly Alford", role: "Patient Support Specialist" },
+                { name: "Mark Bundalian", role: "Billing Assistant" },
+              ].map((staff, i) => (
+                <div key={i} className="space-y-6 flex flex-col">
+                  <div className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                    <div className="flex-1 space-y-1">
+                      <h3 className="text-lg font-normal text-[var(--color-foreground)]">
+                        <strong>{staff.name}</strong>
+                        <i>, {staff.role}</i>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
 
