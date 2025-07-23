@@ -7,23 +7,6 @@ import HeroButtons from "@/components/ui/HeroButtons";
 import ProviderSearch from "@/components/ui/FindAProvider";
 
 export default function Home() {
-  const commonInsurances = [
-    "BlueCross Blueshield",
-    "Cigna",
-    "Aetena",
-    "HealthyBlue",
-    "WellCare",
-    "AmeriHealth Caritas",
-    "UnitedHealthCare Community Plan",
-    "Carolina Complete Health",
-    "AmBetter",
-    "Medcost",
-    "Caresource",
-    "ChampVA",
-    "Meritain Health",
-    "Carolina Behavioral Health Alliance",
-    "North Carolina State Health Plan",
-  ];
 
   return (
     <>

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Button from "./Button";
 import { teamData } from "@/app/data/teamData";
 
-// Define the shape of each provider
 interface Provider {
   id: string;
   name: string;
