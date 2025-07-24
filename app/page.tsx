@@ -1,11 +1,9 @@
-import Button from "@/components/ui/Button";
+
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
-import CallBanner from "@/components/ui/CallBanner";
 import HeroButtons from "@/components/ui/HeroButtons";
 import ProviderSearch from "@/components/ui/FindAProvider";
-import GetInTouch from "@/components/ui/GetInTouch";
 
 export default function Home() {
 

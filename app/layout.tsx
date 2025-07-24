@@ -5,7 +5,6 @@ import ParallaxProviderWrapper from "@/components/ParallaxProviderWrapper";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 import Footer from "@/components/layout/Footer";
 import { Poppins } from "next/font/google";
-import CallBanner from "@/components/ui/CallBanner";
 import GetInTouch from "@/components/ui/GetInTouch";
 
 const poppins = Poppins({
