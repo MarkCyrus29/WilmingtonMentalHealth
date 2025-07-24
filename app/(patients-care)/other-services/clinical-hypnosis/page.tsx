@@ -331,7 +331,7 @@ function page() {
           </p>
           <div className="mt-8 bg-blue-50 rounded-xl p-6 max-w-5xl mx-auto text-center border-l-4 border-blue-500">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">
-              Dr. Stanley's Personal Experience
+              {`Dr. Stanley's Personal Experience`}
             </h3>
             <p className="text-blue-700">
               Dr. Stanley uses self-hypnosis regularly for his own health
