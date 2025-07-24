@@ -119,23 +119,37 @@ function Page() {
       </section>
       <section className="w-full py-24 bg-blue-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Simple Language + Open Discussions = De-Stigmatization
-            </h3>
-            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              After your initial assessment, which determines the most
-              appropriate level of care you must be placed on, we schedule
-              structured therapy sessions and encourage you to participate in
-              self-help or mutual support groups (e.g., AA, SMART Recovery,
-              etc.). We may also conduct random drug screens to help you develop
-              accountability.
-              <br />
-              <br /> Our treatment method can provide immediate solutions or
-              just another failed attempt to achieve the life you want. We want
-              you to see how using substance(s) impacts your life and is getting
-              in the middle of you and your goals.
-            </p>
+          <div className="flex flex-col md:flex-row gap-12 ">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Simple Language + Open Discussions = De-Stigmatization
+              </h3>
+              <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                After your initial assessment, which determines the most
+                appropriate level of care you must be placed on, we schedule
+                structured therapy sessions and encourage you to participate in
+                self-help or mutual support groups (e.g., AA, SMART Recovery,
+                etc.). We may also conduct random drug screens to help you
+                develop accountability.
+                <br />
+                <br /> Our treatment method can provide immediate solutions or
+                just another failed attempt to achieve the life you want. We
+                want you to see how using substance(s) impacts your life and is
+                getting in the middle of you and your goals.
+              </p>
+            </div>
+            <div className="flex-1/2">
+              <div className="relative w-full h-full flex-shrink-0">
+                <Image
+                  src="/images/substance-use/psychoeducation (2).jpg"
+                  alt={"Psychoeducation Image"}
+                  fill
+                  className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -150,24 +164,24 @@ function Page() {
                 href: "/mental-health/adult-therapy",
               },
               {
-                title: "Couples Counseling",
-                href: "/mental-health/couples-counseling",
-              },
-              {
-                title: "Group Therapy",
-                href: "/mental-health/group-therapy",
-              },
-              {
                 title: "Substance Use Disorders",
                 href: "/substance-use",
               },
               {
-                title: "Health Services",
-                href: "/health-services",
+                title: "Relapse Prevention",
+                href: "/substance-use/relapse-prevention",
+              },
+              {
+                title: "Couples Counseling",
+                href: "/mental-health/couples-counseling",
               },
               {
                 title: "Salud Latina",
-                href: "#",
+                href: "/other-services/salud-latina",
+              },
+              {
+                title: "Corporate Wellness",
+                href: "/other-services/corporate-wellness",
               },
             ].map((service, i) => (
               <RelatedServices
@@ -179,7 +193,7 @@ function Page() {
           </div>
         </div>
       </section>
-      
+
       <CallBanner />
     </main>
   );

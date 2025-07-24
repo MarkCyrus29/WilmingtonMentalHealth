@@ -3,6 +3,7 @@ import { Users, Calendar } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import RelatedServices from "@/components/ui/RelatedServices";
+import Image from "next/image";
 
 function Page() {
   return (
@@ -47,18 +48,36 @@ function Page() {
             id="benefits"
             className="h-full w-full flex flex-col items-start scroll-mt-[100px]"
           >
-            <h2>Benefits of Group Therapy</h2>
-            <span className="flex flex-row items-center">
-              <Users className="h-8 w-8 text-primary mr-2" />
-              <h4 className="!text-primary">Therapeutic Advantages</h4>
-            </span>
-            <h3 className="mt-10 mb-5 text-left">How Group Therapy Helps</h3>
-            <p className="text-lg leading-relaxed mb-6">
-              Group therapy offers unique therapeutic benefits that individual
-              therapy alone cannot provide. By participating in a supportive
-              group environment, you&apos;ll experience healing through shared
-              experiences and mutual support.
-            </p>
+            <div className="w-full flex flex-col md:flex-row gap-4 mb-12">
+              <div className="flex-1/2">
+                <h2>Benefits of Group Therapy</h2>
+                <span className="flex flex-row items-center">
+                  <Users className="h-8 w-8 text-primary mr-2" />
+                  <h4 className="!text-primary">Therapeutic Advantages</h4>
+                </span>
+                <h3 className="mt-10 mb-5 text-left">
+                  How Group Therapy Helps
+                </h3>
+                <p className="text-lg leading-relaxed mb-6">
+                  Group therapy offers unique therapeutic benefits that
+                  individual therapy alone cannot provide. By participating in a
+                  supportive group environment, you&apos;ll experience healing
+                  through shared experiences and mutual support.
+                </p>
+              </div>
+              <div className="flex-1/2">
+                <div className="relative w-full h-full flex-shrink-0">
+                  <Image
+                    src={"/images/patients-care/group-therapy.jpg"}
+                    alt={"Group Therapy Image"}
+                    fill
+                    className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
 
             {/* Card grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
@@ -174,16 +193,16 @@ function Page() {
                 href: "/mental-health/substance-use",
               },
               {
-                title: "Medication Management",
-                href: "#",
+                title: "Test & Evaluations",
+                href: "/tests-evaluations",
               },
               {
-                title: "Wellness Exam",
-                href: "/health-services/wellness-exam",
+                title: "Corporate Wellness",
+                href: "/other-services/corporate-wellness",
               },
               {
-                title: "Assesments",
-                href: "/tests-evaluations/assessments",
+                title: "Salud Latina",
+                href: "/other-services/salud-latina",
               },
             ].map((service, i) => (
               <RelatedServices

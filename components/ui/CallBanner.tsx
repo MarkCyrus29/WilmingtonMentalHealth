@@ -25,9 +25,9 @@ export default function CallBanner({
     <section
       className={`w-screen h-full py-14 text-center items-center flex flex-col justify-center bg-primary/65 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[10px] border-t border-t-[rgba(255,255,255,0.18)] ${className}`}
     >
-      <h2 className="!font-normal pb-2 ">{title}</h2>
-      <h4 className="!font-normal pb-2 ">{subtitle}</h4>
-      <h3 className="font-bold mt-4 flex md:inline flex-col ">
+      <h2 className="!font-normal pb-2 !text-background">{title}</h2>
+      <h4 className="!font-normal pb-2 !text-background">{subtitle}</h4>
+      <h3 className="font-bold mt-4 flex md:inline flex-col !text-background">
         <a
           href={`tel:9107775575`}
           className="transition-opacity hover:opacity-80 !text-background border-2 border-background/45 py-3 px-6 rounded-4xl shadow-sm bg-primary"

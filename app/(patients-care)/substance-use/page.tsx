@@ -372,24 +372,24 @@ function Page() {
                 href: "/mental-health/adult-therapy",
               },
               {
-                title: "Group Therapy",
-                href: "/mental-health/group-therapy",
+                title: "Substance Use Disorders",
+                href: "/substance-use",
+              },
+              {
+                title: "Psychoeducation",
+                href: "/substance-use/psychoeducation",
+              },
+              {
+                title: "Test & Evaluations",
+                href: "/tests-evaluations",
+              },
+              {
+                title: "Salud Latina",
+                href: "/other-services/salud-latina",
               },
               {
                 title: "Couples Counseling",
                 href: "/mental-health/couples-counseling",
-              },
-              {
-                title: "Military Counseling",
-                href: "/mental-health/military-counseling",
-              },
-              {
-                title: "LGBTQIA+ Counseling",
-                href: "/mental-health/lgbtq-counseling",
-              },
-              {
-                title: "Medication Management",
-                href: "#",
               },
             ].map((service, i) => (
               <RelatedServices

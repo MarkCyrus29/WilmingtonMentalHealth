@@ -17,7 +17,7 @@ export default function page() {
             "/images/home/slideshow-images/hero1.JPG",
           ]}
         />
-        <div className="absolute top-30 w-screen flex flex-col items-center text-center pt-16 z-30">
+        <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
             Wilmington Mental Health + Medical Care
           </h4>
@@ -42,7 +42,7 @@ export default function page() {
           </div>
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Since 2017, Serving Our Community
+              Serving the Wilmington Community Since 2017
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>

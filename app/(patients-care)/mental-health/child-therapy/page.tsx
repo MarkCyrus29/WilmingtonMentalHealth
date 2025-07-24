@@ -3,28 +3,42 @@ import { Heart } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { ServicesCard } from "@/components/ui/ServicesCard";
 import RelatedServices from "@/components/ui/RelatedServices";
+import PageBanner from "@/components/ui/PageBanner";
 
 function TherapySection({
   title,
   ageRange,
   description,
   services,
+  img,
 }: {
   title: string;
   ageRange: string;
   description: React.ReactNode;
   services: { title: string }[];
+  img?: string;
 }) {
   return (
     <section className="h-full w-screen flex flex-col items-center justify-center my-26 ">
-      <div className="w-[85%]">
-        <div className=" flex flex-col items-center ">
-          <h2>{title}</h2>
-          <span className="flex flex-row items-center">
-            <Heart className={`h-8 w-8 text-primary mr-2`} />
-            <h4 className={`!text-primary`}>{ageRange}</h4>
-          </span>
+      <div className=" flex flex-col items-center pb-10">
+        <h2>{title}</h2>
+        <span className="flex flex-row items-center">
+          <Heart className={`h-8 w-8 text-primary mr-2`} />
+          <h4 className={`!text-primary`}>{ageRange}</h4>
+        </span>
+      </div>
+      {img ? (
+        <div className="w-screen h-[90vh]">
+          <PageBanner
+            title=""
+            imageSrc={img}
+            alt="Child Therapy Image"
+            subtitle=""
+            height="h-full"
+          />
         </div>
+      ) : null}
+      <div className="w-[85%]">
         <h3 className="mt-10 mb-5 ">Our Approach</h3>
         <p className="">{description}</p>
         <h3 className="mt-10 mb-5 ">Service Areas:</h3>
@@ -64,7 +78,7 @@ function Page() {
 
       {/* ─── Child Therapy ─── */}
       <TherapySection
-        title="Child Counseling"
+        title="Child Therapy"
         ageRange="Ages 3 - 12"
         description={
           <>
@@ -103,8 +117,9 @@ function Page() {
 
       {/* ─── Adolescent Therapy ─── */}
       <TherapySection
-        title="Adolescent Counseling"
+        title="Adolescent Therapy"
         ageRange="Ages 13 - 17"
+        img="/images/patients-care/child-therapy (1).jpg"
         description={
           <>
             We help adolescents, ages 13–17, deal with their emotions and
@@ -140,15 +155,15 @@ function Page() {
             {[
               {
                 title: "Assesments",
-                href: "#",
+                href: "/tests-evaluations/assesments",
               },
               {
                 title: "Emotional Support Animal",
-                href: "#",
+                href: "/other-services/emotional-support-animal",
               },
               {
-                title: "Medication Management",
-                href: "#",
+                title: "Salud Latina",
+                href: "/other-services/salud-latina",
               },
             ].map((service, i) => (
               <RelatedServices

@@ -91,7 +91,7 @@ export default function OurTeamPage() {
               {[
                 { name: "Dionya Hawkins", role: "Patient Care Specialist" },
                 { name: "Antonio Gamboa", role: "Medical Records" },
-                { name: "Payton Lintizinger", role: "Office Manager" },
+                { name: "Payton Litzinger", role: "Office Manager" },
                 { name: "Elaiza Landrito", role: "Patient Care Coordinator" },
                 { name: "Keith Jimeno", role: "Patient Care Coordinator" },
                 {

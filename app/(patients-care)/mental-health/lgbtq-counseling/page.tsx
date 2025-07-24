@@ -185,36 +185,28 @@ function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {[
               {
-                title: "Individual Therapy",
-                href: "#",
+                title: "Adult Therapy",
+                href: "/mental-health/adult-therapy",
               },
               {
                 title: "Couples Counseling",
                 href: "/mental-health/couples-counseling",
               },
               {
-                title: "Family Therapy",
-                href: "#",
-              },
-              {
                 title: "Group Therapy",
                 href: "/mental-health/group-therapy",
               },
               {
-                title: "Men's & Women's Health",
-                href: "#",
+                title: "Test & Evaluations",
+                href: "/tests-evaluations",
               },
               {
-                title: "Wellness Exam",
-                href: "#",
+                title: "Corporate Wellness",
+                href: "/other-services/corporate-wellness",
               },
               {
                 title: "Salud Latina",
-                href: "#",
-              },
-              {
-                title: "Assessments",
-                href: "#",
+                href: "/other-services/salud-latina",
               },
             ].map((service, i) => (
               <RelatedServices

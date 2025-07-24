@@ -381,25 +381,26 @@ function Page() {
                 href: "/mental-health/adult-therapy",
               },
               {
-                title: "Family Therapy",
-                href: "/mental-health/family-therapy",
-              },
-              {
                 title: "Group Therapy",
                 href: "/mental-health/group-therapy",
-              },
-              {
-                title: "Men's & Women's Health",
-                href: "/services/mens-womens-health",
-              },
-              {
-                title: "Wellness Exam",
-                href: "/services/wellness-exam",
               },
               {
                 title: "Salud Latina",
                 href: "/services/salud-latina",
               },
+              {
+                title: "Corporate Wellness",
+                href: "/other-services/corporate-wellness",
+              },
+              {
+                title: "Substance Use Disorders",
+                href: "/substance-use",
+              },
+              {
+                title: "Test & Evaluations",
+                href: "/tests-evaluations",
+              },
+              
             ].map((service, i) => (
               <RelatedServices
                 href={service.href}

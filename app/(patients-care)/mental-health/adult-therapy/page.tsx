@@ -4,6 +4,7 @@ import { CheckCircle, Heart, AlertTriangle } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { ServicesCard } from "@/components/ui/ServicesCard";
 import RelatedServices from "@/components/ui/RelatedServices";
+import Image from "next/image";
 
 export function TherapySection({
   id,
@@ -14,6 +15,7 @@ export function TherapySection({
   symptoms,
   treatmentGoals,
   treatmentModalities,
+  img,
 }: {
   id: string;
   title: string;
@@ -23,21 +25,40 @@ export function TherapySection({
   symptoms: string[];
   treatmentGoals: string[];
   treatmentModalities: string[];
+  img?: string;
 }) {
   return (
     <section
       id={id}
-      className="h-full w-screen flex flex-col items-center justify-center my-26 scroll-mt-[100px]"
+      className="h-full w-screen flex flex-col items-center justify-center py-26 scroll-mt-[20px]"
     >
       <div className="w-[85%]">
-        <h2>{title}</h2>
-        <span className="flex flex-row items-center">
-          <Heart className={`h-8 w-8 text-${color} mr-2`} />
-          <h4 className={`!text-${color}`}>Professional Adult Treatment</h4>
-        </span>
+        <div className="w-full flex flex-col md:flex-row gap-12">
+          <div className={`${img ? "flex-1/2" : ""} `}>
+            <h2>{title}</h2>
+            <span className="flex flex-row items-center">
+              <Heart className={`h-8 w-8 text-${color} mr-2`} />
+              <h4 className={`!text-${color}`}>Professional Adult Treatment</h4>
+            </span>
 
-        <h3 className="mt-10 mb-5 text-left">Our Approach</h3>
-        <p>{description}</p>
+            <h3 className="mt-10 mb-5 text-left">Our Approach</h3>
+            <p>{description}</p>
+          </div>
+          {img ? (
+            <div className="flex-1/2">
+              <div className="relative w-full h-full flex-shrink-0">
+                <Image
+                  src={img}
+                  alt={title + " Image"}
+                  fill
+                  className="object-cover rounded-lg shadow-lg transition-all hover:shadow-xl "
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  priority
+                />
+              </div>
+            </div>
+          ) : null}
+        </div>
 
         {disorders.length > 0 && (
           <>
@@ -380,6 +401,7 @@ function Page() {
         id="trauma-ptsd"
         title="Trauma/PTSD Therapy"
         color="primary"
+        img="/images/patients-care/adult-therapy (6).jpg"
         description={
           <>
             Learn how to overcome psychological trauma. Trauma occurs when you
@@ -440,6 +462,7 @@ function Page() {
         id="depression"
         title="Depression Therapy"
         color="primary"
+        img="/images/patients-care/adult-therapy (7).jpg"
         description={
           <>
             Learn how to address persistent feelings of sadness and loss of
@@ -498,6 +521,7 @@ function Page() {
         id="anxiety"
         title="Anxiety Therapy"
         color="secondary"
+        img="/images/patients-care/adult-therapy (8).jpg"
         description={
           <>
             Learn how to manage intrusive thinking. Anxiety is a common human
@@ -548,7 +572,7 @@ function Page() {
       />
 
       {/* ─── Other Services Section ─── */}
-      <section className="h-full w-screen flex flex-col items-center justify-center my-26 bg-gray-50">
+      <section className="h-full w-screen flex flex-col items-center justify-center py-26 bg-gray-50">
         <div className="w-[85%]">
           <h2>Other Services at Wilmington Mental Health</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">

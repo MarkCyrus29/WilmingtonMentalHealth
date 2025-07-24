@@ -15,7 +15,7 @@ function Page() {
             "/images/patients-care/military-counseling (3).jpg",
           ]}
         />
-        <div className="absolute top-30 w-screen flex flex-col items-center text-center pt-16 z-30">
+        <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
             Military Therapy
           </h4>
@@ -101,6 +101,7 @@ function Page() {
       <TherapySection
         id="trauma-ptsd"
         title="Trauma/PTSD Therapy"
+        img="/images/patients-care/trauma.jpg"
         color="primary"
         description={
           <>
@@ -159,6 +160,7 @@ function Page() {
       <TherapySection
         id="depression"
         title="Depression Therapy"
+        img="/images/patients-care/depression.jpg"
         color="primary"
         description={
           <>
@@ -230,16 +232,16 @@ function Page() {
                 href: "/mental-health/couples-therapy",
               },
               {
-                title: "Men's & Women's Health",
-                href: "#",
+                title: "Test & Evaluations",
+                href: "/tests-evaluations",
               },
               {
-                title: "Wellness Exam",
-                href: "#",
+                title: "Substance Use Disorders",
+                href: "/substance-use",
               },
               {
-                title: "Medication Management",
-                href: "#",
+                title: "Corporate Wellness",
+                href: "/other-services/corporate-wellness",
               },
             ].map((service, i) => (
               <RelatedServices
