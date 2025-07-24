@@ -1,10 +1,9 @@
-
 import Button from "./Button";
 
 function GetInTouch() {
   return (
     <section className="w-screen h-auto bg-secondary flex flex-col justify-center py-24">
-      <h1 className="text-center pb-10">Get In Touch</h1>
+      <h1 className="text-center pb-10 !text-background">Get In Touch</h1>
       <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:justify-around px-6 md:px-16">
         {/* Map Section */}
         <div className="w-full md:w-[50%] flex justify-center">
