@@ -1,12 +1,11 @@
-
 import Card from "@/components/ui/Card";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import Image from "next/image";
 import HeroButtons from "@/components/ui/HeroButtons";
 import ProviderSearch from "@/components/ui/FindAProvider";
+import CallBanner from "@/components/ui/CallBanner";
 
 export default function Home() {
-
   return (
     <>
       {/* HERO SECTION */}
@@ -101,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* CTA SECTION */}
-
+      <CallBanner />
     </>
   );
 }
