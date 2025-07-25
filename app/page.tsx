@@ -4,6 +4,25 @@ import Image from "next/image";
 import HeroButtons from "@/components/ui/HeroButtons";
 import ProviderSearch from "@/components/ui/FindAProvider";
 import CallBanner from "@/components/ui/CallBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wilmington Mental Health",
+  description:
+    "Welcome to Wilmington Mental Health. We provide compassionate outpatient mental health care, integrated treatment for chronic illness, substance use, and emotional wellness. Explore our diverse provider team, therapy options, and virtual care services.",
+  keywords: [
+    "Wilmington Mental Health",
+    "mental health care",
+    "outpatient therapy",
+    "substance use treatment",
+    "chronic illness mental health",
+    "integrated care",
+    "mental health services NC",
+    "therapy Wilmington NC",
+    "virtual therapy",
+    "mental health support",
+  ],
+};
 
 export default function Home() {
   return (
