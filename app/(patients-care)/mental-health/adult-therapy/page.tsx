@@ -5,6 +5,13 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { ServicesCard } from "@/components/ui/ServicesCard";
 import RelatedServices from "@/components/ui/RelatedServices";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Adult Therapy | Wilmington Mental Health",
+  description:
+    "Receive personalized adult counseling at Wilmington Mental Health—evidence-based therapy for trauma, depression, anxiety, and stress to help you build insights, coping skills, and lasting well-being.",
+};
 
 export function TherapySection({
   id,
@@ -296,7 +303,7 @@ function Page() {
         />
         <div className="absolute  top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Individual Psychotherapy & Counseling
+            Mental health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Adult Therapy

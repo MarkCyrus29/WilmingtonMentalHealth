@@ -4,6 +4,22 @@ import HorizontalCard from "@/components/ui/HorizontalCard";
 import { Heart, Brain } from "lucide-react";
 import CallBanner from "@/components/ui/CallBanner";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LGBTQIA+ Counseling | Wilmington Mental Health",
+  description:
+    "Wilmington Mental Health offers affirming, LGBTQIA+-inclusive therapy focused on identity exploration, coping skills, self-esteem, and well-being.",
+  keywords: [
+    "LGBTQ counseling",
+    "LGBTQ therapy",
+    "affirmative therapy",
+    "queer counseling",
+    "gender-affirming mental health",
+    "sexual orientation support",
+    "Wilmington mental health",
+  ],
+};
 
 function page() {
   return (

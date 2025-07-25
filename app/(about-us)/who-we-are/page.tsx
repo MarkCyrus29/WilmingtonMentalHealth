@@ -2,6 +2,25 @@ import Image from "next/image";
 import { Heart, Users, Shield, Sparkles, Globe, UserCheck } from "lucide-react";
 import CallBanner from "@/components/ui/CallBanner";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Who We Are | Wilmington Mental Health",
+  description:
+    "Learn about Wilmington Mental Health's mission, values, and commitment to holistic care for the Wilmington community since 2017.",
+  keywords: [
+    "Wilmington Mental Health",
+    "mental health Wilmington",
+    "psychiatry Wilmington NC",
+    "therapy Wilmington",
+    "behavioral health",
+    "mental health clinic",
+    "integrated care",
+    "individual therapy",
+    "family therapy",
+    "minority mental health",
+  ],
+};
 
 export default function page() {
   return (
@@ -19,7 +38,7 @@ export default function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Wilmington Mental Health + Medical Care
+            Wilmington Mental Health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Who We Are

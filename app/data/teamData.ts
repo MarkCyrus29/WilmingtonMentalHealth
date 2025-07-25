@@ -118,7 +118,7 @@ export const teamData: TeamMember[] = [
       "Life can be tough sometimes. Let me be the person you can trust, the one who is going to listen to you without judgement.",
       " I am a vibrant Latina originally from Mexico City and I specialize in treating patients who have experienced trauma.",
       "I started in the human services field in 2005 in Child Protective Services at DHHS. My love and passion for “hurting people” led me into this profession.",
-      ". I utilize several therapeutic tools to help others achieve their goals and objectives, such as Cognitive Behavioral Therapy (CBT) and Parent Child Interaction Therapy (PCIT).",
+      "I utilize several therapeutic tools to help others achieve their goals and objectives, such as Cognitive Behavioral Therapy (CBT) and Parent Child Interaction Therapy (PCIT).",
       "I am specialized in treating trauma issues. One technique that I use is Eye Movement Desensitization and Reprocessing (EMDR). This technique is effective in helping individuals move forward in their lives from a past trauma event that has caused them to become “stuck” in their current daily life. I am also trained in EMDR (Eye Movement Desensitization and Reprocessing), a highly effective technique to help individuals move forward from past traumatic events that keep them feeling stuck.",
       "Together, we will design a program that applies to your needs. I will help develop a future-oriented character to enhance your healthier lifestyle. Our therapeutic encounters are an opportunity to learn more about your inner power.  ",
     ],
@@ -255,7 +255,7 @@ export const teamData: TeamMember[] = [
     framework:
       "Cognitive Behavioral Therapy, Trauma Therapy, Adlerian Therapy (Childhood/Family Therapy)",
     credentials: ["NCC", "LCMHCA"],
-    insurance: [],
+    insurance: [""],
     about: [
       "Kailyn Mattingly has a passion for helping people and believes that everyone deserves the opportunity to feel confident in themselves and fulfillment in their lives.",
       "She aims to provide a safe, non-judgmental environment to aid patients in finding a renewed sense of self. Her goal is to guide patients through difficult times and support them in rediscovering joy, fulfillment, and positive emotions.",
@@ -488,7 +488,7 @@ export const teamData: TeamMember[] = [
     framework:
       "Solution-Focused Therapy, Existential Therapy, CBT, Positive Psychology",
     credentials: ["CMHC Intern"],
-    insurance: [],
+    insurance: [""],
     about: [
       "I am currently completing my practicum and internship as I pursue my Master's in Clinical Mental Health Counseling through Capella University.",
       "My passion for mental health is driven by a deep curiosity about the human experience and a drive for helping others build fulfilling lives through self-awareness, personal growth, and practical, goal-oriented techniques.",
@@ -515,7 +515,7 @@ export const teamData: TeamMember[] = [
     frameworkTag: "Supervised Support Services",
     framework: "N/A – Provides services under supervision",
     credentials: ["Intern"],
-    insurance: [],
+    insurance: [""],
     about: [
       "Eunika is an MSW intern who serves people of all backgrounds, ages, and needs.",
       "She is eager to gain experience with a diverse range of individuals, including those facing mental health challenges, trauma, or major life transitions.",

@@ -4,6 +4,13 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { ServicesCard } from "@/components/ui/ServicesCard";
 import RelatedServices from "@/components/ui/RelatedServices";
 import PageBanner from "@/components/ui/PageBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Child & Adolescent Therapy | Wilmington Mental Health",
+  description:
+    "Expert child (age 3-12) and adolescent (age 13-17) therapy in Wilmington. We support emotional regulation, anxiety, behavior challenges, self-esteem & family communication.",
+};
 
 function TherapySection({
   title,
@@ -68,7 +75,7 @@ function Page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Child & Adolescent Therapy
+            Mental Health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Child & Adolescent Therapy
@@ -159,7 +166,7 @@ function Page() {
               },
               {
                 title: "Emotional Support Animal",
-                href: "/other-services/emotional-support-animal",
+                href: "/tests-evaluations/emotional-support-animal",
               },
               {
                 title: "Salud Latina",

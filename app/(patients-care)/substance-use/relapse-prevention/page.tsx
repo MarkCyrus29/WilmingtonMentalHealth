@@ -13,6 +13,13 @@ import {
   CheckCircle,
 } from "lucide-react";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Relapse Prevention | Wilmington Mental Health",
+  description:
+    "Build a personalized relapse prevention plan at Wilmington Mental Health. Learn CBT-based coping tools, identify triggers and high-risk situations, and establish a support roadmap to maintain lasting recovery.",
+};
 
 function page() {
   return (
@@ -28,7 +35,7 @@ function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            PREVENTION & SUPPORT
+            Substance Use Disorders
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Relapse Prevention

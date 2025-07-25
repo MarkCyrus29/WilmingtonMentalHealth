@@ -3,6 +3,25 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import { TherapySection } from "../adult-therapy/page";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Military Counseling | Wilmington Mental Health",
+  description:
+    "Wilmington Mental Health provides specialized therapy for veterans and military personnel—helping manage trauma, PTSD, depression, and ease transitions into civilian life with expert care and support.",
+  keywords: [
+    "military counseling",
+    "veteran mental health",
+    "PTSD therapy",
+    "trauma therapy",
+    "therapy for veterans",
+    "mental health services for military",
+    "counseling for active duty",
+    "veteran depression therapy",
+    "civilian transition support",
+    "Wilmington mental health",
+  ],
+};
 
 function Page() {
   return (
@@ -17,7 +36,7 @@ function Page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Military Therapy
+            Mental Health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Military Counseling

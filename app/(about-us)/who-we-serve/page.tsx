@@ -1,6 +1,25 @@
 import { Users, Shield, Calendar, Phone, FileText } from "lucide-react";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import CallBanner from "@/components/ui/CallBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Who We Serve | Wilmington Mental Health",
+  description:
+    "Discover the populations we support at Wilmington Mental Health—from children and veterans to LGBTQ+ individuals and underserved communities. Learn how we address barriers to care.",
+  keywords: [
+    "Wilmington Mental Health",
+    "mental health services Wilmington",
+    "underserved populations mental health",
+    "LGBTQ mental health Wilmington",
+    "veteran mental health NC",
+    "domestic violence therapy",
+    "mental health for minorities",
+    "therapy for children and adolescents",
+    "mental health care access barriers",
+    "holistic mental health Wilmington",
+  ],
+};
 
 export default function WhoWeServe() {
   const vulnerablePopulations = [
@@ -74,7 +93,7 @@ export default function WhoWeServe() {
           />
           <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
             <h4 className="!text-background text-lg drop-shadow-2xl">
-              Wilmington Mental Health + Medical Care
+              Wilmington Mental Health
             </h4>
             <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
               Who We Serve

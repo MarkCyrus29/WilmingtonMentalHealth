@@ -4,6 +4,26 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import HorizontalCard from "@/components/ui/HorizontalCard";
 import RelatedServices from "@/components/ui/RelatedServices";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Group Therapy | Wilmington Mental Health",
+  description:
+    "Discover the benefits of expert-led group therapy at Wilmington Mental Health. Share experiences, gain coping strategies, and join supportive sessions. Book now.",
+  keywords: [
+    "group therapy",
+    "mental health support groups",
+    "group counseling",
+    "therapy sessions",
+    "coping strategies",
+    "peer support therapy",
+    "Wilmington group therapy",
+    "emotional wellness groups",
+    "guided therapy sessions",
+    "mental health treatment Wilmington",
+  ],
+};
+
 
 function Page() {
   return (
@@ -18,7 +38,7 @@ function Page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Group Therapy & Support Groups
+            Mental Health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Group Therapy

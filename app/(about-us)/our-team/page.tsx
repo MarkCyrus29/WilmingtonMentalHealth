@@ -4,8 +4,24 @@ import Image from "next/image";
 import PageBanner from "@/components/ui/PageBanner";
 import CallBanner from "@/components/ui/CallBanner";
 import { Globe } from "lucide-react";
+import { Metadata } from "next";
 
-// Group team members by department
+export const metadata: Metadata = {
+  title: "Meet the Team | Wilmington Mental Health",
+  description:
+    "Get to know the licensed therapists, counselors, and support staff at Wilmington Mental Health. Explore departments, specialties, and the professionals behind your care.",
+  keywords: [
+    "Wilmington Mental Health team",
+    "licensed therapists Wilmington",
+    "counselors near me",
+    "mental health professionals NC",
+    "meet the team mental health",
+    "therapy staff profiles",
+    "bilingual therapists Wilmington",
+    "support staff mental health clinic",
+  ],
+};
+
 const groupedByDepartment = teamData.reduce<Record<string, TeamMember[]>>(
   (acc, member) => {
     if (!acc[member.department]) {

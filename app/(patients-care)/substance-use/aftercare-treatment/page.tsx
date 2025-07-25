@@ -3,6 +3,25 @@ import HorizontalCard from "@/components/ui/HorizontalCard";
 import CallBanner from "@/components/ui/CallBanner";
 import { Users, User, Calendar, Clock } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aftercare Treatment | Wilmington Mental Health",
+  description:
+    "Continue your recovery journey with Wilmington Mental Health's outpatient aftercare program—support extending beyond IOP with relapse prevention planning, therapy sessions, support groups, and long-term sobriety tools.",
+  keywords: [
+    "aftercare treatment",
+    "outpatient aftercare program",
+    "relapse prevention",
+    "long-term recovery support",
+    "after IOP care",
+    "mental health aftercare",
+    "substance abuse recovery",
+    "therapy and support groups",
+    "sobriety maintenance tools",
+    "Wilmington NC recovery services",
+  ],
+};
 
 function page() {
   return (
@@ -16,7 +35,7 @@ function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Continued Support
+            Substance Use Disorders
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Aftercare Treatment
@@ -46,7 +65,6 @@ function page() {
             <div className="relative h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/substance-use/aftercare-treatment (3).jpg"
-
                 alt="Wilmington Substance Use Disorder: Aftercare Treatment"
                 fill
                 className="object-cover"

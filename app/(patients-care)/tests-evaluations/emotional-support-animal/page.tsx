@@ -12,6 +12,26 @@ import {
 } from "lucide-react";
 import RelatedServices from "@/components/ui/RelatedServices";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Emotional Support Animals | Wilmington Mental Health",
+  description:
+    "Learn how Wilmington Mental Health therapists can assess your need and issue ESA letters for emotional support animals—helping clients with anxiety, PTSD, depression access housing accommodations and feel supported every day.",
+  keywords: [
+    "emotional support animal letter",
+    "ESA evaluation Wilmington NC",
+    "ESA for anxiety",
+    "PTSD emotional support animal",
+    "ESA for depression",
+    "ESA housing letter",
+    "licensed therapist ESA letter",
+    "mental health ESA evaluation",
+    "Wilmington NC ESA services",
+    "emotional support animal certification",
+  ],
+};
+
 
 function page() {
   return (

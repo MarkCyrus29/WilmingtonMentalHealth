@@ -4,6 +4,26 @@ import CallBanner from "@/components/ui/CallBanner";
 import PageBanner from "@/components/ui/PageBanner";
 import HorizontalCard from "@/components/client/HorizontalCardClient";
 import TeletherapyAccordion from "@/components/client/TeletheraphyAccordionClient";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Telehealth & Virtual Mental Health Appointments | Wilmington Mental Health",
+  description:
+    "Access confidential teletherapy with licensed Wilmington providers from home or mobile device. Learn how to prepare, join via Google Meet, and get mental health support virtually.",
+  keywords: [
+    "telehealth mental health services",
+    "virtual therapy Wilmington NC",
+    "online counseling appointments",
+    "Google Meet therapy sessions",
+    "remote mental health support",
+    "confidential teletherapy",
+    "virtual mental health care",
+    "licensed therapists online",
+    "teletherapy for anxiety and depression",
+    "Wilmington NC virtual counseling",
+  ],
+};
 
 function Page() {
   return (

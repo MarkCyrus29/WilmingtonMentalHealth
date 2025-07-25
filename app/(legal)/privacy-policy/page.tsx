@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Privacy Policy | Wilmington Mental Health",
+  description:
+    "Read our Privacy Policy to understand how Wilmington Mental Health collects, uses, and protects your personal health information in accordance with HIPAA and applicable laws.",
+  keywords: ["Wilmington Mental Health privacy policy"],
+};
+
 export default function page() {
   return (
     <div className="max-w-7xl mx-auto p-6 ">
@@ -33,7 +41,7 @@ export default function page() {
               RESPONSIBILITIES OF WILMINGTON MENTAL HEALTH
             </h2>
             <p className="mb-3">
-             {` Wilmington Mental Health ("We" or "Us" or "Our") is required by
+              {` Wilmington Mental Health ("We" or "Us" or "Our") is required by
               state and federal law to protect the privacy of your health
               information that may identify you. This health information
               includes mental health, developmental disability and/or substance
@@ -56,7 +64,7 @@ export default function page() {
               you upon request.
             </p>
             <p>
-             {` If at any time, you have questions or concerns about the
+              {` If at any time, you have questions or concerns about the
               information in this Notice or about our agency's privacy policies,
               procedures and practices, you may contact our agency Privacy
               Official at (910) 777-5575.`}
@@ -114,7 +122,7 @@ export default function page() {
             <div className="mb-4">
               <h3 className="font-semibold mb-2">For Payment:</h3>
               <p>
-               {` The treatment provided to you will be shared with our agency's
+                {` The treatment provided to you will be shared with our agency's
                 billing department so a bill can be prepared for services
                 rendered. We may also share your health information with agency
                 staff who review services provided to you to make certain you
@@ -133,7 +141,7 @@ export default function page() {
                 For Health Care Operations:
               </h3>
               <p className="mb-2">
-               {` Wilmington Mental Health may use or disclose your health
+                {` Wilmington Mental Health may use or disclose your health
                 information in performing a variety of business activities that
                 we call "health care operations". Some examples of how we may
                 use or disclose your health information for health care
@@ -387,11 +395,9 @@ export default function page() {
 
             <div className="space-y-3">
               <div>
-                <h3>
-                  To Get a Paper or Electronic Copy of this Notice.
-                </h3>
+                <h3>To Get a Paper or Electronic Copy of this Notice.</h3>
                 <p>
-                 {` At your first treatment encounter with this agency, you will
+                  {` At your first treatment encounter with this agency, you will
                   be given a copy of this Notice and asked to sign an
                   acknowledgement that you have received it. In the event of
                   emergency services, you will be provided the Notice as soon as
@@ -430,9 +436,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3>
-                  The Right to Choose How I Send PHI to You.
-                </h3>
+                <h3>The Right to Choose How I Send PHI to You.</h3>
                 <p>
                   You have the right to request to be contacted at a different
                   location or by a different method. For example, you may
@@ -445,11 +449,9 @@ export default function page() {
               </div>
 
               <div>
-                <h3>
-                  The Right to See and Get Copies of Your PHI.
-                </h3>
+                <h3>The Right to See and Get Copies of Your PHI.</h3>
                 <p>
-                 {` Other than "psychotherapy notes," you have the right to get an
+                  {` Other than "psychotherapy notes," you have the right to get an
                   electronic or paper copy of your medical record and other
                   information that we have about you. We will provide you with a
                   copy of your record, or a summary of it, if you agree to
@@ -480,9 +482,7 @@ export default function page() {
               </div>
 
               <div>
-                <h3>
-                  The Right to Correct or Update Your PHI.
-                </h3>
+                <h3>The Right to Correct or Update Your PHI.</h3>
                 <p>
                   If you believe that we have information that is either
                   inaccurate or incomplete, you may submit a request in writing
@@ -563,9 +563,7 @@ export default function page() {
             </p>
 
             <div className="bg-gray-50 p-4 mb-4">
-              <p>
-                U.S. Department of Health and Human Services
-              </p>
+              <p>U.S. Department of Health and Human Services</p>
               <p>Office for Civil Rights</p>
               <p>61 Forsyth Street, S.W., Suite 3B70, Atlanta, GA 30303-8909</p>
               <p>Telephone: (404) 562-7886 / (404) 331-2867 (TDD)</p>

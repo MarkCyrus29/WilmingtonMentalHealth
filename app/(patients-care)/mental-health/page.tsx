@@ -5,6 +5,25 @@ import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mental Health Services | Wilmington Mental Health",
+  description:
+    "Explore mental health services at Wilmington Mental Health. We offer compassionate therapy, counseling, and emotional support to help individuals and families thrive.",
+  keywords: [
+    "mental health Wilmington",
+    "therapy Wilmington NC",
+    "emotional support",
+    "depression therapy",
+    "anxiety counseling",
+    "mental health services",
+    "Wilmington therapists",
+    "licensed counselor Wilmington",
+    "online therapy North Carolina",
+    "CBT, DBT therapy Wilmington",
+  ],
+};
 
 function page() {
   return (
@@ -21,7 +40,7 @@ function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            COMPREHENSIVE CARE
+            Patient Care
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Mental Health Services
@@ -33,9 +52,9 @@ function page() {
         <div className="w-[85%]">
           <h1 className="text-center">Mental Health</h1>
           <p className="mt-6 text-lg leading-relaxed text-center">
-            Wilmington Mental Health&apos;s holistic and integrative care model is
-            implemented by healthcare professionals with extensive training in
-            psychology and whose primary purpose is to promote and encourage
+            Wilmington Mental Health&apos;s holistic and integrative care model
+            is implemented by healthcare professionals with extensive training
+            in psychology and whose primary purpose is to promote and encourage
             stabilization and healing in our patients. We use a person-centered
             approach to address your emotional and psychological needs and can
             collaborate with other healthcare professions for continuity of

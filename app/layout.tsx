@@ -14,8 +14,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Wilmington",
-  description: "Wilmington Mental Health & Medical Care",
+  title: {
+    template: "%s | Wilmington Mental Health",
+    default: "Wilmington Mental Health",
+  },
+  description: "Compassionate mental health care designed for you.",
 };
 
 export default function RootLayout({

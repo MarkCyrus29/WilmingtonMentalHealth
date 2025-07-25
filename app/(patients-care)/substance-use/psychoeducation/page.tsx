@@ -3,6 +3,27 @@ import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import { Users, BookOpen } from "lucide-react";
 import Image from "next/image";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Psychoeducation for Substance Use Disorders | Wilmington Mental Health",
+  description:
+    "Gain clarity on addiction with our psychoeducation program—structured learning via discussions, CBT tools, and educational content to support motivation, insight, and recovery.",
+  keywords: [
+    "psychoeducation program",
+    "substance use disorders",
+    "addiction education",
+    "CBT for addiction",
+    "motivational enhancement",
+    "structured recovery support",
+    "addiction awareness",
+    "mental health education",
+    "Wilmington addiction services",
+    "recovery education program",
+  ],
+};
+
 
 function Page() {
   return (
@@ -16,7 +37,7 @@ function Page() {
         />
         <div className="absolute  top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Recovery Education
+            Substance Use Disorders
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Psychoeducation

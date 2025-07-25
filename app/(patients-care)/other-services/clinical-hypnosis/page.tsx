@@ -4,6 +4,26 @@ import { Brain, Lightbulb, X, BookOpen, User } from "lucide-react";
 import RelatedServices from "@/components/ui/RelatedServices";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Clinical Hypnosis | Wilmington Mental Health",
+  description:
+    "Explore evidence-based clinical hypnosis services at Wilmington Mental Health—designed to support pain relief, manage stress & anxiety, and enhance chronic illness wellness under licensed care.",
+  keywords: [
+    "clinical hypnosis",
+    "hypnotherapy Wilmington NC",
+    "pain management hypnosis",
+    "stress relief therapy",
+    "anxiety hypnosis treatment",
+    "licensed hypnotherapist",
+    "chronic illness support",
+    "evidence-based hypnosis",
+    "mental health hypnosis",
+    "alternative therapy Wilmington",
+  ],
+};
+
 
 function page() {
   return (
@@ -19,7 +39,7 @@ function page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Integrative Medicine
+            Other Services
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Clinical Hypnosis

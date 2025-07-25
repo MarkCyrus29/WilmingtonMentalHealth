@@ -11,6 +11,25 @@ import {
 import { ServicesCard } from "@/components/ui/ServicesCard";
 import HeroSlideshow from "@/components/ui/HeroSlideshow";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Couples Counseling | Wilmington Mental Health",
+  description:
+    "Expert couples counseling and premarital therapy in Wilmington, NC. Improve communication, resolve conflict, and strengthen your relationship today.",
+  keywords: [
+    "couples counseling",
+    "relationship therapy",
+    "marriage counseling",
+    "premarital counseling",
+    "conflict resolution therapy",
+    "couples therapy Wilmington NC",
+    "communication skills therapy",
+    "relationship support",
+    "intimacy counseling",
+    "therapy for couples",
+  ],
+};
 
 function Page() {
   const conflictResolutionSteps = [
@@ -62,7 +81,7 @@ function Page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Working Together Towards a Stronger Bond
+            Mental Health
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Couples Counseling
@@ -400,7 +419,6 @@ function Page() {
                 title: "Test & Evaluations",
                 href: "/tests-evaluations",
               },
-              
             ].map((service, i) => (
               <RelatedServices
                 href={service.href}

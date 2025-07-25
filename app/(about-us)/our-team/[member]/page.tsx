@@ -12,8 +12,8 @@ import {
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import CallBanner from "@/components/ui/CallBanner";
+import { Metadata } from "next";
 
-// Page props
 interface PageParams {
   member: string;
 }
@@ -24,6 +24,27 @@ type Props = {
 
 export async function generateStaticParams(): Promise<PageParams[]> {
   return teamData.map((member) => ({ member: member.id }));
+}
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const member = teamData.find(async (m) => m.id === (await params).member);
+  if (!member) return notFound();
+
+  const firstName = member.name.split(" ")[0];
+
+  return {
+    title: `${member.name} | Wilmington Mental Health`,
+    description: `Learn about ${member.name}, ${member.role} at Wilmington Mental Health — including specialties, languages spoken, background, and therapeutic approach.`,
+    keywords: [
+      member.name,
+      `${member.role} Wilmington`,
+      "mental health provider",
+      "licensed therapist",
+      member.frameworkTag,
+      member.idealPopulation,
+      ...(member.languages || []),
+      ...(member.specialties?.split(",") || []),
+    ],
+  };
 }
 
 export default async function Page({ params }: Props) {

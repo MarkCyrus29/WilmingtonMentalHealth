@@ -14,6 +14,25 @@ import {
   CheckCircle,
 } from "lucide-react";
 import RelatedServices from "@/components/ui/RelatedServices";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Substance Use Disorders | Wilmington Mental Health",
+  description:
+    "At Wilmington Mental Health, our outpatient program provides structured, evidence-based care for substance use disorders—combining assessments, therapy (CBT, DBT), relapse prevention, urine testing, and ongoing support to help individuals reclaim sobriety and wellness.",
+  keywords: [
+    "substance use disorder treatment",
+    "outpatient rehab Wilmington NC",
+    "CBT for addiction",
+    "DBT for substance abuse",
+    "relapse prevention therapy",
+    "urine drug testing program",
+    "evidence-based addiction care",
+    "addiction counseling Wilmington",
+    "mental health and substance use",
+    "sober recovery support program",
+  ],
+};
 
 function Page() {
   return (
@@ -28,7 +47,7 @@ function Page() {
         />
         <div className="absolute top-[40%] transform -translate-y-[40%] w-screen flex flex-col items-center text-center pt-16 z-30">
           <h4 className="!text-background text-lg drop-shadow-2xl">
-            Recovery & Treatment
+            Patient Care
           </h4>
           <h1 className="!text-background text-3xl font-bold mt-2 drop-shadow-2xl">
             Substance Use Disorders

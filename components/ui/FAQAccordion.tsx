@@ -56,7 +56,7 @@ export default function TeletherapyAccordion() {
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center p-4 text-left text-xl font-medium transition-colors bg-primary/65  text-background border-t border-t-[rgba(255,255,255,0.18)] hover:cursor-pointer"
+              className="w-full flex justify-between items-center p-4 text-left text-2xl font-medium transition-colors bg-primary/65  text-background border-t border-t-[rgba(255,255,255,0.18)] hover:cursor-pointer"
             >
               {item.question}
               <ChevronDown
@@ -78,7 +78,7 @@ export default function TeletherapyAccordion() {
               }}
               className="transition-all duration-200 ease-in-out overflow-hidden px-4 text-base text-dark/70"
             >
-              <div className="py-2">{item.answer}</div>
+              <div className="py-2 text-xl">{item.answer}</div>
             </div>
           </div>
         );

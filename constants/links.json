@@ -46,14 +46,52 @@
           ] 
         },
         {
-          "title": "Other Services",
-          "link": "/other-services",
+          "title": "Speciality Treatment",
+          "link": "/specialty-treatment",
           "children": [
-            { "title": "Urinalysis", "link": "/lab-services/urinalysis" },
-            { "title": "Clinical Hypnosis", "link": "/other-services/clinical-hypnosis" },
-            { "title": "Emotional Support Animal", "link": "/other-services/emotional-support-animal" },
-            { "title": "Salud Latina", "link": "/other-services/salud-latina" },
-            { "title": "Corporate Wellness", "link": "/other-services/corporate-wellness" }
+            { "title": "Anger Management", "link": "/specialty-treatment/anger-management" },
+            {
+              "title": "EMDR / Trauma-CBT",
+              "link": "/specialty-treatment/emdr-trauma-cbt"
+            },
+            {
+              "title": "Eating Disorders",
+              "link": "/specialty-treatment/eating-disorders"
+            },
+            {
+              "title": "Sex Offender Treatment",
+              "link": "/specialty-treatment/sex-offender-treatment"
+            },
+            {
+              "title": "Transcranial Magnetic Stimulation (TMS)",
+              "link": "/specialty-treatment/transcranial-magnetic-stimulation"
+            }
+          ]
+        },
+        {
+          "title": "Corporate Wellness",
+          "link": "/corporate-wellness",
+          "children": [
+            {
+              "title": "Employee Assistance",
+              "link": "/corporate-wellness/employee-assistance"
+            },
+            {
+              "title": "Compassion Fatigue",
+              "link": "/corporate-wellness/compassion-fatigue"
+            },
+            {
+              "title": "Family & Medical Leave (FMLA)",
+              "link": "/corporate-wellness/fmla"
+            },
+            {
+              "title": "Short-Term Disability",
+              "link": "/corporate-wellness/short-term-disability"
+            },
+            {
+              "title": "Worker's Compensation",
+              "link": "/corporate-wellness/workers-comp"
+            }
           ]
         },
         {
@@ -61,8 +99,23 @@
           "link": "/tests-evaluations",
           "children": [
             { "title": "Assessments", "link": "/tests-evaluations/assesments" },
-            { "title": "Psychological Evals", "link": "/tests-evaluations/psychological-evals" }
+            { "title": "Psychological Evaluations", "link": "/tests-evaluations/psychological-evaluation" },
+            { "title": "Immigration Evaluations", "link": "/tests-evaluations/immigration-evaluation" },
+            { "title": "Emotional Support Animal", "link": "/tests-evaluations/emotional-support-animal" }
           ]
+        },
+        {
+          "title": "Other Services",
+          "link": "/other-services",
+          "children": [
+            { "title": "Urinalysis", "link": "/lab-services/urinalysis" },
+            { "title": "Clinical Hypnosis", "link": "/other-services/clinical-hypnosis" },
+            
+            { "title": "Salud Latina", "link": "/other-services/salud-latina" }
+          ]
+        },{
+          "title": "Whole Person Care",
+          "link": "/whole-person-care"
         }
       ]
     },
