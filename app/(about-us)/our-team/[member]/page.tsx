@@ -29,8 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const member = teamData.find(async (m) => m.id === (await params).member);
   if (!member) return notFound();
 
-  const firstName = member.name.split(" ")[0];
-
   return {
     title: `${member.name} | Wilmington Mental Health`,
     description: `Learn about ${member.name}, ${member.role} at Wilmington Mental Health — including specialties, languages spoken, background, and therapeutic approach.`,
